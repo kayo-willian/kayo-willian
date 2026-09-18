@@ -57,6 +57,11 @@ A log of my path into Linux, networking, and cybersecurity. Every project here d
 | **[Ubuntu Server Labs](https://github.com/kayo-willian/ubuntu-server-labs)** | Hands-on Ubuntu Server labs covering Linux administration, networking, services, security, and multi-server infrastructure. |
 | **[Debian Server Labs](https://github.com/kayo-willian/debian-server-labs)** | Hands-on Debian Server labs focused on Linux administration, networking, services, security, and infrastructure. |
 
+### 🎮 Game Development
+| Project | Description |
+|---------|-------------|
+| **[Channel Blue](https://github.com/kayo-willian/channel-blue)** | My first 2D game, developed with GDevelop 5 and inspired by the preservation of aquatic ecosystems. |
+
 ### 🛡️ Cybersecurity
 | Project | Description |
 |---------|-----------|
