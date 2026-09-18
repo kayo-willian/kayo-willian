@@ -60,7 +60,7 @@ A log of my path into Linux, networking, and cybersecurity. Every project here d
 ### 🎮 Game Development
 | Project | Description |
 |---------|-------------|
-| **[Channel Blue](https://github.com/kayo-willian/channel-blue)** | My first 2D game, developed with GDevelop 5 as an introduction to game development and interactive projects. |
+| **[Channel Blue Game](https://github.com/kayo-willian/channel-blue)** | My first 2D game, developed with GDevelop 5 as an introduction to game development and interactive projects. |
 
 ### 🛡️ Cybersecurity
 | Project | Description |
