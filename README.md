@@ -28,7 +28,6 @@ A log of my path into Linux, networking, and cybersecurity. Every project here d
 - 🛡️ Working toward a career in cybersecurity, with a focus on Blue Team and defensive security
 - 🔧 Learning by building, breaking, troubleshooting, and documenting real lab environments
 - 📚 Turning every lab into a technical reference for continuous learning
-- 🤖 Curious about electronics, robotics, and how technology works from the ground up
 - 📧 Reach me at kayowillian.net@protonmail.com
 
 </td>
