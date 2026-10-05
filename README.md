@@ -46,7 +46,7 @@ A log of my path into Linux, networking, and cybersecurity. Every project here d
 ### 🛠️ Tools & Utilities
 | Project | Description |
 |---------|-----------|
-| **[Scroll Lock RGB Fix](https://github.com/kayo-willian/scrolllock-rgb-fix)** | Fixes RGB lighting on generic gaming keyboards that use the Scroll Lock LED as a firmware trigger for GNOME/Wayland systems (Ubuntu 24.04+) where the compositor doesn't sync LED state with the hardware. |
+| **[Scroll Lock RGB Fix](https://github.com/kayo-willian/scrolllock-rgb-fix)** | Fixes RGB lighting on generic gaming keyboards that use the Scroll Lock LED as a firmware trigger on Linux. Supports dynamic device detection, automatic recovery, systemd integration, and multi-distribution installation.|
 
 ### 📡 Networking & Systems Labs
 | Project | Description |
