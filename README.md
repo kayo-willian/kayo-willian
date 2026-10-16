@@ -24,7 +24,7 @@ A log of my path into Linux, networking, and cybersecurity. Every project here d
 
 - 🌎 Based in Brazil
 - 🌐 Exploring the foundations of computer networks and IT infrastructure
-- 🐧 Building hands-on experience with Linux, Ubuntu Server, and network administration
+- 🐧 Building hands-on experience with Linux, Ubuntu, Debian Server, and network administration
 - 🛡️ Working toward a career in cybersecurity, with a focus on Blue Team and defensive security
 - 🔧 Learning by building, breaking, troubleshooting, and documenting real lab environments
 - 📚 Turning every lab into a technical reference for continuous learning
