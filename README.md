@@ -15,7 +15,7 @@
 
 <br/>
 
-<img src="assets/header.jpg" width="100%" alt="Ronin" />
+<img src="assets/header-blue.jpg" width="100%" alt="Ronin" />
 
 <br/><br/>
 
