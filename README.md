@@ -1,10 +1,3 @@
-<!-- ============================================================
-  KAYO | PROFILE README v4
-  Theme: black / white / blue (blue team)
-  REQUIRED: upload the samurai image to  assets/header.jpg
-  in this same repository (kayo-willian/kayo-willian)
-============================================================ -->
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=210&section=header&text=KAYO&fontColor=FFFFFF&fontSize=78&fontAlignY=38&animation=fadeIn&desc=Linux%20%C2%B7%20Networking%20%C2%B7%20Blue%20Team&descSize=20&descAlignY=60&descColor=2F81F7" width="100%" alt="Kayo banner" />
@@ -65,18 +58,46 @@ method    : build, break, troubleshoot, document
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Kali](https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Tsurugi](https://img.shields.io/badge/Tsurugi%20Linux-0A7E8C?style=for-the-badge&logo=linux&logoColor=white)
 
 **Networking**
 
+![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Cisco Packet Tracer](https://img.shields.io/badge/Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![TCP/IP](https://img.shields.io/badge/TCP%2FIP-2563EB?style=for-the-badge&logoColor=white)
+
+<br/>
+
 ![Routing](https://img.shields.io/badge/Routing-7C3AED?style=for-the-badge&logoColor=white)
+![Switching](https://img.shields.io/badge/Switching-0B3D91?style=for-the-badge&logoColor=white)
 ![OSPF](https://img.shields.io/badge/OSPF-0891B2?style=for-the-badge&logoColor=white)
 ![VLAN](https://img.shields.io/badge/VLAN-D97706?style=for-the-badge&logoColor=white)
+![STP](https://img.shields.io/badge/STP-0D9488?style=for-the-badge&logoColor=white)
+![NAT%2FPAT](https://img.shields.io/badge/NAT%2FPAT-DC2626?style=for-the-badge&logoColor=white)
+
+<br/>
+
 ![DHCP](https://img.shields.io/badge/DHCP-16A34A?style=for-the-badge&logoColor=white)
 ![DNS](https://img.shields.io/badge/DNS-DB2777?style=for-the-badge&logoColor=white)
+![ACL](https://img.shields.io/badge/ACL-C026D3?style=for-the-badge&logoColor=white)
+![SNMP](https://img.shields.io/badge/SNMP-475569?style=for-the-badge&logoColor=white)
+
+**Containers**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker%20Compose-1D63ED?style=for-the-badge&logo=docker&logoColor=white)
+![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=for-the-badge&logo=portainer&logoColor=white)
+
+<br/>
+
+**Infrastructure & Monitoring**
+
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=for-the-badge&logo=zabbix&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Uptime Kuma](https://img.shields.io/badge/Uptime%20Kuma-5CDD8B?style=for-the-badge&logo=uptimekuma&logoColor=black)
+![Pi-hole](https://img.shields.io/badge/Pi--hole-96060C?style=for-the-badge&logo=pihole&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 
 **Virtualization**
 
@@ -91,7 +112,7 @@ method    : build, break, troubleshoot, document
 ![GitHub](https://img.shields.io/badge/GitHub-30363D?style=for-the-badge&logo=github&logoColor=white)
 ![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white)
 
-**Security focus (studying)**
+**Security focus**
 
 ![Blue Team](https://img.shields.io/badge/Blue%20Team-1F6FEB?style=for-the-badge&logo=shield&logoColor=white)
 ![OSINT](https://img.shields.io/badge/OSINT-0F766E?style=for-the-badge&logoColor=white)
@@ -106,6 +127,57 @@ method    : build, break, troubleshoot, document
 ## 🗡️ Projects
 
 </div>
+
+### 🌐 Featured Project
+
+<table>
+<tr>
+<td width="100%" valign="top">
+
+<h3>Enterprise NOC — From Scratch</h3>
+
+<p>
+  <img src="https://img.shields.io/badge/FEATURED-PROJECT-0B3D91?style=for-the-badge&labelColor=0D0D0D" alt="Featured Project">
+  <img src="https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-2563EB?style=for-the-badge&labelColor=0D0D0D" alt="Development Status">
+</p>
+
+<p>
+  <code>Cisco</code> ·
+  <code>Linux</code> ·
+  <code>Docker</code> ·
+  <code>Zabbix</code> ·
+  <code>Grafana</code> ·
+  <code>NOC</code>
+</p>
+
+<p>
+  An end-to-end enterprise IT infrastructure project,
+  built around a physical networking laboratory and
+  centralized Network Operations Center.
+</p>
+
+<p>
+  The project covers structured cabling, network racks,
+  Cisco routing and switching, VLAN segmentation,
+  Linux servers, containerized services, infrastructure
+  monitoring, and technical troubleshooting.
+</p>
+
+<p>
+  Documentation also includes infrastructure architecture,
+  implementation evidence, and a financial analysis
+  comparing deployment and operational costs.
+</p>
+
+<p>
+  <a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">
+    <img src="https://img.shields.io/badge/EXPLORE%20PROJECT-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7" alt="Explore Project">
+  </a>
+</p>
+
+</td>
+</tr>
+</table>
 
 ### 🛠️ Tools & Utilities
 
