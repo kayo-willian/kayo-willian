@@ -65,18 +65,12 @@ method    : build, break, troubleshoot, document
 ![Cisco Packet Tracer](https://img.shields.io/badge/Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![TCP/IP](https://img.shields.io/badge/TCP%2FIP-2563EB?style=for-the-badge&logoColor=white)
-
-<br/>
-
 ![Routing](https://img.shields.io/badge/Routing-7C3AED?style=for-the-badge&logoColor=white)
 ![Switching](https://img.shields.io/badge/Switching-0B3D91?style=for-the-badge&logoColor=white)
 ![OSPF](https://img.shields.io/badge/OSPF-0891B2?style=for-the-badge&logoColor=white)
 ![VLAN](https://img.shields.io/badge/VLAN-D97706?style=for-the-badge&logoColor=white)
 ![STP](https://img.shields.io/badge/STP-0D9488?style=for-the-badge&logoColor=white)
 ![NAT%2FPAT](https://img.shields.io/badge/NAT%2FPAT-DC2626?style=for-the-badge&logoColor=white)
-
-<br/>
-
 ![DHCP](https://img.shields.io/badge/DHCP-16A34A?style=for-the-badge&logoColor=white)
 ![DNS](https://img.shields.io/badge/DNS-DB2777?style=for-the-badge&logoColor=white)
 ![ACL](https://img.shields.io/badge/ACL-C026D3?style=for-the-badge&logoColor=white)
