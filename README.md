@@ -8,8 +8,6 @@
 
 <br/>
 
-<img src="assets/header-blue.jpg" width="100%" alt="Ronin" />
-
 <br/><br/>
 
 ![Status](https://img.shields.io/badge/STATUS-LEARNING%20%26%20BUILDING-0D0D0D?style=for-the-badge&labelColor=2F81F7)
