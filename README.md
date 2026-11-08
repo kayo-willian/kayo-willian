@@ -55,24 +55,28 @@ method    : build, break, troubleshoot, document
 
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Kali](https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+
+<br/>
 
 **Networking**
 
 ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
-![Cisco Packet Tracer](https://img.shields.io/badge/Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
+![Packet Tracer](https://img.shields.io/badge/Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![TCP/IP](https://img.shields.io/badge/TCP%2FIP-2563EB?style=for-the-badge&logoColor=white)
-![Routing](https://img.shields.io/badge/Routing-7C3AED?style=for-the-badge&logoColor=white)
-![Switching](https://img.shields.io/badge/Switching-0B3D91?style=for-the-badge&logoColor=white)
-![OSPF](https://img.shields.io/badge/OSPF-0891B2?style=for-the-badge&logoColor=white)
-![VLAN](https://img.shields.io/badge/VLAN-D97706?style=for-the-badge&logoColor=white)
-![STP](https://img.shields.io/badge/STP-0D9488?style=for-the-badge&logoColor=white)
-![NAT%2FPAT](https://img.shields.io/badge/NAT%2FPAT-DC2626?style=for-the-badge&logoColor=white)
-![DHCP](https://img.shields.io/badge/DHCP-16A34A?style=for-the-badge&logoColor=white)
-![DNS](https://img.shields.io/badge/DNS-DB2777?style=for-the-badge&logoColor=white)
-![ACL](https://img.shields.io/badge/ACL-C026D3?style=for-the-badge&logoColor=white)
-![SNMP](https://img.shields.io/badge/SNMP-475569?style=for-the-badge&logoColor=white)
+![TCP/IP](https://img.shields.io/badge/TCP%2FIP-2563EB?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PHBhdGggZD0iTTMgMTJoMThNMTIgM2MtNSA1LTUgMTMgMCAxOE0xMiAzYzUgNSA1IDEzIDAgMThNNSA2aDE0TTUgMThoMTQiLz48L3N2Zz4=)
+![Routing](https://img.shields.io/badge/Routing-7C3AED?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iMiIvPjxjaXJjbGUgY3g9IjE5IiBjeT0iNSIgcj0iMiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTkiIHI9IjIiLz48cGF0aCBkPSJNNyA1aDEwTTYgN2w1IDEwTTE4IDdsLTUgMTBNMTQgMTVsLTEgMiAyIC41Ii8+PC9zdmc+)
+![Switching](https://img.shields.io/badge/Switching-0B3D91?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSI2IiB3aWR0aD0iMjAiIGhlaWdodD0iMTIiIHJ4PSIyIi8+PHBhdGggZD0iTTYgMTBoM3Y0SDZ6TTExIDEwaDN2NGgtM3pNMTYgMTBoM3Y0aC0zeiIvPjwvc3ZnPg==)
+![OSPF](https://img.shields.io/badge/OSPF-0891B2?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIyLjQiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjMiIHI9IjIiLz48Y2lyY2xlIGN4PSIyMSIgY3k9IjEyIiByPSIyIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIyMSIgcj0iMiIvPjxjaXJjbGUgY3g9IjMiIGN5PSIxMiIgcj0iMiIvPjxwYXRoIGQ9Ik0xMiA1djQuNU0xOSAxMmgtNC41TTEyIDE0LjVWMTlNNSAxMmg0LjUiLz48L3N2Zz4=)
+![VLAN](https://img.shields.io/badge/VLAN-D97706?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSIzIiB3aWR0aD0iOCIgaGVpZ2h0PSI3IiByeD0iMSIvPjxyZWN0IHg9IjE0IiB5PSIzIiB3aWR0aD0iOCIgaGVpZ2h0PSI3IiByeD0iMSIvPjxyZWN0IHg9IjIiIHk9IjE0IiB3aWR0aD0iOCIgaGVpZ2h0PSI3IiByeD0iMSIvPjxyZWN0IHg9IjE0IiB5PSIxNCIgd2lkdGg9IjgiIGhlaWdodD0iNyIgcng9IjEiLz48cGF0aCBkPSJNMTIgMnYyMCIvPjwvc3ZnPg==)
+![STP](https://img.shields.io/badge/STP-0D9488?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSI5IiB5PSIyIiB3aWR0aD0iNiIgaGVpZ2h0PSI1IiByeD0iMSIvPjxyZWN0IHg9IjIiIHk9IjE3IiB3aWR0aD0iNyIgaGVpZ2h0PSI1IiByeD0iMSIvPjxyZWN0IHg9IjE1IiB5PSIxNyIgd2lkdGg9IjciIGhlaWdodD0iNSIgcng9IjEiLz48cGF0aCBkPSJNMTIgN3Y1SDUuNXY1TTEyIDEyaDYuNXY1Ii8+PC9zdmc+)
+![NAT/PAT](https://img.shields.io/badge/NAT%2FPAT-DC2626?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMyA3aDE3bTAgMC00LTRtNCA0LTQgNE0yMSAxN0g0bTAgMCA0LTRtLTQgNCA0IDQiLz48cGF0aCBkPSJNMTIgMTB2NCIvPjwvc3ZnPg==)
+![DHCP](https://img.shields.io/badge/DHCP-16A34A?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSIyIi8+PHBhdGggZD0iTTcgOGgxME03IDEyaDVNNyAxNmg0TTE0IDE2aDVtMCAwLTMtM20zIDMtMyAzIi8+PC9zdmc+)
+![DNS](https://img.shields.io/badge/DNS-DB2777?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSI3IiBjeT0iNyIgcj0iMyIvPjxjaXJjbGUgY3g9IjE3IiBjeT0iNyIgcj0iMyIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTgiIHI9IjMiLz48cGF0aCBkPSJNOSA5bDIgNk0xNSA5bC0yIDZNMTAgN2g0Ii8+PC9zdmc+)
+![ACL](https://img.shields.io/badge/ACL-C026D3?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSI0IiB5PSIxMCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiByeD0iMiIvPjxwYXRoIGQ9Ik04IDEwVjdhNCA0IDAgMCAxIDggMHYzTTEyIDE0djQiLz48L3N2Zz4=)
+![SNMP](https://img.shields.io/badge/SNMP-475569?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSIzIiB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHJ4PSIyIi8+PHBhdGggZD0iTTUgMTJoM2wyLTQgMyA4IDItNGg0TTEyIDE4djNNOCAyMWg4Ii8+PC9zdmc+)
+
+<br/>
 
 **Containers**
 
@@ -84,17 +88,21 @@ method    : build, break, troubleshoot, document
 
 **Infrastructure & Monitoring**
 
-![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=for-the-badge&logo=zabbix&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyLjUiIHk9IjQiIHdpZHRoPSIxOSIgaGVpZ2h0PSIxNSIgcng9IjIiLz48cGF0aCBkPSJNNSAxMmgzbDIuMy00LjUgMy40IDkgMi4yLTQuNUgxOU05IDIyaDZNMTIgMTl2MyIvPjwvc3ZnPg==)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![Uptime Kuma](https://img.shields.io/badge/Uptime%20Kuma-5CDD8B?style=for-the-badge&logo=uptimekuma&logoColor=black)
 ![Pi-hole](https://img.shields.io/badge/Pi--hole-96060C?style=for-the-badge&logo=pihole&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 
+<br/>
+
 **Virtualization**
 
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
 ![QEMU/KVM](https://img.shields.io/badge/QEMU%2FKVM-FF6600?style=for-the-badge&logo=qemu&logoColor=white)
+
+<br/>
 
 **Tools**
 
@@ -104,13 +112,16 @@ method    : build, break, troubleshoot, document
 ![GitHub](https://img.shields.io/badge/GitHub-30363D?style=for-the-badge&logo=github&logoColor=white)
 ![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white)
 
+<br/>
+
 **Security focus**
 
-![Blue Team](https://img.shields.io/badge/Blue%20Team-1F6FEB?style=for-the-badge&logo=shield&logoColor=white)
-![OSINT](https://img.shields.io/badge/OSINT-0F766E?style=for-the-badge&logoColor=white)
-![Threat Intelligence](https://img.shields.io/badge/Threat%20Intelligence-5B21B6?style=for-the-badge&logoColor=white)
+![Blue Team](https://img.shields.io/badge/Blue%20Team-1F6FEB?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTIgMiAyMSA2djZjMCA2LTQgOS05IDExLTUtMi05LTUtOS0xMVY2eiIvPjxwYXRoIGQ9Im04IDEyIDMgMyA1LTYiLz48L3N2Zz4=)
+![OSINT](https://img.shields.io/badge/OSINT-0F766E?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSI3Ii8+PHBhdGggZD0ibTE1LjUgMTUuNSA2IDZNMyAxMGgxNE0xMCAzYy00IDQtNCAxMCAwIDE0TTEwIDNjNCA0IDQgMTAgMCAxNCIvPjwvc3ZnPg==)
+![Threat Intelligence](https://img.shields.io/badge/Threat%20Intelligence-5B21B6?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEiLz48cGF0aCBkPSJNMTIgMTIgMTkgNU0xMiAzdjNNMjEgMTJoLTMiLz48L3N2Zz4=)
 
 </div>
+
 
 ---
 
