@@ -141,7 +141,7 @@ method    : build, break, troubleshoot, document
 
 <p>
   <img src="https://img.shields.io/badge/FEATURED-PROJECT-0B3D91?style=for-the-badge&labelColor=0D0D0D" alt="Featured Project">
-  <img src="https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-2563EB?style=for-the-badge&labelColor=0D0D0D" alt="Development Status">
+  <img src="https://img.shields.io/badge/STATUS-COMPLETED-22C55E?style=for-the-badge&labelColor=0D0D0D&logo=checkmarx&logoColor=white" alt="Project Completed">
 </p>
 
 <p>
