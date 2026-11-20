@@ -51,8 +51,8 @@ method    : build, break, troubleshoot, document
 
 ## ⚔️ Tech Stack
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Computer Networking](https://img.shields.io/badge/Computer%20Networking-2563EB?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHJlY3QgeD0iOSIgeT0iMiIgd2lkdGg9IjYiIGhlaWdodD0iNSIgcng9IjEiLz48cmVjdCB4PSIyIiB5PSIxNyIgd2lkdGg9IjYiIGhlaWdodD0iNSIgcng9IjEiLz48cmVjdCB4PSIxNiIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiIHJ4PSIxIi8+PHBhdGggZD0iTTEyIDd2NU01IDE3di01aDE0djUiLz48L3N2Zz4=)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -128,7 +128,7 @@ method    : build, break, troubleshoot, document
 #### Oppy
 `Python` · `SQLite` · `Docker` · `Telegram`
 
-Self-hosted monitor that tracks public opportunity listings, detects updates and sends Telegram alerts. Currently monitors Senac Pará PSG opportunities in Santarém.
+A self-hosted tool that monitors public opportunities, detects updates, and sends notifications via Telegram.
 
 [![Repo](https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7)](https://github.com/kayo-willian/oppy)
 
