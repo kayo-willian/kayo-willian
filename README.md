@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=210&section=header&text=KAYO&fontColor=FFFFFF&fontSize=78&fontAlignY=38&animation=fadeIn&desc=Linux%20%C2%B7%20Networking%20%C2%B7%20Systems&descSize=20&descAlignY=60&descColor=2F81F7" width="100%" alt="Kayo banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=210&section=header&text=KAYO&fontColor=FFFFFF&fontSize=78&fontAlignY=38&animation=fadeIn&desc=Linux%20%C2%B7%20Networking%&descSize=20&descAlignY=60&descColor=2F81F7" width="100%" alt="Kayo banner" />
 
 <a href="https://github.com/kayo-willian">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3200&pause=1200&color=FFFFFF&background=00000000&center=true&vCenter=true&width=860&height=50&lines=Learning+by+building+and+troubleshooting;Exploring+Linux+and+computer+networks;From+hands-on+labs+to+useful+tools;Documenting+what+I+learn+along+the+way" alt="Typing animation" />
