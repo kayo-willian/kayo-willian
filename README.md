@@ -141,6 +141,7 @@ method    : build, break, troubleshoot, document
 ### 🛠️ Tools & Utilities
 
 <table>
+<tbody>
 <tr>
 <td width="50%" valign="top">
 
@@ -157,12 +158,14 @@ A lightweight USB presence observer for headless Linux, with an opt-in gate for 
 #### Linux USB Security Token (Fork)
 `Linux` · `PAM` · `Python` · `Bash`
 
-A fork of Henrique's USB authentication project, focused on safer GDM recovery, testing, and English-language documentation.
+A Linux USB authentication fork focused on safer GDM recovery, automated tests, and English documentation.
 
 [![Repo](https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7)](https://github.com/kayo-willian/linux-usb-security-token)
 
 </td>
 </tr>
+</tbody>
+<tbody>
 <tr>
 <td width="50%" valign="top">
 
@@ -179,74 +182,13 @@ A self-hosted tool that monitors public opportunities, detects updates, and send
 #### Scroll Lock RGB Fix
 `Python` · `Linux` · `GNOME/Wayland`
 
-Fixes RGB lighting on generic gaming keyboards that use the Scroll Lock LED as a firmware trigger, on systems where the compositor doesn't sync the LED state with the hardware.
+Fixes Scroll Lock-triggered RGB lighting on generic keyboards in Linux desktop environments.
 
 [![Repo](https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7)](https://github.com/kayo-willian/scrolllock-rgb-fix)
 
 </td>
 </tr>
-</table>
-
-### 📡 Networking & Systems Labs
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<h4>Packet Tracer Labs</h4>
-
-<code>Cisco</code> · <code>VLAN</code> · <code>DHCP</code> · <code>DNS</code> · <code>OSPF</code>
-
-<p>Networking labs that grow from core fundamentals to multi-site infrastructure, routing, OSPF and troubleshooting.</p>
-
-<a href="https://github.com/kayo-willian/packet-tracer-labs">
-<img src="https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7">
-</a>
-
-</td>
-<td width="50%" valign="top">
-
-<h4>Linux Networking Labs</h4>
-
-<code>Terminal</code> · <code>Networking</code> · <code>Troubleshooting</code>
-
-<p>Practice with Linux and the command line: commands, networking and system administration.</p>
-
-<a href="https://github.com/kayo-willian/linux-networking-labs">
-<img src="https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7">
-</a>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-<h4>Ubuntu Server Labs</h4>
-
-<code>Ubuntu</code> · <code>Services</code> · <code>Security</code>
-
-<p>Hands-on Linux administration: networking, services, security and multi-server infrastructure, built as a personal reference guide.</p>
-
-<a href="https://github.com/kayo-willian/ubuntu-server-labs">
-<img src="https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7">
-</a>
-
-</td>
-<td width="50%" valign="top">
-
-<h4>Debian Server Labs</h4>
-
-<code>Debian</code> · <code>Administration</code> · <code>Infrastructure</code>
-
-<p>Debian server labs focused on administration, networking, services, security and infrastructure.</p>
-
-<a href="https://github.com/kayo-willian/debian-server-labs">
-<img src="https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7">
-</a>
-
-</td>
-</tr>
+</tbody>
 </table>
 
 ### 🎮 Game Development
