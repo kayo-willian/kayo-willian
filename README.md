@@ -24,7 +24,7 @@ name      : Kayo
 base      : Brazil
 focus     : Linux / Networking / Systems
 stack     : Linux, Networking, Virtualization
-studying  : Computer networks, Linux, Bash, Python, OSINT
+studying  : Computer networks, Linux, Bash, Python, Docker
 method    : build, break, troubleshoot, document
 ```
 
