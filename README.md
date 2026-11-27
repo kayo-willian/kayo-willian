@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=180&section=header&text=KAYO&fontColor=FFFFFF&fontSize=72&fontAlignY=38&animation=fadeIn&desc=Linux%20%C2%B7%20Networking&descSize=20&descAlignY=60&descColor=2F81F7" width="100%" alt="Kayo banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=80&section=header" width="100%" alt="Black and blue header" />
 
 ![Linux](https://img.shields.io/badge/Linux-161B22?style=flat-square&logo=linux&logoColor=FCC624)
 ![Networking](https://img.shields.io/badge/Networking-161B22?style=flat-square&logo=cisco&logoColor=049FD9)
