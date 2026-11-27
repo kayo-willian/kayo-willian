@@ -19,8 +19,9 @@
 
 ### `$ whoami`
 
-I enjoy understanding how computer systems work, experimenting with hardware and software, and learning through practical projects. I like building, testing, troubleshooting and documenting what I discover.
+I like figuring out why things work and, more often, why they don't.
 
+This is where I keep my experiments, findings and fixes.
 
 </td>
 <td width="42%" align="center" valign="middle">
