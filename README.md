@@ -19,9 +19,13 @@
 
 ### `$ whoami`
 
-I like figuring out why things work and, more often, why they don't.
-
-This is where I keep my experiments, findings and fixes.
+```yaml
+ecosystem  : GNU/Linux
+philosophy : Open Source
+interests  : Hardware & Software
+activities : Testing, Research & Development
+curiosity  : The Unknown
+```
 
 </td>
 <td width="42%" align="center" valign="middle">
