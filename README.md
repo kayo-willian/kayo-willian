@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=180&section=header&text=KAYO&fontColor=FFFFFF&fontSize=72&fontAlignY=38&animation=fadeIn&desc=Linux%20%C2%B7%20Networking%&descSize=20&descAlignY=60&descColor=2F81F7" width="100%" alt="Kayo banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=180&section=header&text=KAYO&fontColor=FFFFFF&fontSize=72&fontAlignY=38&animation=fadeIn&desc=Linux%20%C2%B7%20Networking&descSize=20&descAlignY=60&descColor=2F81F7" width="100%" alt="Kayo banner" />
 
 ![Status](https://img.shields.io/badge/STATUS-LEARNING%20%26%20BUILDING-0D0D0D?style=for-the-badge&labelColor=2F81F7)
 ![Focus](https://img.shields.io/badge/FOCUS-LINUX%20%26%20NETWORKING-0D0D0D?style=for-the-badge&labelColor=FFFFFF)
@@ -16,16 +16,12 @@
 
 ### `$ whoami`
 
-I work on hands-on projects involving **Linux**, **networking** and **computer systems**.
-I build labs, test ideas, solve practical problems and document what I learn along the way.
+I’m interested in how computer systems work, from physical hardware to Linux and network infrastructure. I learn by building, testing, troubleshooting and documenting real systems.
 
-```bash
-name      : Kayo
-base      : Brazil
-focus     : Linux / Networking / Systems
-stack     : Linux, Networking, Virtualization
-studying  : Computer networks, Linux, Bash, Python, Docker
-method    : build, break, troubleshoot, document
+```text
+focus     : Linux, Networking, Infrastructure
+tools     : Bash, Python, Docker, Git
+interests : Open Source, Hardware & Software Testing
 ```
 
 </td>
@@ -35,160 +31,6 @@ method    : build, break, troubleshoot, document
 
 </td>
 </tr>
-</table>
-
----
-
-<div align="center">
-
-## 🗡️ Projects
-
-</div>
-
-### 🌐 Featured Project
-
-<table>
-<tr>
-<td width="100%" valign="top">
-
-<h3>Enterprise NOC — From Scratch</h3>
-
-<p>
-  <img src="https://img.shields.io/badge/FEATURED-PROJECT-0B3D91?style=for-the-badge&labelColor=0D0D0D" alt="Featured Project">
-  <img src="https://img.shields.io/badge/STATUS-COMPLETED-22C55E?style=for-the-badge&labelColor=0D0D0D&logo=checkmarx&logoColor=white" alt="Project Completed">
-</p>
-
-<p>
-  <code>Cisco</code> ·
-  <code>Linux</code> ·
-  <code>Docker</code> ·
-  <code>Zabbix</code> ·
-  <code>Grafana</code> ·
-  <code>NOC</code>
-</p>
-
-<p>
-  An end-to-end enterprise IT infrastructure project,
-  built around a physical networking laboratory and
-  centralized Network Operations Center.
-</p>
-
-<p>
-  The project covers structured cabling, network racks,
-  Cisco routing and switching, VLAN segmentation,
-  Linux servers, containerized services, infrastructure
-  monitoring, and technical troubleshooting.
-</p>
-
-<p>
-  Documentation also includes infrastructure architecture,
-  implementation evidence, and a financial analysis
-  comparing deployment and operational costs.
-</p>
-
-<p>
-  <a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">
-    <img src="https://img.shields.io/badge/EXPLORE%20PROJECT-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7" alt="Explore Project">
-  </a>
-</p>
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="100%" valign="top">
-
-<h3>Soft & Wet Homelab</h3>
-
-<p>
-  <img src="https://img.shields.io/badge/FEATURED-PROJECT-0B3D91?style=for-the-badge&labelColor=0D0D0D" alt="Featured Project">
-  <img src="https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-F59E0B?style=for-the-badge&labelColor=0D0D0D" alt="In Development">
-</p>
-
-<p>
-  <code>Debian 13</code> ·
-  <code>Docker</code> ·
-  <code>Docker Compose</code> ·
-  <code>Navidrome</code> ·
-  <code>Self-hosting</code>
-</p>
-
-<p>
-  A personal home server project built on a resource-limited Debian laptop,
-  focused on running and managing self-hosted services with Docker.
-</p>
-
-<p>
-  Planned services include Navidrome for music streaming,
-  Portainer for container management, a lightweight application dashboard,
-  and other applications suited to the available hardware.
-  The project will document deployment, remote administration,
-  persistent storage, backups, and maintenance.
-</p>
-
-<p>
-  <a href="https://github.com/kayo-willian/soft-and-wet-homelab">
-    <img src="https://img.shields.io/badge/EXPLORE%20PROJECT-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7" alt="Explore Project">
-  </a>
-</p>
-
-</td>
-</tr>
-</table>
-
-### 🛠️ Tools & Utilities
-
-<table>
-<tbody>
-<tr>
-<td width="50%" valign="top">
-
-#### USB Presence Gate
-`Python` · `Debian` · `systemd` · `udev`
-
-A lightweight USB presence observer for headless Linux, with an opt-in gate for a disposable systemd demo service.
-
-[![Repo](https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7)](https://github.com/kayo-willian/usb-presence-gate)
-
-</td>
-<td width="50%" valign="top">
-
-#### Linux USB Security Token (Fork)
-`Linux` · `PAM` · `Python` · `Bash`
-
-A Linux USB authentication fork focused on safer GDM recovery, automated tests, and English documentation.
-
-[![Repo](https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7)](https://github.com/kayo-willian/linux-usb-security-token)
-
-</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td width="50%" valign="top">
-
-#### Oppy
-`Python` · `SQLite` · `Docker` · `Telegram`
-
-A self-hosted tool that monitors public opportunities, detects updates, and sends notifications via Telegram.
-
-[![Repo](https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7)](https://github.com/kayo-willian/oppy)
-
-</td>
-<td width="50%" valign="top">
-
-#### Scroll Lock RGB Fix
-`Python` · `Linux` · `GNOME/Wayland`
-
-Fixes Scroll Lock-triggered RGB lighting on generic keyboards in Linux desktop environments.
-
-[![Repo](https://img.shields.io/badge/OPEN%20REPO-0D0D0D?style=for-the-badge&logo=github&logoColor=2F81F7)](https://github.com/kayo-willian/scrolllock-rgb-fix)
-
-</td>
-</tr>
-</tbody>
 </table>
 
 ---
