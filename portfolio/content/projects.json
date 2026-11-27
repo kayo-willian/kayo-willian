@@ -1,88 +1,361 @@
-{
-  "projects": [
-    [
-      "enterprise-noc-from-scratch",
-      "Enterprise NOC",
-      "Redes e infraestrutura",
-      "Networking and infrastructure"
+[
+  {
+    "id": "enterprise-noc-from-scratch",
+    "name": "Enterprise NOC — From Scratch",
+    "tags": [
+      "Cisco",
+      "Debian",
+      "Docker",
+      "Zabbix",
+      "Grafana"
     ],
-    [
-      "soft-and-wet-homelab",
-      "Soft & Wet",
-      "Homelab",
-      "Homelab"
-    ],
-    [
-      "oppy",
-      "Oppy",
-      "Ferramenta",
-      "Tool"
-    ],
-    [
-      "usb-presence-gate",
-      "USB Presence Gate",
-      "Sistema",
-      "System"
-    ],
-    [
-      "scrolllock-rgb-fix",
-      "Scroll Lock RGB Fix",
-      "Utilitário",
-      "Utility"
-    ],
-    [
-      "arduino-linux-controller",
-      "Arduino Linux Controller",
-      "Hardware",
-      "Hardware"
-    ],
-    [
-      "linux-usb-security-token",
-      "Linux USB Security Token",
-      "Repositório",
-      "Repository"
-    ],
-    [
-      "linux-networking-labs",
-      "Linux Networking Labs",
-      "Laboratório",
-      "Lab"
-    ],
-    [
-      "packet-tracer-labs",
-      "Packet Tracer Labs",
-      "Laboratório",
-      "Lab"
-    ],
-    [
-      "ubuntu-server-labs",
-      "Ubuntu Server Labs",
-      "Laboratório",
-      "Lab"
-    ],
-    [
-      "debian-server-labs",
-      "Debian Server Labs",
-      "Laboratório",
-      "Lab"
-    ],
-    [
-      "channel-blue",
-      "Channel Blue",
-      "Repositório",
-      "Repository"
-    ],
-    [
-      "where-the-water-goes",
-      "Where the Water Goes",
-      "Fork / contribuição",
-      "Fork / contribution"
-    ],
-    [
-      "kayo-willian",
-      "GO BEYOND",
-      "Site e perfil",
-      "Website and profile"
+    "repo": "https://github.com/kayo-willian/enterprise-noc-from-scratch",
+    "en": {
+      "kind": "Network infrastructure",
+      "summary": "A physical network for Tapajós Inovações, a fictional company. I followed a connection from its patch-panel port to the service and the dashboard that observes it.",
+      "detail": "A Catalyst switch separates seven VLANs. One Debian host runs containerized services and monitoring. A second hosts Asterisk and FreeRADIUS for voice and authentication.",
+      "finding": "When Zabbix could not collect data from the newly registered switch, I traced the gap to mismatched SNMP settings. The repair restored collection. A separate filter explained why the alerts widget was still empty.",
+      "scope": "Completed physical lab. The published dashboards are historical captures. The operations guide distinguishes faults observed on hardware from proposed incident exercises.",
+      "credit": "I planned and configured the infrastructure. AI tools helped write, organize and review the documentation.",
+      "links": [
+        {
+          "label": "Explore the portal",
+          "url": "https://kayo-willian.github.io/enterprise-noc-from-scratch/"
+        },
+        {
+          "label": "Network topology",
+          "url": "https://github.com/kayo-willian/enterprise-noc-from-scratch/blob/main/docs/networking/consolidated-logical-topology.md"
+        },
+        {
+          "label": "SNMP investigation",
+          "url": "https://github.com/kayo-willian/enterprise-noc-from-scratch/blob/main/docs/monitoring/snmp-troubleshooting.md"
+        }
+      ],
+      "caption": "Switch and Cat 6 patch panel, photographed in the lab.",
+      "alt": "Blue patch leads connect the Catalyst switch to the rack’s numbered patch panel."
+    },
+    "pt": {
+      "kind": "Infraestrutura de redes",
+      "summary": "Uma rede física para a Tapajós Inovações, empresa fictícia. Acompanhei o caminho de uma conexão da porta do patch panel ao serviço e ao painel que o monitora.",
+      "detail": "Um switch Catalyst separa sete VLANs. Um servidor Debian hospeda os serviços em contêineres e o monitoramento. Outro executa Asterisk e FreeRADIUS para telefonia e autenticação.",
+      "finding": "Quando o Zabbix não conseguiu coletar dados do switch recém-cadastrado, identifiquei uma divergência na configuração de SNMP. A coleta voltou após a correção. Um filtro explicava por que o painel de alertas continuava vazio.",
+      "scope": "Laboratório físico concluído. Os painéis publicados registram o momento da coleta. O guia de operação distingue falhas observadas no equipamento de exercícios de incidentes propostos.",
+      "credit": "Planejei e configurei a infraestrutura. Ferramentas de IA auxiliaram na redação, organização e revisão da documentação.",
+      "links": [
+        {
+          "label": "Explorar o portal",
+          "url": "https://kayo-willian.github.io/enterprise-noc-from-scratch/pt-BR/"
+        },
+        {
+          "label": "Topologia da rede",
+          "url": "https://github.com/kayo-willian/enterprise-noc-from-scratch/blob/main/docs/pt-BR/redes/topologia-logica-consolidada.md"
+        },
+        {
+          "label": "Investigação de SNMP",
+          "url": "https://github.com/kayo-willian/enterprise-noc-from-scratch/blob/main/docs/pt-BR/monitoramento/diagnostico-snmp.md"
+        }
+      ],
+      "caption": "Switch e patch panel Cat 6 fotografados no laboratório.",
+      "alt": "Cabos azuis conectam o switch Catalyst ao patch panel numerado do rack."
+    },
+    "image": "noc-rack.webp",
+    "imageSize": [
+      1250,
+      738
     ]
-  ]
-}
+  },
+  {
+    "id": "soft-and-wet-homelab",
+    "name": "Soft & Wet Homelab",
+    "tags": [
+      "Debian",
+      "Compose",
+      "Navidrome",
+      "Tailscale"
+    ],
+    "repo": "https://github.com/kayo-willian/soft-and-wet-homelab",
+    "en": {
+      "kind": "Self-hosting",
+      "summary": "What can a laptop with 2 GB of RAM still serve? I installed Debian without a desktop and used one application as the test load.",
+      "detail": "Navidrome runs in Docker Compose. Tailscale runs directly on Debian. I transferred the media over SSH and tested playback from a phone outside the LAN.",
+      "finding": "Before deploying the application, the host used 388 MiB of RAM. The first container sample read 32.51 MiB at startup. Steady-state measurements are still open.",
+      "scope": "The server is in use. Navidrome is its only documented application container, and expansion is paused.",
+      "credit": "I deployed and tested the system. Codex helped review, translate and organize the documentation.",
+      "links": [
+        {
+          "label": "Resource measurements",
+          "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/measurements.md"
+        },
+        {
+          "label": "Host architecture",
+          "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/architecture.md"
+        }
+      ]
+    },
+    "pt": {
+      "kind": "Hospedagem própria",
+      "summary": "O que um notebook com 2 GB de RAM ainda consegue hospedar? Instalei o Debian sem interface gráfica e usei um único aplicativo para testar a máquina.",
+      "detail": "O Navidrome roda no Docker Compose. O Tailscale roda diretamente no Debian. Transferi a mídia por SSH e testei a reprodução em um celular fora da rede local.",
+      "finding": "Antes de instalar a aplicação, o servidor consumia 388 MiB de RAM. A primeira leitura do contêiner registrou 32,51 MiB na inicialização. O consumo em regime estável ainda precisa ser medido.",
+      "scope": "Servidor em uso. O Navidrome é o único aplicativo documentado em contêiner, e a expansão está pausada.",
+      "credit": "Fiz a implantação e os testes. O Codex auxiliou na revisão, tradução e organização da documentação.",
+      "links": [
+        {
+          "label": "Medições de recursos",
+          "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/pt-BR/medicoes.md"
+        },
+        {
+          "label": "Arquitetura do servidor",
+          "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/pt-BR/arquitetura.md"
+        }
+      ]
+    }
+  },
+  {
+    "id": "arduino-linux-controller",
+    "name": "Arduino Linux Controller",
+    "tags": [
+      "Arduino Uno",
+      "C++",
+      "Python",
+      "USB serial"
+    ],
+    "repo": "https://github.com/kayo-willian/arduino-linux-controller",
+    "en": {
+      "kind": "Physical computing",
+      "summary": "Six button caps crowded the breadboard. I cut the controller down to three buttons, a volume knob and two network indicators.",
+      "detail": "The Uno sends gestures and volume changes over USB serial. A Python process maps them to media, audio and session controls in Ubuntu. The host sends connectivity status back to the LEDs.",
+      "finding": "A short press worked in the terminal but missed the intended media player. Selecting the player explicitly fixed playback. A separate pin mismatch explained the silent offline indicator.",
+      "scope": "One functional prototype. The published source reconstructs the working build. An intermittent USB connector heating issue remained unresolved.",
+      "credit": "I assembled, rewired and tested the controller. ChatGPT assisted with firmware, Python, troubleshooting and documentation.",
+      "links": [
+        {
+          "label": "Bench notes",
+          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/development.md"
+        },
+        {
+          "label": "Final pinout",
+          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/hardware.md"
+        }
+      ],
+      "caption": "Final prototype with three buttons and a B10K potentiometer.",
+      "alt": "A wired breadboard holds green, yellow and red buttons beside a rotary potentiometer."
+    },
+    "pt": {
+      "kind": "Computação física",
+      "summary": "Seis botões mal cabiam na protoboard. Reduzi o controle a três botões, um potenciômetro de volume e dois indicadores de rede.",
+      "detail": "O Uno envia os acionamentos dos botões e as mudanças de volume pela serial USB. Um processo Python os traduz em controles de mídia, áudio e sessão no Ubuntu. O computador devolve o estado da conexão para os LEDs.",
+      "finding": "O comando funcionava no terminal, mas o toque curto acionava o reprodutor errado. A seleção explícita do reprodutor resolveu o problema. Uma divergência de pino explicava por que o LED de falta de conexão permanecia apagado.",
+      "scope": "Um protótipo funcional. O código publicado reconstrói a versão que funcionou na bancada. O aquecimento intermitente do conector USB ficou sem diagnóstico conclusivo.",
+      "credit": "Montei, refiz a fiação e testei o controle. O ChatGPT auxiliou no firmware, no Python, no diagnóstico e na documentação.",
+      "links": [
+        {
+          "label": "Diário de bancada",
+          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/pt-BR/desenvolvimento.md"
+        },
+        {
+          "label": "Pinagem final",
+          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/pt-BR/componentes-e-montagem.md"
+        }
+      ],
+      "caption": "Protótipo final com três botões e um potenciômetro B10K.",
+      "alt": "Três botões, verde, amarelo e vermelho, dividem a protoboard com o potenciômetro rotativo."
+    },
+    "image": "controller.webp",
+    "imageSize": [
+      900,
+      880
+    ]
+  },
+  {
+    "id": "oppy",
+    "name": "Oppy",
+    "tags": [
+      "Python",
+      "SQLite",
+      "Telegram"
+    ],
+    "repo": "https://github.com/kayo-willian/oppy",
+    "en": {
+      "kind": "Change detection",
+      "summary": "A course listing can change between visits. Oppy watches a single public course program and queues the differences for delivery to Telegram.",
+      "detail": "A Python parser compares each collection against the last valid one. SQLite stores each change and its pending notification in the same transaction.",
+      "finding": "If a source page is incomplete, the previous listing survives. Saved HTML lets the parser and delivery queue be tested offline.",
+      "scope": "One PSG connector is implemented. A crash just after Telegram accepts a message can still produce a duplicate delivery.",
+      "credit": "I defined the requirements, reviewed the pull requests and ran the Docker and smoke tests. ChatGPT and Claude helped plan the work. Codex wrote the code, tests and Docker setup.",
+      "links": [
+        {
+          "label": "Delivery guarantees",
+          "url": "https://github.com/kayo-willian/oppy/blob/main/docs/offline-core.md"
+        },
+        {
+          "label": "Parser rules",
+          "url": "https://github.com/kayo-willian/oppy/blob/main/docs/psg-parser.md"
+        }
+      ]
+    },
+    "pt": {
+      "kind": "Detecção de mudanças",
+      "summary": "Uma oferta de curso pode mudar entre duas visitas. O Oppy acompanha um programa público de cursos e enfileira as mudanças para envio pelo Telegram.",
+      "detail": "Um parser em Python compara cada coleta com a última válida. O SQLite grava a mudança e a notificação pendente na mesma transação.",
+      "finding": "Se uma página vem incompleta, a listagem anterior é preservada. Com HTML salvo, é possível testar o parser e a fila de envio sem acessar o portal.",
+      "scope": "Há um conector implementado para o PSG. Se o processo parar logo após o Telegram aceitar uma mensagem, ela pode ser entregue duas vezes.",
+      "credit": "Defini os requisitos, revisei os pull requests e rodei os testes com Docker e os smoke tests. ChatGPT e Claude auxiliaram no planejamento. O Codex escreveu o código, os testes e a configuração do Docker.",
+      "links": [
+        {
+          "label": "Garantias de entrega",
+          "url": "https://github.com/kayo-willian/oppy/blob/main/pt-BR/docs/offline-core.md"
+        },
+        {
+          "label": "Regras do parser",
+          "url": "https://github.com/kayo-willian/oppy/blob/main/pt-BR/docs/psg-parser.md"
+        }
+      ]
+    }
+  },
+  {
+    "id": "usb-presence-gate",
+    "name": "USB Presence Gate",
+    "tags": [
+      "Python",
+      "udev",
+      "systemd"
+    ],
+    "repo": "https://github.com/kayo-willian/usb-presence-gate",
+    "en": {
+      "kind": "Service lifecycle",
+      "summary": "A removable drive becomes a physical input for a disposable Linux service. The experiment follows what happens when the drive disappears and returns.",
+      "detail": "A worker reads USB descriptors through sysfs. udev events and a systemd timer trigger checks. An opt-in policy can start or stop the bundled demo service.",
+      "finding": "On the Debian test host, the observer recorded removal after its grace period and recognized the device on reinsertion. The public report also records cleanup after uninstall.",
+      "scope": "Experimental. Matching a descriptor establishes presence only. Later hardening changes still need fresh tests on physical hardware.",
+      "credit": "I defined the experiment and supplied the hardware evidence. AI tools assisted with architecture review, implementation, tests and documentation.",
+      "links": [
+        {
+          "label": "Hardware validation",
+          "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/docs/hardware-validation-2026-11-22.md"
+        },
+        {
+          "label": "Service lifecycle",
+          "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/docs/lifecycle.md"
+        }
+      ]
+    },
+    "pt": {
+      "kind": "Ciclo de vida de serviços",
+      "summary": "Um dispositivo USB removível serve de entrada física para um serviço descartável no Linux. O experimento acompanha o que acontece ao retirar e reinserir o dispositivo.",
+      "detail": "Um processo lê os descritores USB pelo sysfs. Eventos do udev e um temporizador do systemd acionam as verificações. Uma política opcional pode iniciar ou parar o serviço de demonstração.",
+      "finding": "No Debian, o observador registrou a retirada após o intervalo de tolerância e reconheceu o dispositivo na reinserção. O relatório público também registra a limpeza após a desinstalação.",
+      "scope": "Experimental. A correspondência de descritores só indica presença. As mudanças posteriores de robustez ainda precisam de novos testes em hardware.",
+      "credit": "Defini o experimento e registrei os testes físicos. Ferramentas de IA auxiliaram na revisão da arquitetura, implementação, testes e documentação.",
+      "links": [
+        {
+          "label": "Validação em hardware",
+          "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/pt-BR/docs/validacao-em-hardware-2026-11-22.md"
+        },
+        {
+          "label": "Ciclo de vida do serviço",
+          "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/pt-BR/docs/ciclo-de-vida.md"
+        }
+      ]
+    }
+  },
+  {
+    "id": "scrolllock-rgb-fix",
+    "name": "Scroll Lock RGB Fix",
+    "tags": [
+      "Python",
+      "evdev",
+      "sysfs"
+    ],
+    "repo": "https://github.com/kayo-willian/scrolllock-rgb-fix",
+    "en": {
+      "kind": "Linux input devices",
+      "summary": "On one USB keyboard, Scroll Lock doubles as the switch for the entire backlight. A change to Caps Lock could leave the keys in the dark.",
+      "detail": "A small systemd service pairs a keyboard input device with its own Scroll Lock LED. It reads evdev events and writes the intended brightness back through sysfs.",
+      "finding": "A direct LED write switched the lights on in the original GNOME/Wayland setup. The daemon uses that firmware behavior to restore the chosen state after other LED events.",
+      "scope": "The original investigation covers one wired keyboard. Other lighting protocols and current-revision behavior across devices remain unverified.",
+      "credit": "The source distinguishes original hardware photographs from AI-enhanced illustrations. This photograph is cropped from the original.",
+      "links": [
+        {
+          "label": "Hardware record",
+          "url": "https://github.com/kayo-willian/scrolllock-rgb-fix/blob/main/docs/hardware-compatibility.md"
+        },
+        {
+          "label": "Daemon architecture",
+          "url": "https://github.com/kayo-willian/scrolllock-rgb-fix/blob/main/docs/architecture.md"
+        }
+      ],
+      "caption": "Original keyboard, with the light symbol on the Scroll Lock key.",
+      "alt": "Close-up of the blue-lit Scroll Lock key on the original keyboard."
+    },
+    "pt": {
+      "kind": "Dispositivos de entrada no Linux",
+      "summary": "Em um teclado USB, o Scroll Lock também liga a iluminação de todas as teclas. Uma mudança no Caps Lock podia apagá-las.",
+      "detail": "Um serviço do systemd associa o dispositivo de entrada ao próprio LED de Scroll Lock. Ele lê eventos pelo evdev e reaplica o brilho escolhido pelo sysfs.",
+      "finding": "No ambiente original com GNOME e Wayland, escrever diretamente no LED acendeu o teclado. O serviço usa esse comportamento do firmware para restaurar o estado após outros eventos de LED.",
+      "scope": "A investigação original cobre um teclado com fio. Outros protocolos de iluminação e o comportamento da versão atual em vários dispositivos seguem sem verificação.",
+      "credit": "O repositório distingue fotografias originais de ilustrações aprimoradas com IA. Esta imagem é um recorte da fotografia original.",
+      "links": [
+        {
+          "label": "Registro do hardware",
+          "url": "https://github.com/kayo-willian/scrolllock-rgb-fix/blob/main/pt-BR/docs/compatibilidade-de-hardware.md"
+        },
+        {
+          "label": "Arquitetura do serviço",
+          "url": "https://github.com/kayo-willian/scrolllock-rgb-fix/blob/main/pt-BR/docs/arquitetura.md"
+        }
+      ],
+      "caption": "Teclado original, com o símbolo de iluminação na tecla Scroll Lock.",
+      "alt": "Detalhe da tecla Scroll Lock iluminada em azul no teclado original."
+    },
+    "image": "scroll-lock.webp",
+    "imageSize": [
+      481,
+      403
+    ]
+  },
+  {
+    "id": "channel-blue",
+    "name": "Clean It Up! · Channel Blue",
+    "tags": [
+      "GDevelop 5"
+    ],
+    "repo": "https://github.com/kayo-willian/channel-blue",
+    "en": {
+      "kind": "Game development",
+      "summary": "An educational top-down game in which the player collects waste while moving through a lake, a river and the sea.",
+      "detail": "GDevelop event sheets handle spawning, collision, movement and scene changes. The river introduces a current that pushes the player sideways. In the sea, the current strengthens and the collection goal rises.",
+      "finding": "The published scene flow follows all three stages, including failure, retry and victory. Event-sheet captures show how each transition works.",
+      "scope": "Playable in a browser with keyboard or touch controls.",
+      "credit": "I developed the game in GDevelop. The credits list DALL·E for sprites and backgrounds, Canva Magic Media for interfaces, Suno for music and Freesound for effects.",
+      "links": [
+        {
+          "label": "Play the game",
+          "url": "https://gd.games/kayozkx/clean-it-up"
+        },
+        {
+          "label": "Scene flow",
+          "url": "https://github.com/kayo-willian/channel-blue/blob/main/docs/scene-flow.md"
+        }
+      ]
+    },
+    "pt": {
+      "kind": "Desenvolvimento de jogos",
+      "summary": "Um jogo educativo com visão de cima em que o jogador recolhe resíduos ao atravessar um lago, um rio e o mar.",
+      "detail": "As folhas de eventos do GDevelop cuidam da criação de objetos, colisões, movimento e mudanças de cena. No rio, a corrente empurra o personagem para o lado. No mar, a corrente fica mais forte e a meta de coleta aumenta.",
+      "finding": "O fluxo de cenas publicado percorre as três fases, incluindo derrota, nova tentativa e vitória. As capturas das folhas de eventos mostram como cada transição funciona.",
+      "scope": "Jogável no navegador com controles por teclado ou toque.",
+      "credit": "Desenvolvi o jogo no GDevelop. Os créditos incluem DALL·E nos sprites e cenários, Canva Magic Media na interface, Suno na música e Freesound nos efeitos.",
+      "links": [
+        {
+          "label": "Jogar no navegador",
+          "url": "https://gd.games/kayozkx/clean-it-up"
+        },
+        {
+          "label": "Fluxo de cenas",
+          "url": "https://github.com/kayo-willian/channel-blue/blob/main/pt-BR/docs/fluxo-de-cenas.md"
+        }
+      ]
+    }
+  }
+]

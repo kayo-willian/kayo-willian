@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "packet-tracer-labs",
+    "name": "Packet Tracer Labs",
+    "repo": "https://github.com/kayo-willian/packet-tracer-labs",
+    "en": {
+      "focus": "Routing in simulation",
+      "summary": "I started with two networks and one router. The later simulations connect VLANs over trunks, translate addresses and carry routes between OSPF areas.",
+      "evidence": "In a ten-router ring, I took a link down and checked how OSPF found a path around the break. The lab includes the topology and device configurations.",
+      "record": "https://github.com/kayo-willian/packet-tracer-labs/blob/main/docs/labs/11-para-state-ospf-backbone/README.md",
+      "docs": "https://github.com/kayo-willian/packet-tracer-labs/blob/main/docs/README.md",
+      "credit": ""
+    },
+    "pt": {
+      "focus": "Roteamento em simulação",
+      "summary": "Comecei com duas redes e um roteador. Nas simulações seguintes, interliguei VLANs por enlaces trunk, configurei a tradução de endereços e acompanhei a troca de rotas entre áreas OSPF.",
+      "evidence": "Em um anel com dez roteadores, derrubei um enlace e verifiquei como o OSPF encontrou outro caminho. O registro inclui a topologia e as configurações dos equipamentos.",
+      "record": "https://github.com/kayo-willian/packet-tracer-labs/blob/main/pt-BR/docs/laboratorios/11-backbone-ospf-do-para/README.md",
+      "docs": "https://github.com/kayo-willian/packet-tracer-labs/blob/main/pt-BR/docs/README.md",
+      "credit": ""
+    }
+  },
+  {
+    "slug": "linux-networking-labs",
+    "name": "Linux Networking Labs",
+    "repo": "https://github.com/kayo-willian/linux-networking-labs",
+    "en": {
+      "focus": "Following the actual route",
+      "summary": "A USB Wi-Fi adapter could see networks but could not join them. I followed NetworkManager’s logs, identified the active driver and worked through build errors to install its replacement.",
+      "evidence": "Ethernet still had the preferred route. I unplugged it and repeated the connectivity and DNS checks to establish that traffic was using Wi-Fi.",
+      "record": "https://github.com/kayo-willian/linux-networking-labs/blob/main/docs/labs/02-wi-fi-troubleshooting/README.md",
+      "docs": "https://github.com/kayo-willian/linux-networking-labs/blob/main/docs/README.md",
+      "credit": "ChatGPT helped interpret the logs, investigate the driver and organize the notes. I ran and verified the commands on Ubuntu."
+    },
+    "pt": {
+      "focus": "Por onde o tráfego passa",
+      "summary": "Um adaptador Wi-Fi USB enxergava as redes, mas não conseguia se conectar. Acompanhei os logs do NetworkManager, identifiquei o driver em uso e investiguei os erros de compilação até instalar o substituto.",
+      "evidence": "A rota preferencial ainda era a da Ethernet. Desconectei o cabo e repeti os testes de conectividade e DNS para confirmar que o tráfego passava pelo Wi-Fi.",
+      "record": "https://github.com/kayo-willian/linux-networking-labs/blob/main/pt-BR/docs/laboratorios/02-diagnostico-de-wi-fi/README.md",
+      "docs": "https://github.com/kayo-willian/linux-networking-labs/blob/main/pt-BR/docs/README.md",
+      "credit": "O ChatGPT ajudou a interpretar os logs, investigar o driver e organizar o relato. Executei e validei os comandos no Ubuntu."
+    }
+  },
+  {
+    "slug": "ubuntu-server-labs",
+    "name": "Ubuntu Server Labs",
+    "repo": "https://github.com/kayo-willian/ubuntu-server-labs",
+    "en": {
+      "focus": "From first boot to HTTP",
+      "summary": "Six records follow an Ubuntu Server guest in VirtualBox through networking, service management, user permissions and package maintenance. The final exercise serves a custom page with Nginx.",
+      "evidence": "I checked the listening socket and requested the page inside the guest, then opened it from the host through a VirtualBox NAT forwarding rule.",
+      "record": "https://github.com/kayo-willian/ubuntu-server-labs/blob/main/docs/labs/06-web-server/README.md",
+      "docs": "https://github.com/kayo-willian/ubuntu-server-labs/blob/main/docs/README.md",
+      "credit": ""
+    },
+    "pt": {
+      "focus": "Da instalação ao HTTP",
+      "summary": "Seis registros acompanham uma máquina virtual Ubuntu Server no VirtualBox, da configuração de rede à administração de serviços, permissões e pacotes. No exercício final, publiquei uma página própria com Nginx.",
+      "evidence": "Conferi a porta em escuta e consultei a página dentro da máquina virtual. Depois, abri a página no navegador do sistema hospedeiro usando o redirecionamento de portas do NAT do VirtualBox.",
+      "record": "https://github.com/kayo-willian/ubuntu-server-labs/blob/main/pt-BR/docs/laboratorios/06-servidor-web/README.md",
+      "docs": "https://github.com/kayo-willian/ubuntu-server-labs/blob/main/pt-BR/docs/README.md",
+      "credit": ""
+    }
+  },
+  {
+    "slug": "debian-server-labs",
+    "name": "Debian Server Labs",
+    "repo": "https://github.com/kayo-willian/debian-server-labs",
+    "en": {
+      "focus": "Moving a monitoring service",
+      "summary": "A physical Debian host ran Zabbix and MariaDB under tight memory limits. I moved the monitoring server to a virtual machine and kept the agent running on the original host.",
+      "evidence": "The migration record traces the database backup and restore, recovery of the web interface and checks on the agent. A later lab verifies forward and reverse DNS with BIND9.",
+      "record": "https://github.com/kayo-willian/debian-server-labs/blob/main/docs/labs/11-migrating-the-zabbix-monitoring-server-to-a-virtual-machine/README.md",
+      "docs": "https://github.com/kayo-willian/debian-server-labs/blob/main/docs/README.md",
+      "credit": ""
+    },
+    "pt": {
+      "focus": "Migração do monitoramento",
+      "summary": "Um servidor Debian físico rodava Zabbix e MariaDB com pouca memória. Migrei o servidor de monitoramento para uma máquina virtual e mantive o agente no equipamento original.",
+      "evidence": "O relato acompanha o backup e a restauração do banco, a recuperação da interface web e as verificações do agente. Em outro laboratório, validei a resolução DNS direta e reversa com o BIND9.",
+      "record": "https://github.com/kayo-willian/debian-server-labs/blob/main/pt-BR/docs/laboratorios/11-migracao-do-servidor-zabbix-para-maquina-virtual/README.md",
+      "docs": "https://github.com/kayo-willian/debian-server-labs/blob/main/pt-BR/docs/README.md",
+      "credit": ""
+    }
+  }
+]

@@ -1,0 +1,162 @@
+{
+  "enterprise-noc-from-scratch": {
+    "en": {
+      "title": "Inside the Catalyst switch",
+      "rows": [
+        [
+          "VLAN 10",
+          "IT and network operations"
+        ],
+        [
+          "VLAN 20 / 30 / 40",
+          "Accounting, finance and sales"
+        ],
+        [
+          "VLAN 50",
+          "Voice and authentication"
+        ],
+        [
+          "VLAN 60 / 70",
+          "Corporate Wi-Fi and IoT"
+        ]
+      ],
+      "note": "The switch configuration records these seven VLANs. The router-side configuration was incomplete, so the record cannot establish every path between departments."
+    },
+    "pt": {
+      "title": "Dentro do switch Catalyst",
+      "rows": [
+        [
+          "VLAN 10",
+          "TI e operação de redes"
+        ],
+        [
+          "VLAN 20 / 30 / 40",
+          "Contabilidade, finanças e vendas"
+        ],
+        [
+          "VLAN 50",
+          "Telefonia e autenticação"
+        ],
+        [
+          "VLAN 60 / 70",
+          "Wi-Fi corporativo e IoT"
+        ]
+      ],
+      "note": "A configuração do switch registra essas sete VLANs. A configuração do roteador foi registrada apenas em parte, o que impede confirmar todos os caminhos entre os departamentos."
+    }
+  },
+  "soft-and-wet-homelab": {
+    "en": {
+      "title": "Two memory readings",
+      "rows": [
+        [
+          "388 MiB",
+          "Host memory used before deploying applications"
+        ],
+        [
+          "32.51 MiB",
+          "Memory attributed to the Navidrome container at the first reading"
+        ]
+      ],
+      "note": "The host and container figures describe different scopes and moments. The startup sample is a single observation."
+    },
+    "pt": {
+      "title": "Duas leituras de memória",
+      "rows": [
+        [
+          "388 MiB",
+          "Memória usada no servidor antes da implantação dos aplicativos"
+        ],
+        [
+          "32,51 MiB",
+          "Memória atribuída ao contêiner do Navidrome na primeira leitura"
+        ]
+      ],
+      "note": "Os números do servidor e do contêiner correspondem a escopos e momentos diferentes. A amostra de inicialização registra um único instante."
+    }
+  },
+  "oppy": {
+    "en": {
+      "title": "How Oppy reads a collection",
+      "rows": [
+        [
+          "Unchanged listing",
+          "A repeated check leaves the notification queue alone."
+        ],
+        [
+          "Changed listing",
+          "The change and its pending notification commit together."
+        ],
+        [
+          "Failed collection",
+          "The last valid state is preserved while the failure is recorded."
+        ]
+      ],
+      "note": "Telegram delivery is at least once. A crash after Telegram accepts a message but before local confirmation can result in a repeat."
+    },
+    "pt": {
+      "title": "Como o Oppy interpreta uma coleta",
+      "rows": [
+        [
+          "Oferta inalterada",
+          "Repetir a verificação mantém a fila de notificações como estava."
+        ],
+        [
+          "Oferta alterada",
+          "A mudança e a notificação pendente são gravadas na mesma transação."
+        ],
+        [
+          "Falha na coleta",
+          "O sistema registra a falha e preserva o último estado válido."
+        ]
+      ],
+      "note": "A entrega ao Telegram ocorre pelo menos uma vez. Se houver uma interrupção entre o aceite da mensagem e a confirmação local, ela pode ser enviada novamente."
+    }
+  },
+  "arduino-linux-controller": {
+    "en": {
+      "title": "Reading the controls",
+      "rows": [
+        [
+          "Green button",
+          "Tap to play or pause, double-tap for the previous track, hold for the next."
+        ],
+        [
+          "Yellow button",
+          "Toggle mute."
+        ],
+        [
+          "Red button",
+          "Hold for one second to lock the desktop."
+        ],
+        [
+          "Rotary knob",
+          "Adjust playback volume."
+        ]
+      ],
+      "note": "The host tests connectivity and sends its status over USB. Two LEDs on the controller show the result."
+    },
+    "pt": {
+      "title": "Leitura dos controles",
+      "rows": [
+        [
+          "Botão verde",
+          "Um toque reproduz ou pausa, dois voltam à faixa anterior e um toque longo avança."
+        ],
+        [
+          "Botão amarelo",
+          "Ativa ou desativa o mudo."
+        ],
+        [
+          "Botão vermelho",
+          "Um toque de um segundo bloqueia a sessão."
+        ],
+        [
+          "Potenciômetro",
+          "Ajusta o volume da reprodução."
+        ]
+      ],
+      "note": "O computador testa a conectividade e envia o estado por USB. Dois LEDs no controlador mostram o resultado."
+    }
+  }
+}

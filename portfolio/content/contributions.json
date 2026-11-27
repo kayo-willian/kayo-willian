@@ -1,0 +1,86 @@
+[
+  {
+    "project": "Linux USB Security Token",
+    "owner": "rique-decoder",
+    "fork": "https://github.com/kayo-willian/linux-usb-security-token",
+    "upstream": "https://github.com/rique-decoder/linux-usb-security-token",
+    "items": [
+      {
+        "number": 1,
+        "url": "https://github.com/rique-decoder/linux-usb-security-token/pull/1",
+        "type": "pr",
+        "state": "merged",
+        "en": {
+          "title": "Preserving file metadata during GDM recovery",
+          "summary": "My patch preserves extended attributes when the recovery helper replaces a configuration file. Tests cover a successful copy and a simulated write failure using temporary files. The maintainer merged the change."
+        },
+        "pt": {
+          "title": "Preservação de metadados na recuperação do GDM",
+          "summary": "Minha correção preserva os atributos estendidos quando o utilitário de recuperação substitui um arquivo de configuração. Os testes usam arquivos temporários para verificar uma cópia bem-sucedida e uma falha simulada de gravação. O mantenedor integrou a alteração."
+        }
+      }
+    ],
+    "en": {
+      "forkNote": "I revised and translated the guides in my fork. The original authentication design and its physical tests are the work of rique-decoder."
+    },
+    "pt": {
+      "forkNote": "Revisei e traduzi os guias no meu fork. O projeto de autenticação original e os testes físicos são de rique-decoder."
+    }
+  },
+  {
+    "project": "Where the Water Goes",
+    "owner": "thecrownjoel",
+    "fork": "https://github.com/kayo-willian/where-the-water-goes",
+    "upstream": "https://github.com/thecrownjoel/where-the-water-goes",
+    "items": [
+      {
+        "number": 13,
+        "url": "https://github.com/thecrownjoel/where-the-water-goes/issues/13",
+        "type": "issue",
+        "state": "open",
+        "en": {
+          "title": "Testing the Linux desktop package",
+          "summary": "On GNOME with Wayland, the globe worked offline from cache and entered fullscreen manually. Automatic activation on idle failed in that session. I sent the maintainer screenshots and the limits of the test."
+        },
+        "pt": {
+          "title": "Teste do pacote para desktop Linux",
+          "summary": "No GNOME com Wayland, o globo funcionou offline com os dados em cache e entrou em tela cheia manualmente. A ativação automática por inatividade falhou nessa sessão. Enviei ao mantenedor as capturas de tela e os limites do teste."
+        }
+      },
+      {
+        "number": 12,
+        "url": "https://github.com/thecrownjoel/where-the-water-goes/issues/12",
+        "type": "issue",
+        "state": "open",
+        "en": {
+          "title": "Tracing an oversized rain marker",
+          "summary": "I isolated the precipitation layer and compared its displayed values with the USGS API. The source contained the anomalous readings. The report documents how their visual scale obscured part of the globe."
+        },
+        "pt": {
+          "title": "Investigação de um marcador de chuva",
+          "summary": "Isolei a camada de precipitação e comparei os valores exibidos com a API do USGS. As leituras anômalas já estavam na fonte. O relato mostra como a escala visual do marcador encobria parte do globo."
+        }
+      },
+      {
+        "number": 14,
+        "url": "https://github.com/thecrownjoel/where-the-water-goes/pull/14",
+        "type": "pr",
+        "state": "open",
+        "en": {
+          "title": "Preserving keychain paths in a release workflow",
+          "summary": "With Codex assistance, I proposed a fix for macOS keychain paths containing spaces. I checked the shell behavior on Debian with a simulated command. Certificate signing on macOS remains untested."
+        },
+        "pt": {
+          "title": "Preservação de caminhos no workflow de lançamento",
+          "summary": "Com apoio do Codex, propus uma correção para caminhos do chaveiro do macOS que contêm espaços. Verifiquei o comportamento do shell no Debian com um comando simulado. A assinatura de certificados no macOS continua sem teste."
+        }
+      }
+    ],
+    "en": {
+      "forkNote": "The hydrology globe is maintained by thecrownjoel. I use my fork for compatibility testing and proposed changes."
+    },
+    "pt": {
+      "forkNote": "O globo de dados hidrológicos é mantido por thecrownjoel. Uso meu fork para testar compatibilidade e propor alterações."
+    }
+  }
+]
