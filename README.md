@@ -38,6 +38,19 @@ curiosity  : The Unknown
 
 ---
 
+## Selected Projects
+
+| Project | Description |
+|---|---|
+| [Enterprise NOC](https://github.com/kayo-willian/enterprise-noc-from-scratch) | Network infrastructure and monitoring |
+| [Soft & Wet](https://github.com/kayo-willian/soft-and-wet-homelab) | Resource-efficient Linux homelab |
+| [Oppy](https://github.com/kayo-willian/oppy) | Automated opportunity monitoring |
+| [USB Presence Gate](https://github.com/kayo-willian/usb-presence-gate) | USB-based Linux service control |
+| [Scroll Lock RGB Fix](https://github.com/kayo-willian/scrolllock-rgb-fix) | Linux keyboard backlight utility |
+| [Arduino Linux Controller](https://github.com/kayo-willian/arduino-linux-controller) | Hardware and software integration |
+
+---
+
 <div align="center">
 
 ## 📬 Contact
