@@ -25,7 +25,7 @@ jobs:
           python-version: '3.12'
       - name: Prepare NOC photograph from pinned source
         run: |
-          curl --fail --silent --show-error --location 'https://raw.githubusercontent.com/kayo-willian/enterprise-noc-from-scratch/ac78e0465a0ef15c90c7669a4bcf0b5/docs/assets/images/physical/cisco-router-switch-patch-panel.jpg' -o "$RUNNER_TEMP/noc-source.jpg"
+          curl --fail --silent --show-error --location 'https://raw.githubusercontent.com/kayo-willian/enterprise-noc-from-scratch/ac78e0465a0ef15c90c7669a4fdc1e9aa4bcf0b5/docs/assets/images/physical/cisco-router-switch-patch-panel.jpg' -o "$RUNNER_TEMP/noc-source.jpg"
           test "$(git hash-object "$RUNNER_TEMP/noc-source.jpg")" = d4636bb45e4d3364478c15120a0f66db4ddc9517
           python -m pip install 'Pillow>=12,<13'
           python portfolio/generator/evidence.py "$RUNNER_TEMP/noc-source.jpg" portfolio/assets/images/noc-rack.webp
