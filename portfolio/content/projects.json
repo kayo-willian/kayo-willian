@@ -1,0 +1,88 @@
+{
+  "projects": [
+    [
+      "enterprise-noc-from-scratch",
+      "Enterprise NOC",
+      "Redes e infraestrutura",
+      "Networking and infrastructure"
+    ],
+    [
+      "soft-and-wet-homelab",
+      "Soft & Wet",
+      "Homelab",
+      "Homelab"
+    ],
+    [
+      "oppy",
+      "Oppy",
+      "Ferramenta",
+      "Tool"
+    ],
+    [
+      "usb-presence-gate",
+      "USB Presence Gate",
+      "Sistema",
+      "System"
+    ],
+    [
+      "scrolllock-rgb-fix",
+      "Scroll Lock RGB Fix",
+      "Utilitário",
+      "Utility"
+    ],
+    [
+      "arduino-linux-controller",
+      "Arduino Linux Controller",
+      "Hardware",
+      "Hardware"
+    ],
+    [
+      "linux-usb-security-token",
+      "Linux USB Security Token",
+      "Repositório",
+      "Repository"
+    ],
+    [
+      "linux-networking-labs",
+      "Linux Networking Labs",
+      "Laboratório",
+      "Lab"
+    ],
+    [
+      "packet-tracer-labs",
+      "Packet Tracer Labs",
+      "Laboratório",
+      "Lab"
+    ],
+    [
+      "ubuntu-server-labs",
+      "Ubuntu Server Labs",
+      "Laboratório",
+      "Lab"
+    ],
+    [
+      "debian-server-labs",
+      "Debian Server Labs",
+      "Laboratório",
+      "Lab"
+    ],
+    [
+      "channel-blue",
+      "Channel Blue",
+      "Repositório",
+      "Repository"
+    ],
+    [
+      "where-the-water-goes",
+      "Where the Water Goes",
+      "Fork / contribuição",
+      "Fork / contribution"
+    ],
+    [
+      "kayo-willian",
+      "GO BEYOND",
+      "Site e perfil",
+      "Website and profile"
+    ]
+  ]
+}
