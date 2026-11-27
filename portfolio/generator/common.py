@@ -83,7 +83,7 @@ class Page:
     <meta name="description" content="{e(description)}"><title>{e(title)} · GO BEYOND</title>
     <link rel="canonical" href="{BASE}{self.path}">
     <link rel="alternate" hreflang="{alt}" href="{BASE}{target}">
-    <link rel="icon" href="{self.asset('art/mark.svg')}" type="image/svg+xml">
+    <link rel="icon" href="{self.asset('art/go-beyond-icon.svg')}" type="image/svg+xml">
     <link rel="stylesheet" href="{self.asset('style.css')}">
     <script defer src="{self.asset('nav.js')}"></script>
   </head>

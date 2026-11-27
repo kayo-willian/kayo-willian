@@ -32,7 +32,9 @@
         }
       ],
       "caption": "Cisco router, switch and patch panel. Cropped photograph; inventory labels obscured.",
-      "alt": "Cisco router and Catalyst switch connected to a numbered patch panel with blue network cables."
+      "alt": "Cisco router and Catalyst switch connected to a numbered patch panel with blue network cables.",
+      "coverAlt": "Original Enterprise NOC project banner with the Tapajós Inovações jaguar emblem.",
+      "coverCaption": "Original project artwork."
     },
     "pt": {
       "kind": "Infraestrutura de redes",
@@ -56,12 +58,19 @@
         }
       ],
       "caption": "Roteador Cisco, switch e patch panel. Fotografia recortada com etiquetas patrimoniais ocultadas.",
-      "alt": "Roteador Cisco e switch Catalyst conectados ao patch panel numerado por cabos de rede azuis."
+      "alt": "Roteador Cisco e switch Catalyst conectados ao patch panel numerado por cabos de rede azuis.",
+      "coverAlt": "Capa original do Enterprise NOC com a onça da Tapajós Inovações.",
+      "coverCaption": "Identidade visual original do projeto."
     },
     "image": "noc-rack.webp",
     "imageSize": [
       1240,
       760
+    ],
+    "cover": "noc-banner.png",
+    "coverSize": [
+      1920,
+      560
     ]
   },
   {
@@ -90,7 +99,8 @@
           "label": "Host architecture",
           "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/architecture.md"
         }
-      ]
+      ],
+      "illustrationAlt": "Headless laptop server, network connection and audio waveform."
     },
     "pt": {
       "kind": "Hospedagem própria",
@@ -108,8 +118,10 @@
           "label": "Arquitetura do servidor",
           "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/pt-BR/arquitetura.md"
         }
-      ]
-    }
+      ],
+      "illustrationAlt": "Notebook servidor headless, conexão de rede e forma de onda de áudio."
+    },
+    "illustration": "soft-and-wet-homelab.svg"
   },
   {
     "id": "arduino-linux-controller",
@@ -192,7 +204,8 @@
           "label": "Parser rules",
           "url": "https://github.com/kayo-willian/oppy/blob/main/docs/psg-parser.md"
         }
-      ]
+      ],
+      "illustrationAlt": "Public listings flowing into persistent storage and notification messages."
     },
     "pt": {
       "kind": "Detecção de mudanças",
@@ -210,8 +223,10 @@
           "label": "Regras do parser",
           "url": "https://github.com/kayo-willian/oppy/blob/main/pt-BR/docs/psg-parser.md"
         }
-      ]
-    }
+      ],
+      "illustrationAlt": "Listagens públicas fluindo para armazenamento persistente e notificações."
+    },
+    "illustration": "oppy.svg"
   },
   {
     "id": "usb-presence-gate",
@@ -238,7 +253,8 @@
           "label": "Service lifecycle",
           "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/docs/lifecycle.md"
         }
-      ]
+      ],
+      "illustrationAlt": "USB plug, device presence signal and system service state."
     },
     "pt": {
       "kind": "Ciclo de vida de serviços",
@@ -256,8 +272,10 @@
           "label": "Ciclo de vida do serviço",
           "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/pt-BR/docs/ciclo-de-vida.md"
         }
-      ]
-    }
+      ],
+      "illustrationAlt": "Conector USB, sinal de presença do dispositivo e estado de serviço."
+    },
+    "illustration": "usb-presence-gate.svg"
   },
   {
     "id": "scrolllock-rgb-fix",
@@ -285,8 +303,8 @@
           "url": "https://github.com/kayo-willian/scrolllock-rgb-fix/blob/main/docs/architecture.md"
         }
       ],
-      "caption": "Original keyboard, with the light symbol on the Scroll Lock key.",
-      "alt": "Close-up of the blue-lit Scroll Lock key on the original keyboard."
+      "caption": "Enhanced image from the project documentation.",
+      "alt": "Blue illuminated keyboard from the Scroll Lock RGB Fix project."
     },
     "pt": {
       "kind": "Dispositivos de entrada no Linux",
@@ -305,13 +323,13 @@
           "url": "https://github.com/kayo-willian/scrolllock-rgb-fix/blob/main/pt-BR/docs/arquitetura.md"
         }
       ],
-      "caption": "Teclado original, com o símbolo de iluminação na tecla Scroll Lock.",
-      "alt": "Detalhe da tecla Scroll Lock iluminada em azul no teclado original."
+      "caption": "Imagem aprimorada da documentação do projeto.",
+      "alt": "Teclado com iluminação azul do projeto Scroll Lock RGB Fix."
     },
-    "image": "scroll-lock.webp",
+    "image": "scroll-lock-enhanced.webp",
     "imageSize": [
-      481,
-      403
+      1000,
+      750
     ]
   },
   {
@@ -337,7 +355,8 @@
           "label": "Scene flow",
           "url": "https://github.com/kayo-willian/channel-blue/blob/main/docs/scene-flow.md"
         }
-      ]
+      ],
+      "illustrationAlt": "Pixel-art illustration of an aquatic environment with floating waste and a small collection vessel."
     },
     "pt": {
       "kind": "Desenvolvimento de jogos",
@@ -355,7 +374,9 @@
           "label": "Fluxo de cenas",
           "url": "https://github.com/kayo-willian/channel-blue/blob/main/pt-BR/docs/fluxo-de-cenas.md"
         }
-      ]
-    }
+      ],
+      "illustrationAlt": "Ilustração em pixel art de ambiente aquático com resíduos flutuantes e pequena embarcação coletora."
+    },
+    "illustration": "channel-blue.svg"
   }
 ]

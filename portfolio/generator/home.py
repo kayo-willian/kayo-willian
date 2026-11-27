@@ -13,8 +13,8 @@ def opening(page):
       <h1>Kayo Willian</h1>
       <p class="subjects">{t['subjects']}</p>
       <p class="intro">{t['intro']}</p>
-      <a class="button" href="#work">{t['explore']} {icon('down')}</a>
       <div class="hero-links">{social(t)}</div>
+      <a class="button" href="#work">{t['explore']} {icon('down')}</a>
     </div>
     <div class="hero-brand"><p class="kana" lang="ja" aria-label="ゴー・ビヨンド"><span>ゴー・</span><span>ビヨンド</span></p><p class="brand-kicker">GO BEYOND</p></div>
   </div>
@@ -30,7 +30,7 @@ def quotation(page, index):
 '''
     return f'''
 <figure class="quote frame"><span class="quote-glyph" aria-hidden="true">“</span>
-  <div><blockquote lang="en">{e(q['body'])}</blockquote>{cite}
+  <div><blockquote lang="{'pt-BR' if page.lang == 'pt' else 'en'}">{e(q['pt'] if page.lang == 'pt' else q['body'])}</blockquote>{cite}
   </div>
 </figure>
 '''
@@ -81,7 +81,7 @@ def upstream(page):
 ''')
         rows.append(f'''
 <article class="up-project">
-  <div>
+  <div class="up-summary">
     <p class="up-owner">{e(project['owner'])} /</p>
     <h3>{e(project['project'])}</h3>
     <p>{e(project[page.lang]['forkNote'])}</p>

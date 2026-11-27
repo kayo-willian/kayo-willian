@@ -8,14 +8,15 @@ def photo(page, item):
     return f'<figure class="evidence-photo"><img width="{width}" height="{height}" loading="lazy" alt="{e(v["alt"])}" src="{page.asset("images/"+item["image"])}"><figcaption>{e(v["caption"])}</figcaption></figure>'
 
 
-def drawing(slug):
-    # Concept illustrations of a headless audio server and a persisted message queue.
-    if slug == 'soft-and-wet-homelab':
-        shapes = '<path d="m27 72 99-40 83 28-100 43zM27 72v21l82 31 100-43V60M109 102v22m-66-44 45 17m-45-11 29 11"/><path d="m180 72 14-6" stroke-width="3"/>'
-        return f'<svg class="study-art" viewBox="0 0 242 150" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">{shapes}</svg>'
-    if slug == 'oppy':
-        shapes = ''.join(f'<path d="m{x} {y} 62-23 49 22-62 24z"/>' for x,y in [(36,94),(52,76),(68,58),(84,40)])
-        return f'<svg class="study-art" viewBox="0 0 230 150" aria-hidden="true" fill="#18273b" stroke="currentColor" stroke-width="1.5">{shapes}</svg>'
+def project_visual(page, item, cover=False):
+    v = item[page.lang]
+    if cover and item.get('cover'):
+        width,height = item['coverSize']
+        return f'<figure class="evidence-photo project-cover"><img width="{width}" height="{height}" loading="lazy" alt="{e(v["coverAlt"])}" src="{page.asset("images/"+item["cover"])}"><figcaption>{e(v["coverCaption"])}</figcaption></figure>'
+    if item.get('image'):
+        return photo(page,item)
+    if item.get('illustration'):
+        return f'<figure class="evidence-photo concept-art"><img width="960" height="480" loading="lazy" alt="{e(v["illustrationAlt"])}" src="{page.asset("art/"+item["illustration"])}"><figcaption>{e(page.t["illustration"])}</figcaption></figure>'
     return ''
 
 
@@ -36,7 +37,7 @@ def selected_work(page, projects):
     labels = ['VLANs','Linux servers','Monitored hosts'] if page.lang == 'en' else ['VLANs','Servidores Linux','Hosts monitorados']
     metrics = ''.join(f'<div><strong>{num}</strong><small>{e(label)}</small></div>' for num,label in zip(['07','02','12'],labels))
     featured = f'''
-<article class="lead-case" id="{lead['id']}">{photo(page,lead)}
+<article class="lead-case" id="{lead['id']}">{project_visual(page,lead,cover=True)}
   <div class="lead-copy"><p class="section-label">{e(v['kind'])}</p>
     <h3><a href="{page.project(lead['id'])}">Enterprise NOC<span>From Scratch</span></a></h3>
     <p>{e(v['summary'])}</p><div class="metrics">{metrics}</div><p>{e(v['finding'])}</p>{tags(lead)}
@@ -50,7 +51,7 @@ def selected_work(page, projects):
     for slug in order:
         p = lookup[slug]
         v = p[page.lang]
-        picture = photo(page,p) if p.get('image') else ''
+        picture = project_visual(page,p)
         cards.append(f'''
 <article class="project-card" id="{slug}">{picture}
   <p class="section-label">{e(v['kind'])}</p><h3><a href="{page.project(slug)}">{e(p['name'])}</a></h3>
@@ -82,7 +83,7 @@ def project_page(page, item, next_item):
     research = [('implementation','detail'),('evidence','finding'),('limits','scope'),('credit','credit')]
     sections = ''.join(f'<section><h2>{t[label]}</h2><p>{e(v[key])}</p></section>' for label,key in research if v.get(key))
     links = ''.join(link(l['url'],l['label']) for l in v['links'])
-    visual = photo(page,item) if item.get('image') else ''
+    visual = project_visual(page,item)
     tags = ' · '.join(item['tags'])
     title = item['name']
     body = f'''

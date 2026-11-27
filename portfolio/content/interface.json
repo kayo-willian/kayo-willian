@@ -50,7 +50,8 @@
     "securityRecordTitle": "Security research & labs",
     "securityRecordNote": "Dedicated security projects and investigations will be added here when they are documented and tested. Existing infrastructure labs remain in their original categories.",
     "securityFoundation": "Related technical evidence",
-    "portal": "Corporate portal"
+    "portal": "Corporate portal",
+    "illustration": "Concept illustration · not a photograph"
   },
   "pt": {
     "portfolio": "Portfólio técnico",
@@ -91,7 +92,7 @@
     "limits": "Escopo e limitações",
     "credit": "Autoria e ferramentas",
     "next": "Próximo projeto",
-    "quoteNote": "Texto em inglês do portfólio. Edição não confirmada.",
+    "quoteNote": "Texto em português fornecido para o portfólio. Edição não confirmada.",
     "case": "Estudo de projeto",
     "brandHome": "Página inicial do GO BEYOND",
     "language": "Ler em inglês",
@@ -103,6 +104,7 @@
     "securityRecordTitle": "Pesquisas e laboratórios de segurança",
     "securityRecordNote": "Projetos e investigações de segurança serão adicionados aqui quando estiverem documentados e testados. Os laboratórios de infraestrutura permanecem em suas categorias originais.",
     "securityFoundation": "Evidências técnicas relacionadas",
-    "portal": "Portal corporativo"
+    "portal": "Portal corporativo",
+    "illustration": "Ilustração conceitual · não é uma fotografia"
   }
 }
