@@ -29,14 +29,12 @@ curiosity  : The Unknown
 
 **`$ cat projects.yaml`**
 
-```yaml
-networking : Enterprise NOC
-homelab    : Soft & Wet
-automation : Oppy
-system     : USB Presence Gate
-utility    : Scroll Lock RGB Fix
-hardware   : Arduino Linux Controller
-```
+<pre>networking : <a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">Enterprise NOC</a>
+homelab    : <a href="https://github.com/kayo-willian/soft-and-wet-homelab">Soft &amp; Wet</a>
+automation : <a href="https://github.com/kayo-willian/oppy">Oppy</a>
+system     : <a href="https://github.com/kayo-willian/usb-presence-gate">USB Presence Gate</a>
+utility    : <a href="https://github.com/kayo-willian/scrolllock-rgb-fix">Scroll Lock RGB Fix</a>
+hardware   : <a href="https://github.com/kayo-willian/arduino-linux-controller">Arduino Linux Controller</a></pre>
 
 </td>
 <td width="42%" align="center" valign="middle">
