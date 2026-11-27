@@ -18,7 +18,7 @@ def copy_assets(out):
             if not file.is_file() or file.name == 'reflector.svg':
                 continue
             path = file.relative_to(base)
-            if file.suffix in {'.js', '.css'}:
+            if file.suffix in {'.js', '.css'} or path.as_posix() == 'art/go-beyond-icon.svg':
                 digest = hashlib.sha256(file.read_bytes()).hexdigest()[:12]
                 dest = Path('assets') / f'{file.stem}.{digest}{file.suffix}'
             else:
