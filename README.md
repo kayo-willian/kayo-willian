@@ -27,14 +27,14 @@ activities : Testing, Research & Development
 curiosity  : The Unknown
 ```
 
-**`$ ls projects/`**
+**`$ cat projects.yaml`**
 
-<pre><a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">enterprise-noc-from-scratch</a> — Network &amp; monitoring
-<a href="https://github.com/kayo-willian/soft-and-wet-homelab">soft-and-wet-homelab</a> — Linux homelab
-<a href="https://github.com/kayo-willian/oppy">oppy</a> — Opportunity alerts
-<a href="https://github.com/kayo-willian/usb-presence-gate">usb-presence-gate</a> — USB service control
-<a href="https://github.com/kayo-willian/scrolllock-rgb-fix">scrolllock-rgb-fix</a> — Keyboard backlight
-<a href="https://github.com/kayo-willian/arduino-linux-controller">arduino-linux-controller</a> — Desktop controller</pre>
+<pre>noc     : <a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">enterprise-noc-from-scratch</a>
+homelab : <a href="https://github.com/kayo-willian/soft-and-wet-homelab">soft-and-wet-homelab</a>
+oppy    : <a href="https://github.com/kayo-willian/oppy">oppy</a>
+usb     : <a href="https://github.com/kayo-willian/usb-presence-gate">usb-presence-gate</a>
+rgb     : <a href="https://github.com/kayo-willian/scrolllock-rgb-fix">scrolllock-rgb-fix</a>
+arduino : <a href="https://github.com/kayo-willian/arduino-linux-controller">arduino-linux-controller</a></pre>
 
 </td>
 <td width="42%" align="center" valign="middle">
