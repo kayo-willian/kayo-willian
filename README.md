@@ -27,7 +27,7 @@ activities : Testing, Research & Development
 curiosity  : The Unknown
 ```
 
-**[`$ cat projects.yaml`](https://github.com/kayo-willian?tab=repositories)**
+**`$ cat projects.yaml`**
 
 ```yaml
 networking : Enterprise NOC
