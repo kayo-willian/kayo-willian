@@ -10,6 +10,96 @@ OUT = ROOT / "dist"
 CAT = json.loads((ROOT / "content/catalog.json").read_text(encoding="utf-8"))
 PROJECTS = json.loads((ROOT / "content/projects.json").read_text(encoding="utf-8"))["projects"]
 SECTIONS = CAT["sections"]
+DETAILS = {
+  "enterprise-noc-from-scratch": [
+    "Infraestrutura corporativa construída do zero, com cabeamento estruturado, equipamentos Cisco, servidores Linux e monitoramento de redes.",
+    "Enterprise infrastructure built from scratch, with structured cabling, Cisco networking, Linux servers and network monitoring.",
+    "Cisco · Debian · Docker · Zabbix · Grafana"
+  ],
+  "soft-and-wet-homelab": [
+    "Homelab físico de baixo consumo para explorar administração Linux, serviços self-hosted e limitações reais de hardware.",
+    "Resource-efficient physical homelab for Linux administration, self-hosted services and real hardware constraints.",
+    "Debian 13 · Docker Compose · Navidrome"
+  ],
+  "oppy": [
+    "Sistema open source de monitoramento de oportunidades e envio de notificações.",
+    "Open-source system for monitoring opportunities and sending notifications.",
+    "Python · SQLite · Telegram"
+  ],
+  "usb-presence-gate": [
+    "Controle de serviços Linux com base na presença física de um dispositivo USB, destinado a servidores headless.",
+    "USB presence-based Linux service control for headless servers.",
+    "Python · systemd · udev"
+  ],
+  "scrolllock-rgb-fix": [
+    "Daemon leve para corrigir a iluminação RGB de teclados genéricos controlados pelo Scroll Lock no GNOME/Wayland.",
+    "Lightweight daemon for generic Scroll Lock-controlled RGB keyboards on GNOME/Wayland.",
+    "Python · evdev · systemd"
+  ],
+  "arduino-linux-controller": [
+    "Controlador físico para Linux com controles multimídia, ajuste de volume, bloqueio de tela e indicadores de rede.",
+    "Physical Linux controller with media controls, rotary volume, screen locking and connectivity indicators.",
+    "Arduino · C++ · Python"
+  ],
+  "linux-networking-labs": [
+    "Prática com terminal, comandos de rede e diagnóstico em Linux.",
+    "Hands-on Linux terminal, networking and troubleshooting practice.",
+    "Linux · CLI"
+  ],
+  "packet-tracer-labs": [
+    "Laboratórios de topologias, switching e roteamento no Cisco Packet Tracer.",
+    "Cisco Packet Tracer labs covering topology, switching and routing.",
+    "Cisco · VLAN · OSPF"
+  ],
+  "ubuntu-server-labs": [
+    "Laboratórios de administração, serviços e infraestrutura Ubuntu Server.",
+    "Ubuntu Server administration, services and infrastructure labs.",
+    "Ubuntu · Linux · SSH"
+  ],
+  "debian-server-labs": [
+    "Laboratórios de administração Debian, redes, serviços e monitoramento.",
+    "Debian administration, networking, services and monitoring labs.",
+    "Debian · DNS · Zabbix"
+  ],
+  "channel-blue": [
+    "Primeiro jogo 2D desenvolvido com GDevelop 5, como experiência de criação de projetos interativos.",
+    "First 2D game developed with GDevelop 5 as an exploration of interactive projects.",
+    "GDevelop 5 · Pixel art"
+  ],
+  "linux-usb-security-token": [
+    "Fork voltado a documentação, testes, recuperação e salvaguardas de autenticação USB no Linux.",
+    "Fork focused on documentation, testing, recovery and USB authentication safeguards on Linux.",
+    "Linux · PAM · udev"
+  ],
+  "where-the-water-goes": [
+    "Fork de um globo interativo de dados hidrológicos, com foco em compatibilidade Linux, testes e contribuições upstream.",
+    "Fork of an interactive hydrological globe, focused on Linux compatibility, testing and upstream contributions.",
+    "Rust · TypeScript · Tauri"
+  ],
+  "kayo-willian": [
+    "Este espaço pessoal e o perfil público no GitHub.",
+    "This personal website and public GitHub profile.",
+    "HTML · CSS · Python"
+  ]
+}
+QUOTES = [
+  [
+    "Johnny Joestar, Se o teu coração hesita...\n...Não atires. Ouve a mim com clareza... Se o teu coração está a hesitar, então não deves tu atirar. Pois, assim, os portões para um novo caminho se abrirão para ti.",
+    "Jesus Cristo — JoJo / Steel Ball Run"
+  ],
+  [
+    "One day I would be a better hand at the game. One day I would learn how to laugh. Pablo was waiting for me, and Mozart too...",
+    "Harry Heller — O Lobo da Estepe"
+  ],
+  [
+    "If I could just forget what happened that night - the pain, even for a second. This time, it can be different. It has to.",
+    "Leon S. Kennedy — Resident Evil"
+  ],
+  [
+    "Se o teu coração está hesitante, Não Atires. Tu crescerás... E, mais uma vez, os portões que conduzem a um 'novo caminho' se abrirão para ti.",
+    "Jesus Cristo — JoJo / Steel Ball Run"
+  ]
+]
 
 def e(value):
     return html.escape(str(value), quote=True)
@@ -34,7 +124,7 @@ def page(lang, title, body, section=None):
 <link rel="stylesheet" href="{css}"></head>
 <body class="{e(section or 'home')}">
 <a class="skip" href="#main">{tr(lang,'Ir ao conteúdo','Skip to content')}</a>
-<header class="top"><a class="brand" href="{home}">GB<span>✳</span></a><a class="index-link" href="{home}#index">{tr(lang,'ÍNDICE','INDEX')}</a><a href="{switch}" lang="{alternate}" hreflang="{alternate}">{tr(lang,'EN','PT')}</a></header>
+<header class="top"><a class="brand" href="{home}">GB<span>✳</span></a><a class="index-link" href="{home}#work">{tr(lang,'PROJETOS','PROJECTS')}</a><a href="{home}#index">{tr(lang,'ARQUIVO','ARCHIVE')}</a><a href="{switch}" lang="{alternate}" hreflang="{alternate}">{tr(lang,'EN','PT')}</a></header>
 <main id="main">{body}</main>
 <footer><span>GO BEYOND / KAYO WILLIAN</span><a href="https://github.com/kayo-willian">GITHUB ↗</a><a href="{home}#index">{tr(lang,'ÍNDICE','INDEX')} ↑</a></footer>
 </body></html>"""
@@ -47,15 +137,36 @@ def art():
 <circle cx="240" cy="240" r="17" fill="currentColor"/><circle cx="359" cy="121" r="8" fill="currentColor"/><circle cx="89" cy="303" r="5" fill="currentColor"/>
 </svg>"""
 
+def project_grid(lang, slugs):
+    cards = []
+    for slug in slugs:
+        project = next(p for p in PROJECTS if p[0] == slug)
+        _, title, pt, en = project
+        desc_pt, desc_en, tech = DETAILS[slug]
+        label = tr(lang,pt,en)
+        if slug in ("linux-usb-security-token","where-the-water-goes"):
+            label = tr(lang,"Fork / contribuição","Fork / contribution")
+        cards.append(f'<article class="work-card"><p class="work-kind">{e(label)}</p><h3>{e(title)}</h3><p class="work-description">{e(tr(lang,desc_pt,desc_en))}</p><p class="work-tech">{e(tech)}</p><a class="work-link" href="https://github.com/kayo-willian/{e(slug)}">GitHub ↗<span class="sr-only"> — {e(title)}</span></a></article>')
+    return '<div class="work-grid">'+"".join(cards)+'</div>'
+
 def home(lang):
-    cards = "".join(f'<li><a href="{s["id"]}/"><span class="num">{i:02}</span><span class="kanji" lang="ja">{e(s["ja"])}</span><h3>{e(s["title"])}</h3><p>{e(s["description"][lang])}</p><span class="arrow" aria-hidden="true">↗</span></a></li>' for i,s in enumerate(SECTIONS,1))
-    intro = tr(lang,"Um espaço pessoal na internet. Tecnologia, música, lutas, literatura e tudo o que existe entre essas coisas.","A personal space on the internet. Technology, music, fighting, literature and everything in between.")
-    # Full supplied quotations are held back until the source/rights review.
-    quotes = "".join(f'<div class="quote-slot"><span class="num">0{i}</span><cite>{e(q["speaker"])} — {e(q["source"])}</cite></div>' for i,q in enumerate(CAT["homeQuotes"],1))
-    body = f"""<section class="hero"><div class="hero-art">{art()}<span class="vertical" lang="ja">新しい道</span></div><div class="hero-copy"><p class="kicker">BRASIL / AMAZÔNIA / 2026</p><p class="japanese" lang="ja">ゴー・ビヨンド</p><h1>GO<br>BEYOND<span>.</span></h1><p class="owner">KAYO WILLIAN</p><p class="intro">{intro}</p><a class="button" href="#index">{tr(lang,'EXPLORAR','EXPLORE')} ↓</a></div></section>
-<section id="index" class="archive"><div class="heading"><h2>{tr(lang,'Índice','Index')}<span>.</span></h2><p>19 / {tr(lang,'ESPAÇOS','SPACES')}</p></div><ul class="grid">{cards}</ul></section>
-<section class="quotes"><h2>{tr(lang,'Um novo caminho','A new path')}<span>.</span></h2>{quotes}</section>"""
-    return page(lang,"GO BEYOND",body)
+    personal = [s for s in SECTIONS if s["id"] not in ("projects","existence","connection")]
+    cards = "".join(f'<li><a href="{s["id"]}/"><span class="kanji" lang="ja">{e(s["ja"])}</span><span>{e(s["title"])}</span><span class="archive-arrow" aria-hidden="true">↗</span></a></li>' for s in personal)
+    intro = tr(lang,"Meu trabalho gira em torno de Linux, redes, infraestrutura e software livre. Construo laboratórios e ferramentas, testo software e exploro a relação entre hardware e código.","My work revolves around Linux, networking, infrastructure and open source. I build labs and tools, test software and explore the relationship between hardware and code.")
+    quotes = "".join(f'<figure class="quote"><blockquote><p>{e(q[0])}</p></blockquote><figcaption>{e(q[1])}</figcaption></figure>' for q in QUOTES)
+    featured = project_grid(lang,["enterprise-noc-from-scratch","soft-and-wet-homelab","oppy","usb-presence-gate","scrolllock-rgb-fix","arduino-linux-controller"])
+    labs = project_grid(lang,["linux-networking-labs","packet-tracer-labs","ubuntu-server-labs","debian-server-labs"])
+    contributions = project_grid(lang,["where-the-water-goes","linux-usb-security-token"])
+    other = project_grid(lang,["channel-blue","kayo-willian"])
+    body = f"""<section class="hero portfolio-hero" aria-labelledby="name"><div class="hero-art">{art()}<span class="vertical" lang="ja">新しい道</span></div><div class="hero-copy"><p class="kicker">SANTARÉM / PARÁ / BRASIL</p><p class="japanese" lang="ja">ゴー・ビヨンド</p><h1 id="name">KAYO<br>WILLIAN<span>.</span></h1><p class="hero-role">GNU/Linux <span>/</span> {tr(lang,'Redes','Networking')} <span>/</span> Open Source</p><p class="intro">{e(intro)}</p><div class="hero-actions"><a class="button" href="#work">{tr(lang,'MEUS PROJETOS','MY PROJECTS')} ↓</a><a class="text-link" href="https://github.com/kayo-willian">GitHub ↗</a><a class="text-link" href="https://www.linkedin.com/in/kayo-willian">LinkedIn ↗</a></div></div><div class="hero-stamp" aria-hidden="true">GO<br>BEYOND<span>✳</span></div></section>
+<section id="work" class="work-section"><div class="heading"><h2>{tr(lang,'Projetos','Projects')}<span>.</span></h2><p lang="ja">制作 / 01</p></div>{featured}</section>
+<section id="labs" class="work-section"><div class="heading"><h2>{tr(lang,'Laboratórios','Labs')}<span>.</span></h2><p lang="ja">実験 / 02</p></div>{labs}</section>
+<section id="oss" class="work-section"><div class="heading"><h2>Open Source<span>.</span></h2><p lang="ja">自由 / 03</p></div><p class="section-note">{tr(lang,'Forks e contribuições a projetos de terceiros, com foco em testes e documentação.','Forks and contributions to third-party projects, focused on testing and documentation.')}</p>{contributions}</section>
+<section class="work-section"><div class="heading"><h2>{tr(lang,'Outros trabalhos','Other work')}<span>.</span></h2><p lang="ja">記録 / 04</p></div>{other}</section>
+<section class="contact-strip" id="contact"><h2>{tr(lang,'Conexões','Connections')}<span>.</span></h2><div><a href="https://github.com/kayo-willian">GitHub ↗</a><a href="https://www.linkedin.com/in/kayo-willian">LinkedIn ↗</a><a href="https://x.com/kayowestlion">X ↗</a></div></section>
+<section id="index" class="personal-archive"><div class="heading"><h2>{tr(lang,'Arquivo pessoal','Personal archive')}<span>.</span></h2><p lang="ja">記憶</p></div><p class="section-note">{tr(lang,'Algumas das coisas que gosto, leio, ouço e acompanho.','Some of the things I like, read, listen to and follow.')}</p><ul class="archive-links">{cards}</ul></section>
+<section class="quotes"><div class="heading"><h2>{tr(lang,'Um novo caminho','A new path')}<span>.</span></h2><p lang="ja">新しい道</p></div>{quotes}</section>"""
+    return page(lang,"Kayo Willian — GO BEYOND",body)
 
 def list_items(items):
     return '<ul class="names">' + "".join(f'<li>{e(item)}</li>' for item in items) + '</ul>'
@@ -72,7 +183,7 @@ def library(lang):
 
 def content(lang, sid):
     if sid == "projects":
-        return '<ul class="names projects-list">' + "".join(f'<li><a href="https://github.com/kayo-willian/{e(slug)}"><small>{e(tr(lang,pt,en))}</small>{e(title)} <span>↗</span></a></li>' for slug,title,pt,en in PROJECTS) + '</ul>'
+        return project_grid(lang,[p[0] for p in PROJECTS])
     if sid == "sound": return list_items(CAT["music"]["artists"] + CAT["music"]["goats"])
     if sid == "goats": return '<div class="goat-pair"><p>MICHAEL<br>JACKSON</p><p>KANYE<br>WEST</p></div>'
     if sid == "fight":
@@ -110,7 +221,8 @@ class LinkParser(HTMLParser):
 def validate():
     assert len(SECTIONS) == len({s["id"] for s in SECTIONS}) == 19
     assert len(CAT["fighters"]) == 18
-    assert len(CAT["homeQuotes"]) == 4
+    assert len(CAT["homeQuotes"]) == len(QUOTES) == 4
+    assert set(DETAILS) == {p[0] for p in PROJECTS}
     assert len(PROJECTS) == len({p[0] for p in PROJECTS}) == 14
     pages = list(OUT.rglob("*.html"))
     assert len(pages) == 40
