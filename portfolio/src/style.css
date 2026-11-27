@@ -23,3 +23,6 @@
 
 /* Project media: preserve the original banner and approved illustrations without clipping. */
 .project-card .evidence-photo img{aspect-ratio:5/2;height:auto;width:100%;object-fit:contain;background:#050a12}.case-reading .source-art img{aspect-ratio:5/2;object-fit:contain}.project-card .source-art img{object-fit:contain}
+
+/* Align laboratory actions at the bottom of each equal-height grid card. */
+.lab{display:flex;flex-direction:column;min-width:0}.lab-body{display:flex;flex-direction:column;flex:1}.lab-body .actions{margin-top:auto;padding-top:15px}
