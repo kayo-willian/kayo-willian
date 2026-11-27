@@ -15,9 +15,9 @@
 
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="58%" valign="middle">
 
-### `$ whoami`
+**`$ whoami`**
 
 ```yaml
 ecosystem  : GNU/Linux
