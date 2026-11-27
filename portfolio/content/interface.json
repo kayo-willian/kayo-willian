@@ -12,7 +12,6 @@
     "subjects": "GNU/Linux · Networking · Open source",
     "explore": "Explore projects",
     "email": "Email",
-    "art": "GO BEYOND",
     "workTitle": "Projects",
     "workIntro": "Infrastructure, software and hardware projects. Each overview includes the implementation, technical scope and links to the original work.",
     "tools": "Tools & software",
@@ -38,12 +37,11 @@
     "limits": "Scope & limitations",
     "credit": "Authorship & tools",
     "next": "Next project",
-    "quoteNote": "English wording from the portfolio. Edition unverified.",
+    "quoteNote": "Translation; official edition not verified.",
     "case": "Project study",
-    "brandHome": "GO BEYOND home",
+    "brandHome": "Technical portfolio — home",
     "language": "Read in Brazilian Portuguese",
     "footerLine": "Kayo Willian · Technical portfolio",
-    "by": "Jesus Christ",
     "workContinuation": "This collection grows as new tools and projects are documented.",
     "labContinuation": "New lab records will join this collection.",
     "ossContinuation": "Additional upstream contributions will be recorded here.",
@@ -52,7 +50,8 @@
     "securityFoundation": "Related technical evidence",
     "portal": "Corporate portal",
     "illustration": "Concept illustration · not a photograph",
-    "generatedArt": "AI-generated concept art · not a photograph or screenshot of the actual project"
+    "generatedArt": "AI-generated concept art · not a photograph or screenshot of the actual project",
+    "spiralAlt": "Golden spiral with a geometric construction."
   },
   "pt": {
     "portfolio": "Portfólio técnico",
@@ -67,7 +66,6 @@
     "subjects": "GNU/Linux · Redes · Software livre",
     "explore": "Explorar projetos",
     "email": "E-mail",
-    "art": "GO BEYOND",
     "workTitle": "Projetos",
     "workIntro": "Projetos de infraestrutura, software e hardware. Cada apresentação inclui implementação, escopo técnico e links para o trabalho original.",
     "tools": "Ferramentas e software",
@@ -93,12 +91,11 @@
     "limits": "Escopo e limitações",
     "credit": "Autoria e ferramentas",
     "next": "Próximo projeto",
-    "quoteNote": "Texto em português fornecido para o portfólio. Edição não confirmada.",
+    "quoteNote": "Tradução livre; edição oficial não verificada.",
     "case": "Estudo de projeto",
-    "brandHome": "Página inicial do GO BEYOND",
+    "brandHome": "Portfólio técnico — página inicial",
     "language": "Ler em inglês",
     "footerLine": "Kayo Willian · Portfólio técnico",
-    "by": "Jesus Cristo",
     "workContinuation": "Esta coleção cresce conforme novos projetos e ferramentas são documentados.",
     "labContinuation": "Novos registros de laboratório integrarão esta coleção.",
     "ossContinuation": "Novas contribuições upstream serão registradas aqui.",
@@ -107,6 +104,7 @@
     "securityFoundation": "Evidências técnicas relacionadas",
     "portal": "Portal corporativo",
     "illustration": "Ilustração conceitual · não é uma fotografia",
-    "generatedArt": "Arte conceitual gerada por IA · não é fotografia ou captura do projeto real"
+    "generatedArt": "Arte conceitual gerada por IA · não é fotografia ou captura do projeto real",
+    "spiralAlt": "Espiral áurea com construção geométrica."
   }
 }

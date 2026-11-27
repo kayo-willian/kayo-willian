@@ -9,14 +9,13 @@ def opening(page):
 <section class="cover">
   <div class="frame hero">
     <div class="hero-copy">
-      <p class="byline">{t['portfolio'].upper()}</p>
       <h1>Kayo Willian</h1>
       <p class="subjects">{t['subjects']}</p>
       <p class="intro">{t['intro']}</p>
       <div class="hero-links">{social(t)}</div>
       <a class="button" href="#work">{t['explore']} {icon('down')}</a>
     </div>
-    <div class="hero-brand"><p class="kana" lang="ja" aria-label="ゴー・ビヨンド"><span>ゴー・</span><span>ビヨンド</span></p><p class="brand-kicker">GO BEYOND</p></div>
+    <div class="hero-brand spiral-brand"><img class="golden-spiral" width="640" height="400" src="{page.asset('art/golden-spiral.svg')}" alt="{e(t['spiralAlt'])}"></div>
   </div>
 </section>
 '''
@@ -26,7 +25,7 @@ def quotation(page, index):
     q = data('quotes')[index]
     t = page.t
     cite = f'''
-<figcaption>{t['by']} <span>·</span> <cite lang="en">Steel Ball Run</cite><br><small>Hirohiko Araki · <a href="https://www.shueisha.co.jp/books/items/contents.html?jdcn=08874518851126315501">{'ch.' if page.lang == 'en' else 'cap.'} 58</a> · {t['quoteNote']}</small></figcaption>
+<figcaption>{e(q['byPt'] if page.lang == 'pt' else q['by'])} <span>·</span> <cite lang="en">Steel Ball Run</cite><br><small>Hirohiko Araki · <a href="{e(q['source'])}">{'ch.' if page.lang == 'en' else 'cap.'} {q['chapter']}</a> · {t['quoteNote']}</small></figcaption>
 '''
     return f'''
 <figure class="quote frame"><span class="quote-glyph" aria-hidden="true">“</span>
@@ -129,5 +128,5 @@ def home(page, projects):
     body = (opening(page) + '<div class="epigraph">' + quotation(page, 0) + '</div>' +
             selected_work(page, projects) + labs(page) + upstream(page) + security(page) +
             f'<section class="closing"><div class="frame closing-contact"><h2>{t["contactTitle"]}</h2><div>{social(t)}</div></div>' + quotation(page, 1) +
-            '<div class="signature frame"><span lang="ja">ゴー・ビヨンド</span><b>GO BEYOND</b></div></section>')
+            '</section>')
     return page.document('Kayo Willian', body, t['intro'])

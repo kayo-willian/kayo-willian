@@ -36,11 +36,13 @@ def check_home(page, base, width, lang, folder):
     page.evaluate('document.fonts.ready')
     assert page.locator('html').get_attribute('lang') == ('pt-BR' if lang == 'pt' else 'en')
     check_width(page, width)
-    assert page.locator('[lang="ja"]').count() == 2
-    assert page.evaluate("document.fonts.check('700 30px Kana', 'ゴー・ビヨンド')")
+    assert page.locator('[lang="ja"]').count() == 0
+    assert 'GO BEYOND' not in page.locator('body').inner_text()
+    assert 'GO BEYOND' not in page.title()
+    assert page.locator('.wordmark').inner_text() == ('PORTFÓLIO TÉCNICO' if lang == 'pt' else 'TECHNICAL PORTFOLIO')
     assert page.locator('blockquote').count() == 2
     assert page.locator('blockquote').first.get_attribute('lang') == ('pt-BR' if lang == 'pt' else 'en')
-    assert ('Johnny Joestar, se o teu coração' if lang == 'pt' else 'Johnny Joestar, if your heart') in page.locator('blockquote').first.inner_text()
+    assert ('O caminho mais curto era um desvio' if lang == 'pt' else 'The shortest route was a detour') in page.locator('blockquote').first.inner_text()
     assert page.locator('.project-card img').count() == 6
     for slug in ['oppy','usb-presence-gate','arduino-linux-controller','scrolllock-rgb-fix','channel-blue']:
         assert (page.locator(f'#{slug} img').get_attribute('src') or '').endswith(f'/images/{slug}.webp')
@@ -80,7 +82,9 @@ def check_home(page, base, width, lang, folder):
     assert lab.locator('.lab-body').is_visible()
     assert page.locator('.lab-body:visible').count() == 4
     assert page.locator('.project-card').count() == 6
-    assert page.locator('.hero-brand .kana').is_visible()
+    assert page.locator('.hero-brand .golden-spiral').is_visible()
+    assert 'Gyro Zeppeli' in page.locator('.quote figcaption').first.inner_text()
+    assert page.locator('.quote figcaption a').first.get_attribute('href') == 'https://jojowiki.com/SBR_Chapter_84'
     assert page.locator('.antenna').count() == 0
     page.locator('.language').click()
     assert page.url.endswith('#labs')

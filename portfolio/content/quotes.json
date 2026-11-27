@@ -1,16 +1,22 @@
 [
   {
-    "body": "Johnny Joestar, if your heart hesitates... do not shoot. Listen to me clearly... If your heart is hesitating, then you must not shoot. For then, the gates to a new path will open for you.",
-    "by": "Jesus Christ",
+    "body": "The shortest route was a detour; it was the detour that was our shortest path.",
+    "pt": "O caminho mais curto era um desvio; foi o desvio que se tornou nosso caminho mais curto.",
+    "by": "Gyro Zeppeli",
+    "byPt": "Gyro Zeppeli",
     "work": "JoJo's Bizarre Adventure: Steel Ball Run",
-    "translation": true,
-    "pt": "Johnny Joestar, se o teu coração hesita... não atires. Ouve a mim com clareza... Se o teu coração está a hesitar, então não deves tu atirar. Pois, assim, os portões para um novo caminho se abrirão para ti."
+    "chapter": 84,
+    "source": "https://jojowiki.com/SBR_Chapter_84",
+    "translation": true
   },
   {
     "body": "If your heart is hesitating, do not shoot. You will grow... And once again, the gates leading to a 'new path' will open for you.",
     "by": "Jesus Christ",
     "work": "JoJo's Bizarre Adventure: Steel Ball Run",
     "translation": true,
-    "pt": "Se o teu coração está hesitante, não atires. Tu crescerás... E, mais uma vez, os portões que conduzem a um ‘novo caminho’ se abrirão para ti."
+    "pt": "Se o teu coração está hesitante, não atires. Tu crescerás... E, mais uma vez, os portões que conduzem a um ‘novo caminho’ se abrirão para ti.",
+    "byPt": "Jesus Cristo",
+    "chapter": 58,
+    "source": "https://www.shueisha.co.jp/books/items/contents.html?jdcn=08874518851126315501"
   }
 ]

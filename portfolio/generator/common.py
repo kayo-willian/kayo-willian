@@ -80,7 +80,7 @@ class Page:
     <meta name="robots" content="noindex">
     <meta name="color-scheme" content="dark">
     <meta name="theme-color" content="#050608">
-    <meta name="description" content="{e(description)}"><title>{e(title)} · GO BEYOND</title>
+    <meta name="description" content="{e(description)}"><title>{e(title)} · {e(t['portfolio'])}</title>
     <link rel="canonical" href="{BASE}{self.path}">
     <link rel="alternate" hreflang="{alt}" href="{BASE}{target}">
     <link rel="icon" href="{self.asset('art/go-beyond-icon.svg')}" type="image/svg+xml">
@@ -90,7 +90,7 @@ class Page:
 
   <body id="top"><a class="skip" href="#main">{t['skip']}</a>
 
-    <header class="header frame"><a class="wordmark" aria-label="{t['brandHome']}" href="{self.home()}">GO BEYOND</a>
+    <header class="header frame"><a class="wordmark" aria-label="{t['brandHome']}" href="{self.home()}">{e(t['portfolio'].upper())}</a>
       <nav id="nav" aria-label="{t['portfolio']}">{links}
       </nav><a class="language" href="{self.url(target)}" lang="{alt}" hreflang="{alt}" aria-label="{t['language']}"><span class="lang-dot"></span>{alt.upper()}</a><button type="button" class="menu" aria-controls="nav" aria-expanded="false">{t['menu']} {icon('menu')}</button>
     </header>

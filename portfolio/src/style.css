@@ -26,3 +26,6 @@
 
 /* Align laboratory actions at the bottom of each equal-height grid card. */
 .lab{display:flex;flex-direction:column;min-width:0}.lab-body{display:flex;flex-direction:column;flex:1}.lab-body .actions{margin-top:auto;padding-top:15px}
+
+/* Golden-ratio construction replaces the typographic hero mark. */
+.hero-brand.spiral-brand{display:flex;align-items:center;justify-content:center;padding:12px 0}.spiral-brand:before,.spiral-brand:after{display:none}.golden-spiral{display:block;width:100%;max-width:560px;height:auto;overflow:visible}.wordmark{letter-spacing:.09em;font-size:.85rem}.closing .quote{padding-bottom:clamp(40px,6vw,85px)}@media(max-width:650px){.wordmark{font-size:.72rem;letter-spacing:.045em}.golden-spiral{width:min(85%,330px)}.hero-brand.spiral-brand{padding:4px 0 0}}

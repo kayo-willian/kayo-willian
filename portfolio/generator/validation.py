@@ -41,7 +41,7 @@ def verify(out, project_ids):
             page = out / prefix / (f'projects/{slug}' if slug else '') / 'index.html'
             doc = docs[page]
             expected = 0 if slug else 2
-            if (doc.lang, doc.h1, doc.quotes, doc.japanese) != (lang, 1, expected, expected):
+            if (doc.lang, doc.h1, doc.quotes, doc.japanese) != (lang, 1, expected, 0):
                 raise ValueError(f'Invalid language, heading, quotations or signature in {page}')
     if len(docs) != 2 * (1 + len(project_ids)):
         raise ValueError('The localized page sets differ')
