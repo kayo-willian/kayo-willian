@@ -29,12 +29,12 @@ curiosity  : The Unknown
 
 **`$ cat projects.yaml`**
 
-<pre>networking : <a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">Enterprise NOC</a>
-homelab    : <a href="https://github.com/kayo-willian/soft-and-wet-homelab">Soft &amp; Wet</a>
-automation : <a href="https://github.com/kayo-willian/oppy">Oppy</a>
-system     : <a href="https://github.com/kayo-willian/usb-presence-gate">USB Presence Gate</a>
-utility    : <a href="https://github.com/kayo-willian/scrolllock-rgb-fix">Scroll Lock RGB Fix</a>
-hardware   : <a href="https://github.com/kayo-willian/arduino-linux-controller">Arduino Linux Controller</a></pre>
+<pre><img src="./assets/project-labels/networking.svg" width="78" height="15" alt="networking" /> : <a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">Enterprise NOC</a>
+<img src="./assets/project-labels/homelab.svg" width="78" height="15" alt="homelab" /> : <a href="https://github.com/kayo-willian/soft-and-wet-homelab">Soft &amp; Wet</a>
+<img src="./assets/project-labels/automation.svg" width="78" height="15" alt="automation" /> : <a href="https://github.com/kayo-willian/oppy">Oppy</a>
+<img src="./assets/project-labels/system.svg" width="78" height="15" alt="system" /> : <a href="https://github.com/kayo-willian/usb-presence-gate">USB Presence Gate</a>
+<img src="./assets/project-labels/utility.svg" width="78" height="15" alt="utility" /> : <a href="https://github.com/kayo-willian/scrolllock-rgb-fix">Scroll Lock RGB Fix</a>
+<img src="./assets/project-labels/hardware.svg" width="78" height="15" alt="hardware" /> : <a href="https://github.com/kayo-willian/arduino-linux-controller">Arduino Linux Controller</a></pre>
 
 </td>
 <td width="42%" align="center" valign="middle">
