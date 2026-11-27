@@ -31,6 +31,7 @@ def capture(page, folder, name):
 
 
 def check_home(page, base, width, lang, folder):
+    print(f'Testing {lang} at {width}px', flush=True)
     page.goto(base + ('pt-br/' if lang == 'pt' else ''))
     page.evaluate('document.fonts.ready')
     assert page.locator('html').get_attribute('lang') == ('pt-BR' if lang == 'pt' else 'en')
@@ -48,11 +49,18 @@ def check_home(page, base, width, lang, folder):
     assert page.locator('#soft-and-wet-homelab .project-cover img').count() == 1
     for artwork in page.locator('.cinematic-art img').all():
         assert artwork.get_attribute('alt')
-        artwork.evaluate('(img) => img.decode()')
+        # Lazy images must enter the viewport before decoding.
     assert page.locator('.hero-links a').count() == 4
     for image in page.locator('img').all():
         image.scroll_into_view_if_needed()
-        image.evaluate('(img) => img.decode()')
+        image.evaluate("""(img) => {
+            img.loading = 'eager';
+            return new Promise((resolve, reject) => {
+                const timer = setTimeout(() => reject(new Error('Image decode timeout: ' + img.src)), 15000);
+                img.decode().then(() => { clearTimeout(timer); resolve(); },
+                                  error => { clearTimeout(timer); reject(error); });
+            });
+        }""")
     page.evaluate('scrollTo(0,0)')
     capture(page, folder, f'{lang}-{width}')
     if width == 390:
