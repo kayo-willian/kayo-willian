@@ -27,6 +27,12 @@ activities : Testing, Research & Development
 curiosity  : The Unknown
 ```
 
+**`$ ls projects/`**
+
+[Enterprise NOC](https://github.com/kayo-willian/enterprise-noc-from-scratch) · [Soft & Wet](https://github.com/kayo-willian/soft-and-wet-homelab)<br>
+[Oppy](https://github.com/kayo-willian/oppy) · [USB Presence Gate](https://github.com/kayo-willian/usb-presence-gate)<br>
+[Scroll Lock RGB Fix](https://github.com/kayo-willian/scrolllock-rgb-fix) · [Arduino Linux Controller](https://github.com/kayo-willian/arduino-linux-controller)
+
 </td>
 <td width="42%" align="center" valign="middle">
 
@@ -35,19 +41,6 @@ curiosity  : The Unknown
 </td>
 </tr>
 </table>
-
----
-
-## Selected Projects
-
-| Project | Description |
-|---|---|
-| [Enterprise NOC](https://github.com/kayo-willian/enterprise-noc-from-scratch) | Network infrastructure and monitoring |
-| [Soft & Wet](https://github.com/kayo-willian/soft-and-wet-homelab) | Resource-efficient Linux homelab |
-| [Oppy](https://github.com/kayo-willian/oppy) | Automated opportunity monitoring |
-| [USB Presence Gate](https://github.com/kayo-willian/usb-presence-gate) | USB-based Linux service control |
-| [Scroll Lock RGB Fix](https://github.com/kayo-willian/scrolllock-rgb-fix) | Linux keyboard backlight utility |
-| [Arduino Linux Controller](https://github.com/kayo-willian/arduino-linux-controller) | Hardware and software integration |
 
 ---
 
