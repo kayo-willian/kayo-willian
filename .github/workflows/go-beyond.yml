@@ -25,14 +25,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-node@v4
         with:
-          python-version: '3.12'
-      - run: python portfolio/build.py
-      - run: |
-          test -s portfolio/dist/index.html
-          test -s portfolio/dist/en/index.html
-          test -s portfolio/dist/style.css
+          node-version: '24'
+      - name: Install dependencies
+        working-directory: portfolio
+        run: npm install --no-audit --no-fund
+      - name: Build Astro
+        working-directory: portfolio
+        run: npm run build
+      - name: Validate output
+        run: python3 portfolio/build.py --check
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main'
         with:

@@ -1,0 +1,30 @@
+---
+import '../style.css';
+import { url, t, social, type Lang } from '../lib/site';
+const { lang, title, section = '' } = Astro.props as {lang:Lang;title:string;section?:string};
+const home = url(lang);
+const other = lang === 'en' ? 'pt' : 'en';
+---
+<!doctype html>
+<html lang={lang === 'en' ? 'en' : 'pt-BR'}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="dark" />
+<meta name="robots" content="noindex" />
+<title>{title} | GO BEYOND</title>
+</head>
+<body>
+<a class="skip" href="#main">{t(lang,'Skip to content','Ir ao conteúdo')}</a>
+<header class="top"><div class="wrap top-inner">
+<a class="brand" href={home}>GO<span> BEYOND</span><small lang="ja">ゴー・ビヨンド</small></a>
+<nav aria-label={t(lang,'Main navigation','Navegação principal')}>
+<a href={home+'#work'}>{t(lang,'Projects','Projetos')}</a>
+<a href={home+'#oss'}>Open source</a>
+<a href={home+'#archive'}>{t(lang,'Archive','Arquivo')}</a>
+<a class="language" href={url(other,section)} hreflang={other === 'pt' ? 'pt-BR' : 'en'} lang={other === 'pt' ? 'pt-BR' : 'en'}>{other === 'pt' ? 'PT-BR' : 'EN'}</a>
+</nav></div></header>
+<main id="main"><slot /></main>
+<footer class="wrap footer"><span>© KAYO WILLIAN / GO BEYOND</span><div>{social.map(s => <a href={s.href}>{s.label} ↗</a>)}</div></footer>
+</body>
+</html>

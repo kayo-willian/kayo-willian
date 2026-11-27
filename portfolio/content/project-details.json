@@ -1,0 +1,72 @@
+{
+  "enterprise-noc-from-scratch": [
+    "Infraestrutura corporativa construída do zero, com cabeamento estruturado, equipamentos Cisco, servidores Linux e monitoramento de redes.",
+    "Enterprise infrastructure built from scratch, with structured cabling, Cisco networking, Linux servers and network monitoring.",
+    "Cisco · Debian · Docker · Zabbix · Grafana"
+  ],
+  "soft-and-wet-homelab": [
+    "Homelab físico de baixo consumo para explorar administração Linux, serviços self-hosted e limitações reais de hardware.",
+    "Resource-efficient physical homelab for Linux administration, self-hosted services and real hardware constraints.",
+    "Debian 13 · Docker Compose · Navidrome"
+  ],
+  "oppy": [
+    "Sistema open source de monitoramento de oportunidades e envio de notificações.",
+    "Open-source system for monitoring opportunities and sending notifications.",
+    "Python · SQLite · Telegram"
+  ],
+  "usb-presence-gate": [
+    "Controle de serviços Linux com base na presença física de um dispositivo USB, destinado a servidores headless.",
+    "USB presence-based Linux service control for headless servers.",
+    "Python · systemd · udev"
+  ],
+  "scrolllock-rgb-fix": [
+    "Daemon leve para corrigir a iluminação RGB de teclados genéricos controlados pelo Scroll Lock no GNOME/Wayland.",
+    "Lightweight daemon for generic Scroll Lock-controlled RGB keyboards on GNOME/Wayland.",
+    "Python · evdev · systemd"
+  ],
+  "arduino-linux-controller": [
+    "Controlador físico para Linux com controles multimídia, ajuste de volume, bloqueio de tela e indicadores de rede.",
+    "Physical Linux controller with media controls, rotary volume, screen locking and connectivity indicators.",
+    "Arduino · C++ · Python"
+  ],
+  "linux-networking-labs": [
+    "Prática com terminal, comandos de rede e diagnóstico em Linux.",
+    "Hands-on Linux terminal, networking and troubleshooting practice.",
+    "Linux · CLI"
+  ],
+  "packet-tracer-labs": [
+    "Laboratórios de topologias, switching e roteamento no Cisco Packet Tracer.",
+    "Cisco Packet Tracer labs covering topology, switching and routing.",
+    "Cisco · VLAN · OSPF"
+  ],
+  "ubuntu-server-labs": [
+    "Laboratórios de administração, serviços e infraestrutura Ubuntu Server.",
+    "Ubuntu Server administration, services and infrastructure labs.",
+    "Ubuntu · Linux · SSH"
+  ],
+  "debian-server-labs": [
+    "Laboratórios de administração Debian, redes, serviços e monitoramento.",
+    "Debian administration, networking, services and monitoring labs.",
+    "Debian · DNS · Zabbix"
+  ],
+  "channel-blue": [
+    "Primeiro jogo 2D desenvolvido com GDevelop 5, como experiência de criação de projetos interativos.",
+    "First 2D game developed with GDevelop 5 as an exploration of interactive projects.",
+    "GDevelop 5 · Pixel art"
+  ],
+  "linux-usb-security-token": [
+    "Fork voltado a documentação, testes, recuperação e salvaguardas de autenticação USB no Linux.",
+    "Fork focused on documentation, testing, recovery and USB authentication safeguards on Linux.",
+    "Linux · PAM · udev"
+  ],
+  "where-the-water-goes": [
+    "Fork de um globo interativo de dados hidrológicos, com foco em compatibilidade Linux, testes e contribuições upstream.",
+    "Fork of an interactive hydrological globe, focused on Linux compatibility, testing and upstream contributions.",
+    "Rust · TypeScript · Tauri"
+  ],
+  "kayo-willian": [
+    "Este espaço pessoal e o perfil público no GitHub.",
+    "This personal website and public GitHub profile.",
+    "Astro · TypeScript · CSS"
+  ]
+}

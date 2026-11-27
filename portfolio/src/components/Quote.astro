@@ -1,0 +1,7 @@
+---
+import { quotes, t, type Lang } from '../lib/site';
+const {index,lang,theme} = Astro.props as {index:number;lang:Lang;theme:string};
+const q=quotes[index];
+---
+<figure class="quote-band"><div class="quote-label"><span lang="ja">言葉</span><small>{theme}</small></div>
+<div><blockquote lang="en"><p>“{q.body}”</p></blockquote><figcaption>{q.by} / {q.work}{q.translation && <small> · {t(lang,'English rendering from the supplied text','Tradução inglesa do texto fornecido')}</small>}</figcaption></div></figure>
