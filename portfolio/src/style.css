@@ -20,3 +20,6 @@
 
 /* Preserve wide original cover art and cinematic artwork without cropping. */
 .project-card .project-cover img,.project-card .cinematic-art img{aspect-ratio:3/1;height:auto;object-fit:contain;width:100%;background:#050a12}.project-card .cinematic-art figcaption{min-height:1.25em}.case-reading .project-cover img,.case-reading .cinematic-art img{aspect-ratio:3/1;object-fit:contain}
+
+/* Project media: preserve the original banner and approved illustrations without clipping. */
+.project-card .evidence-photo img{aspect-ratio:5/2;height:auto;width:100%;object-fit:contain;background:#050a12}.case-reading .source-art img{aspect-ratio:5/2;object-fit:contain}.project-card .source-art img{object-fit:contain}

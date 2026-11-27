@@ -161,7 +161,8 @@
       ],
       "caption": "Final prototype with three buttons and a B10K potentiometer.",
       "alt": "A wired breadboard holds green, yellow and red buttons beside a rotary potentiometer.",
-      "homeArtAlt": "Concept rendering of a three-button controller, rotary knob and electronics workbench."
+      "homeArtAlt": "Photographic montage of the real Uno-compatible board, assembled breadboard, three push buttons and B10K potentiometer.",
+      "homeArtCaption": "Original project photographs, arranged for the portfolio."
     },
     "pt": {
       "kind": "Computação física",
@@ -182,14 +183,20 @@
       ],
       "caption": "Protótipo final com três botões e um potenciômetro B10K.",
       "alt": "Três botões, verde, amarelo e vermelho, dividem a protoboard com o potenciômetro rotativo.",
-      "homeArtAlt": "Renderização conceitual de um controlador com três botões, botão rotativo e bancada eletrônica."
+      "homeArtAlt": "Montagem fotográfica da placa compatível com Uno, protoboard montada, três botões e potenciômetro B10K reais.",
+      "homeArtCaption": "Fotografias originais do projeto, reunidas para o portfólio."
     },
     "image": "controller.webp",
     "imageSize": [
       900,
       880
     ],
-    "homeArt": "arduino-linux-controller.webp"
+    "homeArt": "arduino-linux-controller.webp",
+    "homeArtSize": [
+      1200,
+      480
+    ],
+    "homeArtKind": "source"
   },
   {
     "id": "oppy",
@@ -241,7 +248,12 @@
       "homeArtAlt": "Arte conceitual de documentos alimentando um banco de dados e um serviço de notificações."
     },
     "illustration": "oppy.svg",
-    "homeArt": "oppy.webp"
+    "homeArt": "oppy.webp",
+    "homeArtSize": [
+      480,
+      160
+    ],
+    "homeArtKind": "generated"
   },
   {
     "id": "usb-presence-gate",
@@ -293,7 +305,12 @@
       "homeArtAlt": "Renderização conceitual de um dispositivo USB próximo de uma porta iluminada de servidor."
     },
     "illustration": "usb-presence-gate.svg",
-    "homeArt": "usb-presence-gate.webp"
+    "homeArt": "usb-presence-gate.webp",
+    "homeArtSize": [
+      640,
+      213
+    ],
+    "homeArtKind": "generated"
   },
   {
     "id": "scrolllock-rgb-fix",
@@ -323,7 +340,8 @@
       ],
       "caption": "Enhanced image from the project documentation.",
       "alt": "Blue illuminated keyboard from the Scroll Lock RGB Fix project.",
-      "homeArtAlt": "Concept macro image of a dark keyboard with blue backlighting."
+      "homeArtAlt": "The real illuminated keyboard and a detail of its physical Scroll Lock key with the lighting symbol.",
+      "homeArtCaption": "Original keyboard and key detail from the project documentation."
     },
     "pt": {
       "kind": "Dispositivos de entrada no Linux",
@@ -344,14 +362,20 @@
       ],
       "caption": "Imagem aprimorada da documentação do projeto.",
       "alt": "Teclado com iluminação azul do projeto Scroll Lock RGB Fix.",
-      "homeArtAlt": "Imagem conceitual em macro de um teclado escuro com iluminação azul."
+      "homeArtAlt": "Teclado real iluminado e detalhe da tecla física Scroll Lock com símbolo de iluminação.",
+      "homeArtCaption": "Teclado e detalhe da tecla presentes na documentação original."
     },
     "image": "scroll-lock-enhanced.webp",
     "imageSize": [
       1000,
       750
     ],
-    "homeArt": "scrolllock-rgb-fix.webp"
+    "homeArt": "scrolllock-rgb-fix.webp",
+    "homeArtSize": [
+      1200,
+      480
+    ],
+    "homeArtKind": "source"
   },
   {
     "id": "channel-blue",
@@ -378,7 +402,8 @@
         }
       ],
       "illustrationAlt": "Pixel-art illustration of an aquatic environment with floating waste and a small collection vessel.",
-      "homeArtAlt": "Concept pixel art of a river landscape with floating waste."
+      "homeArtAlt": "Original Channel Blue pixel-art banner, featuring the blue droplet character with sunglasses and recycling imagery.",
+      "homeArtCaption": "Original artwork from Clean It Up! · Channel Blue."
     },
     "pt": {
       "kind": "Desenvolvimento de jogos",
@@ -398,9 +423,15 @@
         }
       ],
       "illustrationAlt": "Ilustração em pixel art de ambiente aquático com resíduos flutuantes e pequena embarcação coletora.",
-      "homeArtAlt": "Pixel art conceitual de uma paisagem fluvial com resíduos flutuantes."
+      "homeArtAlt": "Capa original em pixel art do Channel Blue, com o personagem em forma de gota azul, óculos escuros e elementos de reciclagem.",
+      "homeArtCaption": "Arte original de Clean It Up! · Channel Blue."
     },
     "illustration": "channel-blue.svg",
-    "homeArt": "channel-blue.webp"
+    "homeArt": "channel-blue.webp",
+    "homeArtSize": [
+      1200,
+      480
+    ],
+    "homeArtKind": "source"
   }
 ]

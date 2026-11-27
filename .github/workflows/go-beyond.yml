@@ -34,6 +34,8 @@ jobs:
           curl --fail --silent --show-error --location 'https://raw.githubusercontent.com/kayo-willian/scrolllock-rgb-fix/4968de794d92091f949898426b6eec26d4692258/docs/images/1-enhanced.png' -o "$RUNNER_TEMP/scroll-lock.png"
           test "$(git hash-object "$RUNNER_TEMP/scroll-lock.png")" = 552fb0a2dd6f85f406c36b8309a55cb09750def9
           python -c 'from PIL import Image,ImageOps; import sys; im=ImageOps.exif_transpose(Image.open(sys.argv[1])).convert("RGB"); im.thumbnail((1000,750)); im=ImageOps.pad(im,(1000,750),color="#070d16"); im.save(sys.argv[2],quality=88)' "$RUNNER_TEMP/scroll-lock.png" portfolio/assets/images/scroll-lock-enhanced.webp
+      - name: Compose artwork from original project photographs
+        run: python portfolio/generator/project_media.py
       - name: Build static HTML and validate links
         run: python3 portfolio/build.py
       - name: Install Chromium test runner

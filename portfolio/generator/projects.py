@@ -11,7 +11,11 @@ def photo(page, item):
 def project_visual(page, item, cover=False):
     v = item[page.lang]
     if cover and item.get('homeArt') and 'images/'+item['homeArt'] in page.assets:
-        return f'<figure class="evidence-photo concept-art cinematic-art"><img width="887" height="296" loading="lazy" alt="{e(v["homeArtAlt"])}" src="{page.asset("images/"+item["homeArt"])}"><figcaption>{e(page.t["generatedArt"])}</figcaption></figure>'
+        width, height = item['homeArtSize']
+        generated = item.get('homeArtKind') == 'generated'
+        classes = 'concept-art cinematic-art' if generated else 'source-art'
+        caption = page.t['generatedArt'] if generated else v['homeArtCaption']
+        return f'<figure class="evidence-photo {classes}"><img width="{width}" height="{height}" loading="lazy" alt="{e(v["homeArtAlt"])}" src="{page.asset("images/"+item["homeArt"])}"><figcaption>{e(caption)}</figcaption></figure>'
     if cover and item.get('cover'):
         width,height = item['coverSize']
         return f'<figure class="evidence-photo project-cover"><img width="{width}" height="{height}" loading="lazy" alt="{e(v["coverAlt"])}" src="{page.asset("images/"+item["cover"])}"><figcaption>{e(v["coverCaption"])}</figcaption></figure>'

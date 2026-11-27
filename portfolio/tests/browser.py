@@ -41,6 +41,9 @@ def check_home(page, base, width, lang, folder):
     assert page.locator('blockquote').first.get_attribute('lang') == ('pt-BR' if lang == 'pt' else 'en')
     assert ('Johnny Joestar, se o teu coração' if lang == 'pt' else 'Johnny Joestar, if your heart') in page.locator('blockquote').first.inner_text()
     assert page.locator('.project-card img').count() == 6
+    for slug in ['oppy','usb-presence-gate','arduino-linux-controller','scrolllock-rgb-fix','channel-blue']:
+        assert (page.locator(f'#{slug} img').get_attribute('src') or '').endswith(f'/images/{slug}.webp')
+    assert page.locator('#soft-and-wet-homelab img').get_attribute('src').endswith('/images/soft-and-wet-cover.webp')
     assert page.locator('.lead-case .project-cover img').count() == 1
     assert page.locator('#soft-and-wet-homelab .project-cover img').count() == 1
     for artwork in page.locator('.cinematic-art img').all():
