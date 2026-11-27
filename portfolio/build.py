@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the bilingual technical portfolio."""
 import html
+import hashlib
 import json
 import shutil
 from pathlib import Path
@@ -10,6 +11,8 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "dist"
 PROJECTS = json.loads((ROOT / "content/projects.json").read_text(encoding="utf-8"))["projects"]
 DETAILS = json.loads((ROOT / "content/project-details.json").read_text(encoding="utf-8"))
+STYLE = (ROOT / "src/style.css").read_bytes()
+STYLE_NAME = "style-" + hashlib.sha256(STYLE).hexdigest()[:12] + ".css"
 QUOTES = json.loads((ROOT / "content/quotes.json").read_text(encoding="utf-8"))
 
 def e(value):
@@ -20,7 +23,7 @@ def tr(lang, pt, en):
 
 def page(lang, title, body, section=None):
     home = "../" if section else "./"
-    css = ("../" if lang == "pt" else "") + home + "style.css"
+    css = ("../" if lang == "pt" else "") + home + STYLE_NAME
     switch = ("../../" if section else "../") if lang == "pt" else ("../pt-br/" if section else "pt-br/")
     if section:
         switch += section + "/"
@@ -35,22 +38,24 @@ def page(lang, title, body, section=None):
 <link rel="stylesheet" href="{css}"></head>
 <body class="{e(section or 'home')}">
 <a class="skip" href="#main">{tr(lang,'Ir ao conteúdo','Skip to content')}</a>
-<header class="top"><a class="brand" href="{home}">GO <span>BEYOND</span></a><a class="index-link" href="{home}#work">{tr(lang,'PROJETOS','PROJECTS')}</a><a href="{home}#oss">OPEN SOURCE</a><a href="{home}#security">{tr(lang,'SEGURANÇA','SECURITY')}</a><a class="language" href="{switch}" lang="{alternate}" hreflang="{alternate}">{tr(lang,'EN','PT-BR')}</a></header>
+<header class="top" id="top"><a class="brand" href="{home}">GO <span>BEYOND</span></a><a class="index-link" href="{home}#work">{tr(lang,'PROJETOS','PROJECTS')}</a><a href="{home}#oss">OPEN SOURCE</a><a href="{home}#security">{tr(lang,'SEGURANÇA','SECURITY')}</a><a class="language" href="{switch}" lang="{alternate}" hreflang="{alternate}">{tr(lang,'EN','PT-BR')}</a></header>
 <main id="main">{body}</main>
-<footer><span>GO BEYOND / KAYO WILLIAN</span><a href="https://github.com/kayo-willian">GITHUB ↗</a><a href="{home}#main">{tr(lang,'VOLTAR AO TOPO','BACK TO TOP')} ↑</a></footer>
+<footer><span>GO BEYOND / KAYO WILLIAN</span><a href="https://github.com/kayo-willian">GITHUB ↗</a><a href="{home}#top">{tr(lang,'VOLTAR AO TOPO','BACK TO TOP')} ↑</a></footer>
 </body></html>"""
 
 def project_grid(lang, slugs):
     cards = []
-    for slug in slugs:
-        project = next(p for p in PROJECTS if p[0] == slug)
-        _, title, pt, en = project
-        desc_pt, desc_en, tech = DETAILS[slug]
+    for i, slug in enumerate(slugs, 1):
+        _, title, pt, en = next(p for p in PROJECTS if p[0] == slug)
+        item = DETAILS[slug]
+        headline, intro, detail, evidence = item[lang]
         label = tr(lang,pt,en)
         if slug in ("linux-usb-security-token","where-the-water-goes"):
             label = tr(lang,"Fork / contribuição","Fork / contribution")
-        cards.append(f'<article class="work-card"><p class="work-kind">{e(label)}</p><h3>{e(title)}</h3><p class="work-description">{e(tr(lang,desc_pt,desc_en))}</p><p class="work-tech">{e(tech)}</p><a class="work-link" href="https://github.com/kayo-willian/{e(slug)}">GitHub ↗<span class="sr-only"> — {e(title)}</span></a></article>')
-    return '<div class="work-grid '+('six' if len(cards)==6 else 'even')+'">'+ "".join(cards)+'</div>'
+        flow = "".join(f'<span>{e(node)}</span>' for node in item["flow"])
+        external = f'<a class="secondary-link" href="{e(item["url"])}">{tr(lang,"Portal / projeto original","Portal / original project")} ↗</a>' if item.get("url") else ""
+        cards.append(f"""<article class="case" id="{e(slug)}"><div class="case-index"><span>{i:02}</span><small>{e(label)}</small></div><div class="case-body"><p class="case-headline">{e(headline)}</p><h3>{e(title)}</h3><p>{e(intro)}</p><p>{e(detail)}</p><div class="case-links"><a href="https://github.com/kayo-willian/{e(slug)}">{tr(lang,"Repositório","Repository")} ↗</a>{external}</div></div><div class="case-visual"><p class="diagram-title">{tr(lang,"VISÃO TÉCNICA","TECHNICAL VIEW")}</p><div class="flow" aria-label="{tr(lang,"Visão técnica simplificada","Simplified technical view")}">{flow}</div><div class="case-evidence">{e(evidence)}</div><p class="case-tech">{e(item["tech"])}</p></div></article>""")
+    return '<div class="case-list">'+"".join(cards)+'</div>'
 
 def quote(lang, index, theme):
     q = QUOTES[index]
@@ -58,15 +63,15 @@ def quote(lang, index, theme):
     return f'<figure class="quote-band"><div class="quote-marker"><small>{e(theme)}</small></div><div><blockquote lang="en"><p>“{e(q["body"])}”</p></blockquote><figcaption>{e(q["by"])} — {e(q["work"])} · {e(note)}</figcaption></div></figure>'
 
 def home(lang):
-    intro = tr(lang,"Exploro sistemas Linux, redes e infraestrutura. Construo ferramentas e laboratórios, testo software e documento o que aprendo.","I explore Linux systems, networking and infrastructure. I build tools and labs, test software and document what I learn.")
+    intro = tr(lang,"Trabalho com sistemas Linux, redes de computadores e infraestrutura por meio de laboratórios físicos, ferramentas práticas e testes de software. Este portfólio reúne os sistemas que construí, os problemas que investiguei e as evidências técnicas de cada projeto.","I work with Linux systems, computer networks and infrastructure through physical labs, practical tools and software testing. This portfolio brings together the systems I have built, the problems I have investigated and the technical evidence behind each project.")
     featured = project_grid(lang,["enterprise-noc-from-scratch","soft-and-wet-homelab","oppy","usb-presence-gate","scrolllock-rgb-fix","arduino-linux-controller"])
     labs = project_grid(lang,["linux-networking-labs","packet-tracer-labs","ubuntu-server-labs","debian-server-labs"])
     contributions = project_grid(lang,["where-the-water-goes","linux-usb-security-token"])
     other = project_grid(lang,["channel-blue","kayo-willian"])
-    body = f"""<section class="hero portfolio-hero" aria-labelledby="name"><div class="hero-copy"><p class="japanese" lang="ja">ゴー・ビヨンド</p><h1 id="name">KAYO<br>WILLIAN<span>.</span></h1><p class="hero-role">GNU/Linux <span>/</span> {tr(lang,'Redes','Networking')} <span>/</span> Open Source</p><p class="intro">{e(intro)}</p><div class="hero-actions"><a class="button" href="#work">{tr(lang,'MEUS PROJETOS','MY PROJECTS')} ↓</a><a class="text-link" href="https://github.com/kayo-willian">GitHub ↗</a><a class="text-link" href="https://www.linkedin.com/in/kayo-willian">LinkedIn ↗</a><a class="text-link" href="https://x.com/kayowestlion">X ↗</a></div></div><div class="hero-symbol"><span class="ocean-kanji" lang="ja" aria-label="{tr(lang,'Mar','Sea')}">海</span><span class="symbol-caption">{tr(lang,'MAR','SEA')} / GO BEYOND</span></div></section>
+    body = f"""<section class="hero portfolio-hero" aria-labelledby="name"><div class="hero-copy"><p class="japanese" lang="ja">ゴー・ビヨンド</p><h1 id="name">KAYO<br>WILLIAN<span>.</span></h1><p class="hero-role">GNU/Linux <span>/</span> {tr(lang,'Redes','Networking')} <span>/</span> Open Source</p><p class="intro">{e(intro)}</p><div class="hero-actions"><a class="button" href="#work">{tr(lang,'MEUS PROJETOS','MY PROJECTS')} ↓</a><a class="text-link" href="https://github.com/kayo-willian">GitHub ↗</a><a class="text-link" href="https://www.linkedin.com/in/kayo-willian">LinkedIn ↗</a><a class="text-link" href="https://x.com/kayowestlion">X ↗</a></div></div><div class="hero-symbol"><div class="waterlines" aria-hidden="true"></div><span class="ocean-kanji" lang="ja" aria-label="{tr(lang,'Mar','Sea')}">海</span><span class="symbol-caption">GO BEYOND / {tr(lang,'MAR','SEA')}</span></div></section>
 {quote(lang,0,tr(lang,'UM NOVO CAMINHO','A NEW PATH'))}
 <section class="profile-panel" aria-labelledby="profile"><div><p class="kicker">{tr(lang,'PERFIL TÉCNICO','TECHNICAL PROFILE')}</p><h2 id="profile">{tr(lang,'Áreas de atuação','Technical focus')}<span>.</span></h2><p>{tr(lang,'Administração Linux, redes, infraestrutura, automação e testes de software.','Linux administration, networking, infrastructure, automation and software testing.')}</p></div><div class="terminal"><div class="terminal-top"><span></span><span></span><span></span><small>profile.yaml</small></div><div class="terminal-body"><p><b>$</b> cat profile.yaml</p><dl><dt>ecosystem</dt><dd>GNU/Linux</dd><dt>philosophy</dt><dd>Open Source</dd><dt>focus</dt><dd>{tr(lang,'Redes e infraestrutura','Networking &amp; Infrastructure')}</dd><dt>activities</dt><dd>{tr(lang,'Testes e desenvolvimento','Testing &amp; Development')}</dd></dl></div></div></section>
-<section id="work" class="work-section"><div class="heading"><h2>{tr(lang,'Projetos','Projects')}<span>.</span></h2><p>01</p></div>{featured}</section>
+<section id="work" class="work-section"><div class="heading"><div><p>01 / {tr(lang,'TRABALHO AUTORAL','SELECTED WORK')}</p><h2>{tr(lang,'Projetos','Projects')}<span>.</span></h2></div><p>{tr(lang,'INFRAESTRUTURA / SOFTWARE / HARDWARE','INFRASTRUCTURE / SOFTWARE / HARDWARE')}</p></div>{featured}</section>
 <section id="labs" class="work-section"><div class="heading"><h2>{tr(lang,'Laboratórios','Labs')}<span>.</span></h2><p>02</p></div>{labs}</section>
 <section id="oss" class="work-section"><div class="heading"><h2>{tr(lang,'Contribuições open source','Open source contributions')}<span>.</span></h2><p>03</p></div><p class="section-note">{tr(lang,'Forks e contribuições a projetos de terceiros, com foco em testes e documentação.','Forks and contributions to third-party projects, focused on testing and documentation.')}</p>{contributions}</section>
 <section id="security" class="work-section security-section"><div class="heading"><h2>{tr(lang,'Cibersegurança','Cybersecurity')}<span>.</span></h2><p>04</p></div><p class="section-note">{tr(lang,'Área de estudo: defesa de redes, segurança de sistemas Linux e monitoramento.','Learning focus: network defense, Linux system security and monitoring.')}</p><ul class="security-topics"><li>{tr(lang,'Defesa de redes','Network defense')}</li><li>{tr(lang,'Segurança Linux','Linux security')}</li><li>{tr(lang,'Monitoramento','Monitoring')}</li></ul></section>
@@ -117,7 +122,7 @@ def main():
         root = OUT if lang == "en" else OUT / "pt-br"
         root.mkdir(exist_ok=True)
         (root / "index.html").write_text(home(lang),encoding="utf-8")
-    (OUT / "style.css").write_text((ROOT / "src/style.css").read_text(encoding="utf-8"),encoding="utf-8")
+    (OUT / STYLE_NAME).write_bytes(STYLE)
     (OUT / ".nojekyll").touch()
     validate()
 
