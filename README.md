@@ -2,9 +2,12 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,55:0d0d0d,100:0b3d91&height=180&section=header&text=KAYO&fontColor=FFFFFF&fontSize=72&fontAlignY=38&animation=fadeIn&desc=Linux%20%C2%B7%20Networking&descSize=20&descAlignY=60&descColor=2F81F7" width="100%" alt="Kayo banner" />
 
-![Status](https://img.shields.io/badge/STATUS-LEARNING%20%26%20BUILDING-0D0D0D?style=for-the-badge&labelColor=2F81F7)
-![Focus](https://img.shields.io/badge/FOCUS-LINUX%20%26%20NETWORKING-0D0D0D?style=for-the-badge&labelColor=FFFFFF)
-![Base](https://img.shields.io/badge/BASE-BRAZIL-0D0D0D?style=for-the-badge&labelColor=009C3B)
+![Linux](https://img.shields.io/badge/Linux-161B22?style=flat-square&logo=linux&logoColor=FCC624)
+![Networking](https://img.shields.io/badge/Networking-161B22?style=flat-square&logo=cisco&logoColor=049FD9)
+![Bash](https://img.shields.io/badge/Bash-161B22?style=flat-square&logo=gnubash&logoColor=4EAA25)
+![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=3776AB)
+![Docker](https://img.shields.io/badge/Docker-161B22?style=flat-square&logo=docker&logoColor=2496ED)
+![Open Source](https://img.shields.io/badge/Open%20Source-161B22?style=flat-square&logo=opensourceinitiative&logoColor=3DA639)
 
 </div>
 
@@ -16,13 +19,8 @@
 
 ### `$ whoami`
 
-I’m interested in how computer systems work, from physical hardware to Linux and network infrastructure. I learn by building, testing, troubleshooting and documenting real systems.
+I enjoy understanding how computer systems work, experimenting with hardware and software, and learning through practical projects. I like building, testing, troubleshooting and documenting what I discover.
 
-```text
-focus     : Linux, Networking, Infrastructure
-tools     : Bash, Python, Docker, Git
-interests : Open Source, Hardware & Software Testing
-```
 
 </td>
 <td width="42%" align="center" valign="middle">
