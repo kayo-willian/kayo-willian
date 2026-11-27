@@ -7,11 +7,6 @@ on:
       - 'portfolio/**'
       - '.github/workflows/go-beyond.yml'
   workflow_dispatch:
-    inputs:
-      publish:
-        description: Publish the current main build to GitHub Pages
-        type: boolean
-        default: false
 
 permissions:
   contents: read
@@ -36,24 +31,13 @@ jobs:
         run: npm run build
       - name: Validate output
         run: python3 portfolio/build.py --check
-      - name: Prepare local preview
-        run: |
-          mkdir -p "$RUNNER_TEMP/go-beyond-preview/kayo-willian"
-          cp -a portfolio/dist/. "$RUNNER_TEMP/go-beyond-preview/kayo-willian/"
-      - name: Upload compiled preview
-        uses: actions/upload-artifact@v4
-        with:
-          name: go-beyond-preview
-          path: ${{ runner.temp }}/go-beyond-preview/
-          retention-days: 1
-          if-no-files-found: error
       - uses: actions/upload-pages-artifact@v3
-        if: github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         with:
           path: portfolio/dist
 
   deploy:
-    if: github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     permissions:
