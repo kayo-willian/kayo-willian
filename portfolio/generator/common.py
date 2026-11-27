@@ -79,7 +79,7 @@ class Page:
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="noindex">
     <meta name="color-scheme" content="dark">
-    <meta name="theme-color" content="#0d1016">
+    <meta name="theme-color" content="#050608">
     <meta name="description" content="{e(description)}"><title>{e(title)} · GO BEYOND</title>
     <link rel="canonical" href="{BASE}{self.path}">
     <link rel="alternate" hreflang="{alt}" href="{BASE}{target}">
@@ -90,7 +90,7 @@ class Page:
 
   <body id="top"><a class="skip" href="#main">{t['skip']}</a>
 
-    <header class="header frame"><a class="wordmark" aria-label="{t['brandHome']}" href="{self.home()}">{mark()}GO BEYOND</a>
+    <header class="header frame"><a class="wordmark" aria-label="{t['brandHome']}" href="{self.home()}">GO BEYOND</a>
       <nav id="nav" aria-label="{t['portfolio']}">{links}
       </nav><a class="language" href="{self.url(target)}" lang="{alt}" hreflang="{alt}" aria-label="{t['language']}"><span class="lang-dot"></span>{alt.upper()}</a><button type="button" class="menu" aria-controls="nav" aria-expanded="false">{t['menu']} {icon('menu')}</button>
     </header>

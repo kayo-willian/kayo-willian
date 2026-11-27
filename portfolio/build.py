@@ -15,7 +15,7 @@ def copy_assets(out):
     for folder in ['assets', 'src']:
         base = ROOT / folder
         for file in sorted(base.rglob('*')):
-            if not file.is_file():
+            if not file.is_file() or file.name == 'reflector.svg':
                 continue
             path = file.relative_to(base)
             if file.suffix in {'.js', '.css'}:

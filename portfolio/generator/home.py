@@ -8,25 +8,15 @@ def opening(page):
     return f'''
 <section class="cover">
   <div class="frame hero">
-
     <div class="hero-copy">
-      <p class="byline"><i></i><b>Kayo Willian</b> <span>/</span> {t['portfolio']}</p>
-
-      <h1>GO<br>BEYOND</h1>
-      <p class="kana" lang="ja">ゴー・ビヨンド</p>
-
+      <p class="byline">{t['portfolio'].upper()}</p>
+      <h1>Kayo Willian</h1>
       <p class="subjects">{t['subjects']}</p>
-      <p class="intro">{t['intro']}</p><a class="button" href="#work">{t['explore']} {icon('down')}</a>
+      <p class="intro">{t['intro']}</p>
+      <a class="button" href="#work">{t['explore']} {icon('down')}</a>
+      <div class="hero-links">{social(t)}</div>
     </div>
-
-    <figure class="antenna"><img src="{page.asset('art/reflector.svg')}" alt="" width="540" height="460" fetchpriority="high">
-      <figcaption><span class="fig-no">Fig. A</span><span>{t['art']}</span><span class="register" aria-hidden="true">⌖</span></figcaption>
-    </figure>
-  </div>
-
-  <div class="frame contacts"><span class="mono">{t['contact']}</span>
-    <div>{social(t)}
-    </div>
+    <div class="hero-brand"><p class="kana" lang="ja" aria-label="ゴー・ビヨンド"><span>ゴー・</span><span>ビヨンド</span></p><p class="brand-kicker">GO BEYOND</p></div>
   </div>
 </section>
 '''
@@ -53,28 +43,19 @@ def labs(page):
         v = lab[page.lang]
         credit = f'<p class="fine">{e(v["credit"])}</p>' if v['credit'] else ''
         rows.append(f'''
-<details class="lab" id="{lab['slug']}" {'open' if idx == 1 else ''}>
-  <summary><span class="folio">{idx:02d}</span><span><strong>{e(lab['name'])}</strong><small>{e(v['focus'])}</small></span>{icon('plus')}</summary>
-  <div class="lab-body">
-    <p>{e(v['summary'])}</p>
-    <p>{e(v['evidence'])}</p>{credit}
-    <div class="actions">{link(v['record'],t['evidence'])}{link(v['docs'],t['labSource'])}
-    </div>
+<article class="lab" id="{lab['slug']}">
+  <div class="lab-head"><span class="folio">{idx:02d}</span><div><h3>{e(lab['name'])}</h3><small>{e(v['focus'])}</small></div></div>
+  <div class="lab-body"><p>{e(v['summary'])}</p><p>{e(v['evidence'])}</p>{credit}
+    <div class="actions">{link(v['record'],t['evidence'])}{link(v['docs'],t['labSource'])}</div>
   </div>
-</details>
+</article>
 ''')
     return f'''
 <section class="labs-band band" id="labs">
-  <div class="frame spread">
-    <div class="side-heading">
-      <p class="section-label">{t['labs']}</p>
-      <h2>{t['labsTitle']}</h2>
-      <p class="deck">{t['labsIntro']}</p>
-      <div class="notebook-art" aria-hidden="true"><i></i><i></i><i></i><i></i>
-      </div>
-    </div>
-    <div class="lab-shelf">{''.join(rows)}
-    </div>
+  <div class="frame">
+    <div class="section-intro"><div><p class="section-label">02 / {t['labs']}</p><h2>{t['labsTitle']}</h2></div><p class="deck">{t['labsIntro']}</p></div>
+    <div class="lab-grid">{''.join(rows)}</div>
+    <p class="continuity">{t['labContinuation']}</p>
   </div>
 </section>
 '''
@@ -116,11 +97,12 @@ def upstream(page):
   <div class="frame">
     <div class="section-intro">
       <div>
-        <p class="section-label">{t['open']}</p>
+        <p class="section-label">03 / {t['open']}</p>
         <h2>{t['upTitle']}</h2>
       </div>
       <p class="deck">{t['upIntro']}</p>
     </div>{''.join(rows)}
+    <p class="continuity">{t['ossContinuation']}</p>
   </div>
 </section>
 '''
@@ -129,23 +111,14 @@ def upstream(page):
 def security(page):
     t = page.t
     notes = data('security')[page.lang]
-    reading = ''.join(f"<article><h4>{link(r['path'], r['label'], 'right')}</h4><p>{e(r['summary'])}</p></article>" for r in notes['reading'])
-    topics = ''.join(f'<div><p class="mono">{e(area)}</p><h3>{e(question)}</h3><p>{e(text)}</p></div>' for area, question, text in notes['directions'])
+    topics = ''.join(f'<article><h3>{e(area)}</h3><p>{e(text)}</p></article>' for area, text in notes['areas'])
+    reading = ''.join(f'<li>{link(r["path"],r["label"],"right")}</li>' for r in notes['reading'])
     return f'''
 <section id="security" class="security band">
   <div class="frame">
-    <div class="security-head">
-      <p class="section-label">{t['securityLabel']}</p>
-      <h2>{t['securityTitle']}</h2>
-      <p class="deck">{t['securityIntro']}</p>
-    </div>
-    <div class="questions">{topics}
-    </div>
-    <aside class="reading-notes">
-      <h3>{t['foundation']}</h3>
-      <div>{reading}
-      </div>
-    </aside>
+    <div class="security-head"><p class="section-label">04 / {t['securityLabel']}</p><h2>{t['securityTitle']}</h2><p class="deck">{t['securityIntro']}</p></div>
+    <div class="security-map">{topics}</div>
+    <div class="security-records"><div><h3>{t['securityRecordTitle']}</h3><p>{t['securityRecordNote']}</p></div><div><h3>{t['securityFoundation']}</h3><ul>{reading}</ul></div></div>
   </div>
 </section>
 '''

@@ -19,75 +19,50 @@ def drawing(slug):
     return ''
 
 
+def tags(item):
+    return '<div class="tags">' + ''.join(f'<span>{e(tag)}</span>' for tag in item['tags']) + '</div>'
+
+
+def project_links(page, item):
+    t = page.t
+    return '<div class="project-links">' + link(item['repo'],t['repo']) + link(page.project(item['id']),t['more'],'right') + '</div>'
+
+
 def selected_work(page, projects):
     t = page.t
     lookup = {p['id']: p for p in projects}
     lead = lookup['enterprise-noc-from-scratch']
     v = lead[page.lang]
-    name = 'Enterprise NOC'
+    labels = ['VLANs','Linux servers','Monitored hosts'] if page.lang == 'en' else ['VLANs','Servidores Linux','Hosts monitorados']
+    metrics = ''.join(f'<div><strong>{num}</strong><small>{e(label)}</small></div>' for num,label in zip(['07','02','12'],labels))
     featured = f'''
 <article class="lead-case" id="{lead['id']}">{photo(page,lead)}
-  <div class="lead-copy">
-    <p class="section-label">{e(v['kind'])}</p>
-    <h3><a href="{page.project(lead['id'])}">{name}<span>From Scratch</span></a></h3>
-    <p>{e(v['summary'])}</p>{link(page.project(lead['id']),t['read'],'right','ink-button')}
+  <div class="lead-copy"><p class="section-label">{e(v['kind'])}</p>
+    <h3><a href="{page.project(lead['id'])}">Enterprise NOC<span>From Scratch</span></a></h3>
+    <p>{e(v['summary'])}</p><div class="metrics">{metrics}</div><p>{e(v['finding'])}</p>{tags(lead)}
+    <div class="project-links">{link(lead['repo'],t['repo'])}{link('https://kayo-willian.github.io/enterprise-noc-from-scratch/',t['portal'])}{link(page.project(lead['id']),t['read'],'right')}</div>
   </div>
 </article>
 '''
-    studies = []
-    study_ids = ['soft-and-wet-homelab','oppy']
-    for slug in study_ids:
+    order = ['soft-and-wet-homelab','oppy','arduino-linux-controller','scrolllock-rgb-fix','usb-presence-gate','channel-blue']
+    order += [p['id'] for p in projects if p['id'] not in [lead['id'],*order]]
+    cards = []
+    for slug in order:
         p = lookup[slug]
         v = p[page.lang]
-        studies.append(f'''
-<article class="study" id="{slug}">
-  <div class="study-top">
-    <p class="mono">{e(v['kind'])}</p>{drawing(slug)}
-  </div>
-  <h3><a href="{page.project(slug)}">{e(p['name'])}</a></h3>
-  <p>{e(v['summary'])}</p>{link(page.project(slug),t['more'],'right')}
+        picture = photo(page,p) if p.get('image') else ''
+        cards.append(f'''
+<article class="project-card" id="{slug}">{picture}
+  <p class="section-label">{e(v['kind'])}</p><h3><a href="{page.project(slug)}">{e(p['name'])}</a></h3>
+  <p>{e(v['summary'])}</p><p>{e(v['detail'])}</p>{tags(p)}{project_links(page,p)}
 </article>
-''')
-    physical = lookup['arduino-linux-controller']
-    v = physical[page.lang]
-    device = f'''
-<article class="device" id="{physical['id']}">{photo(page,physical)}
-  <div>
-    <p class="section-label">{e(v['kind'])}</p>
-    <h3>{e(physical['name'])}</h3>
-    <p>{e(v['summary'])}</p>{link(page.project(physical['id']),t['more'],'right')}
-  </div>
-</article>
-'''
-    small = []
-    for p in projects:
-        slug = p['id']
-        if slug in [lead['id'],physical['id'],*study_ids]:
-            continue
-        v = p[page.lang]
-        small.append(f'''
-<li id="{slug}"><a href="{page.project(slug)}"><span><small>{e(v['kind'])}</small><strong>{e(p['name'])}</strong></span>{icon('right')}</a>
-</li>
 ''')
     return f'''
 <section id="work" class="work band">
   <div class="frame">
-    <div class="section-intro">
-      <div>
-        <p class="section-label">{t['projects']}</p>
-        <h2>{t['workTitle']}</h2>
-      </div>
-      <p class="deck">{t['workIntro']}</p>
-    </div>{featured}
-    <div class="study-pair">{''.join(studies)}
-    </div>
-    <div class="instruments">{device}
-      <div class="tools">
-        <h3>{t['tools']}</h3>
-        <ul>{''.join(small)}
-        </ul>
-      </div>
-    </div>
+    <div class="section-intro"><div><p class="section-label">01 / {t['projects']}</p><h2>{t['workTitle']}</h2></div><p class="deck">{t['workIntro']}</p></div>
+    {featured}<div class="project-grid">{''.join(cards)}</div>
+    <p class="continuity">{t['workContinuation']}</p>
   </div>
 </section>
 '''
@@ -107,7 +82,7 @@ def project_page(page, item, next_item):
     research = [('implementation','detail'),('evidence','finding'),('limits','scope'),('credit','credit')]
     sections = ''.join(f'<section><h2>{t[label]}</h2><p>{e(v[key])}</p></section>' for label,key in research if v.get(key))
     links = ''.join(link(l['url'],l['label']) for l in v['links'])
-    visual = photo(page,item) if item.get('image') else drawing(item['id'])
+    visual = photo(page,item) if item.get('image') else ''
     tags = ' · '.join(item['tags'])
     title = item['name']
     body = f'''

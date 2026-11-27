@@ -1,63 +1,61 @@
 {
   "en": {
-    "directions": [
+    "areas": [
       [
         "Network defense",
-        "Which traffic belongs here?",
-        "Use segmentation and network monitoring to study how a Blue Team can distinguish expected traffic from a change worth investigating."
+        "Traffic analysis, segmentation, network monitoring and defensive visibility."
       ],
       [
-        "Linux hardening",
-        "Who can do what?",
-        "Explore service permissions, access control and the trade-offs involved in reducing what a Linux host exposes."
+        "Linux & system hardening",
+        "Access control, permissions, service exposure, secure configuration and recovery."
       ],
       [
-        "Incident investigation",
-        "What does the evidence show?",
-        "Learn to correlate logs, alerts and service state, and document how a defensive tool supports or challenges a hypothesis."
+        "Detection & investigation",
+        "Log analysis, alert correlation, incident investigation and defensive tooling."
       ]
     ],
     "reading": [
       {
         "label": "Enterprise NOC",
-        "path": "#enterprise-noc-from-scratch",
-        "summary": "A silent dashboard led to two separate findings: a collection problem at the switch and a filter in the alerts view. Separating those layers is a habit I want to bring to incident investigation."
+        "path": "#enterprise-noc-from-scratch"
+      },
+      {
+        "label": "Debian Server Labs",
+        "path": "#debian-server-labs"
       },
       {
         "label": "Linux Networking Labs",
-        "path": "#linux-networking-labs",
-        "summary": "A successful connectivity test still left a question open. Was the traffic using Wi-Fi or Ethernet? Checking the active route changed what I could conclude from the result."
+        "path": "#linux-networking-labs"
       }
     ]
   },
   "pt": {
-    "directions": [
+    "areas": [
       [
         "Defesa de redes",
-        "Que tráfego é esperado aqui?",
-        "Estudar como a segmentação e o monitoramento de rede ajudam uma equipe de defesa a distinguir o tráfego esperado de uma mudança que merece investigação."
+        "Análise de tráfego, segmentação, monitoramento e visibilidade defensiva."
       ],
       [
-        "Hardening em Linux",
-        "Quem tem permissão para fazer o quê?",
-        "Explorar permissões de serviços, controle de acesso e as escolhas envolvidas na redução da exposição de um host Linux."
+        "Linux e hardening",
+        "Controle de acesso, permissões, exposição de serviços, configuração segura e recuperação."
       ],
       [
-        "Investigação de incidentes",
-        "O que as evidências mostram?",
-        "Aprender a correlacionar logs, alertas e estados de serviços e registrar como uma ferramenta defensiva ajuda a testar uma hipótese."
+        "Detecção e investigação",
+        "Análise de logs, correlação de alertas, investigação de incidentes e ferramentas defensivas."
       ]
     ],
     "reading": [
       {
         "label": "Enterprise NOC",
-        "path": "#enterprise-noc-from-scratch",
-        "summary": "Um painel vazio levou a duas descobertas distintas. Havia uma falha na coleta do switch e um filtro na exibição de alertas. Quero levar esse cuidado de separar as camadas para o estudo de incidentes."
+        "path": "#enterprise-noc-from-scratch"
+      },
+      {
+        "label": "Debian Server Labs",
+        "path": "#debian-server-labs"
       },
       {
         "label": "Linux Networking Labs",
-        "path": "#linux-networking-labs",
-        "summary": "Um teste de conectividade bem-sucedido ainda deixava uma pergunta em aberto. O tráfego usava Wi-Fi ou Ethernet? Verificar a rota ativa mudou o que pude concluir do resultado."
+        "path": "#linux-networking-labs"
       }
     ]
   }

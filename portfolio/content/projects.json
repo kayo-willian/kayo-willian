@@ -12,7 +12,7 @@
     "repo": "https://github.com/kayo-willian/enterprise-noc-from-scratch",
     "en": {
       "kind": "Network infrastructure",
-      "summary": "A physical network for Tapajós Inovações, a fictional company. I followed a connection from its patch-panel port to the service and the dashboard that observes it.",
+      "summary": "A corporate network built in a physical laboratory for the fictional company Tapajós Inovações, integrating structured cabling, Cisco routing and switching, Linux services and centralized monitoring.",
       "detail": "A Catalyst switch separates seven VLANs. One Debian host runs containerized services and monitoring. A second hosts Asterisk and FreeRADIUS for voice and authentication.",
       "finding": "When Zabbix could not collect data from the newly registered switch, I traced the gap to mismatched SNMP settings. The repair restored collection. A separate filter explained why the alerts widget was still empty.",
       "scope": "Completed physical lab. The published dashboards are historical captures. The operations guide distinguishes faults observed on hardware from proposed incident exercises.",
@@ -31,12 +31,12 @@
           "url": "https://github.com/kayo-willian/enterprise-noc-from-scratch/blob/main/docs/monitoring/snmp-troubleshooting.md"
         }
       ],
-      "caption": "Switch and Cat 6 patch panel, photographed in the lab.",
-      "alt": "Blue patch leads connect the Catalyst switch to the rack’s numbered patch panel."
+      "caption": "Cisco router, switch and patch panel. Cropped photograph; inventory labels obscured.",
+      "alt": "Cisco router and Catalyst switch connected to a numbered patch panel with blue network cables."
     },
     "pt": {
       "kind": "Infraestrutura de redes",
-      "summary": "Uma rede física para a Tapajós Inovações, empresa fictícia. Acompanhei o caminho de uma conexão da porta do patch panel ao serviço e ao painel que o monitora.",
+      "summary": "Rede corporativa construída em laboratório físico para a empresa fictícia Tapajós Inovações, integrando cabeamento estruturado, roteamento e switching Cisco, serviços Linux e monitoramento centralizado.",
       "detail": "Um switch Catalyst separa sete VLANs. Um servidor Debian hospeda os serviços em contêineres e o monitoramento. Outro executa Asterisk e FreeRADIUS para telefonia e autenticação.",
       "finding": "Quando o Zabbix não conseguiu coletar dados do switch recém-cadastrado, identifiquei uma divergência na configuração de SNMP. A coleta voltou após a correção. Um filtro explicava por que o painel de alertas continuava vazio.",
       "scope": "Laboratório físico concluído. Os painéis publicados registram o momento da coleta. O guia de operação distingue falhas observadas no equipamento de exercícios de incidentes propostos.",
@@ -55,13 +55,13 @@
           "url": "https://github.com/kayo-willian/enterprise-noc-from-scratch/blob/main/docs/pt-BR/monitoramento/diagnostico-snmp.md"
         }
       ],
-      "caption": "Switch e patch panel Cat 6 fotografados no laboratório.",
-      "alt": "Cabos azuis conectam o switch Catalyst ao patch panel numerado do rack."
+      "caption": "Roteador Cisco, switch e patch panel. Fotografia recortada com etiquetas patrimoniais ocultadas.",
+      "alt": "Roteador Cisco e switch Catalyst conectados ao patch panel numerado por cabos de rede azuis."
     },
     "image": "noc-rack.webp",
     "imageSize": [
-      1250,
-      738
+      1240,
+      760
     ]
   },
   {
@@ -76,7 +76,7 @@
     "repo": "https://github.com/kayo-willian/soft-and-wet-homelab",
     "en": {
       "kind": "Self-hosting",
-      "summary": "What can a laptop with 2 GB of RAM still serve? I installed Debian without a desktop and used one application as the test load.",
+      "summary": "A headless Debian homelab designed to evaluate self-hosted services under limited hardware resources.",
       "detail": "Navidrome runs in Docker Compose. Tailscale runs directly on Debian. I transferred the media over SSH and tested playback from a phone outside the LAN.",
       "finding": "Before deploying the application, the host used 388 MiB of RAM. The first container sample read 32.51 MiB at startup. Steady-state measurements are still open.",
       "scope": "The server is in use. Navidrome is its only documented application container, and expansion is paused.",
@@ -94,7 +94,7 @@
     },
     "pt": {
       "kind": "Hospedagem própria",
-      "summary": "O que um notebook com 2 GB de RAM ainda consegue hospedar? Instalei o Debian sem interface gráfica e usei um único aplicativo para testar a máquina.",
+      "summary": "Homelab Debian headless projetado para avaliar serviços self-hosted com recursos de hardware limitados.",
       "detail": "O Navidrome roda no Docker Compose. O Tailscale roda diretamente no Debian. Transferi a mídia por SSH e testei a reprodução em um celular fora da rede local.",
       "finding": "Antes de instalar a aplicação, o servidor consumia 388 MiB de RAM. A primeira leitura do contêiner registrou 32,51 MiB na inicialização. O consumo em regime estável ainda precisa ser medido.",
       "scope": "Servidor em uso. O Navidrome é o único aplicativo documentado em contêiner, e a expansão está pausada.",
@@ -123,7 +123,7 @@
     "repo": "https://github.com/kayo-willian/arduino-linux-controller",
     "en": {
       "kind": "Physical computing",
-      "summary": "Six button caps crowded the breadboard. I cut the controller down to three buttons, a volume knob and two network indicators.",
+      "summary": "A physical desktop controller with three buttons, a rotary volume control and two connectivity indicators.",
       "detail": "The Uno sends gestures and volume changes over USB serial. A Python process maps them to media, audio and session controls in Ubuntu. The host sends connectivity status back to the LEDs.",
       "finding": "A short press worked in the terminal but missed the intended media player. Selecting the player explicitly fixed playback. A separate pin mismatch explained the silent offline indicator.",
       "scope": "One functional prototype. The published source reconstructs the working build. An intermittent USB connector heating issue remained unresolved.",
@@ -143,7 +143,7 @@
     },
     "pt": {
       "kind": "Computação física",
-      "summary": "Seis botões mal cabiam na protoboard. Reduzi o controle a três botões, um potenciômetro de volume e dois indicadores de rede.",
+      "summary": "Controlador físico de desktop com três botões, controle rotativo de volume e dois indicadores de conectividade.",
       "detail": "O Uno envia os acionamentos dos botões e as mudanças de volume pela serial USB. Um processo Python os traduz em controles de mídia, áudio e sessão no Ubuntu. O computador devolve o estado da conexão para os LEDs.",
       "finding": "O comando funcionava no terminal, mas o toque curto acionava o reprodutor errado. A seleção explícita do reprodutor resolveu o problema. Uma divergência de pino explicava por que o LED de falta de conexão permanecia apagado.",
       "scope": "Um protótipo funcional. O código publicado reconstrói a versão que funcionou na bancada. O aquecimento intermitente do conector USB ficou sem diagnóstico conclusivo.",
@@ -178,7 +178,7 @@
     "repo": "https://github.com/kayo-willian/oppy",
     "en": {
       "kind": "Change detection",
-      "summary": "A course listing can change between visits. Oppy watches a single public course program and queues the differences for delivery to Telegram.",
+      "summary": "A self-hosted monitor for changes in public opportunity listings, with persistent state and Telegram notifications.",
       "detail": "A Python parser compares each collection against the last valid one. SQLite stores each change and its pending notification in the same transaction.",
       "finding": "If a source page is incomplete, the previous listing survives. Saved HTML lets the parser and delivery queue be tested offline.",
       "scope": "One PSG connector is implemented. A crash just after Telegram accepts a message can still produce a duplicate delivery.",
@@ -196,7 +196,7 @@
     },
     "pt": {
       "kind": "Detecção de mudanças",
-      "summary": "Uma oferta de curso pode mudar entre duas visitas. O Oppy acompanha um programa público de cursos e enfileira as mudanças para envio pelo Telegram.",
+      "summary": "Monitor self-hosted de mudanças em listas públicas de oportunidades, com estado persistente e notificações pelo Telegram.",
       "detail": "Um parser em Python compara cada coleta com a última válida. O SQLite grava a mudança e a notificação pendente na mesma transação.",
       "finding": "Se uma página vem incompleta, a listagem anterior é preservada. Com HTML salvo, é possível testar o parser e a fila de envio sem acessar o portal.",
       "scope": "Há um conector implementado para o PSG. Se o processo parar logo após o Telegram aceitar uma mensagem, ela pode ser entregue duas vezes.",
@@ -224,7 +224,7 @@
     "repo": "https://github.com/kayo-willian/usb-presence-gate",
     "en": {
       "kind": "Service lifecycle",
-      "summary": "A removable drive becomes a physical input for a disposable Linux service. The experiment follows what happens when the drive disappears and returns.",
+      "summary": "An experimental Linux USB presence observer and opt-in service gate for a disposable demonstration service; not an authentication product.",
       "detail": "A worker reads USB descriptors through sysfs. udev events and a systemd timer trigger checks. An opt-in policy can start or stop the bundled demo service.",
       "finding": "On the Debian test host, the observer recorded removal after its grace period and recognized the device on reinsertion. The public report also records cleanup after uninstall.",
       "scope": "Experimental. Matching a descriptor establishes presence only. Later hardening changes still need fresh tests on physical hardware.",
@@ -242,7 +242,7 @@
     },
     "pt": {
       "kind": "Ciclo de vida de serviços",
-      "summary": "Um dispositivo USB removível serve de entrada física para um serviço descartável no Linux. O experimento acompanha o que acontece ao retirar e reinserir o dispositivo.",
+      "summary": "Observador experimental de presença USB no Linux e controle opt-in de um serviço demonstrativo descartável; não é um produto de autenticação.",
       "detail": "Um processo lê os descritores USB pelo sysfs. Eventos do udev e um temporizador do systemd acionam as verificações. Uma política opcional pode iniciar ou parar o serviço de demonstração.",
       "finding": "No Debian, o observador registrou a retirada após o intervalo de tolerância e reconheceu o dispositivo na reinserção. O relatório público também registra a limpeza após a desinstalação.",
       "scope": "Experimental. A correspondência de descritores só indica presença. As mudanças posteriores de robustez ainda precisam de novos testes em hardware.",
@@ -270,7 +270,7 @@
     "repo": "https://github.com/kayo-willian/scrolllock-rgb-fix",
     "en": {
       "kind": "Linux input devices",
-      "summary": "On one USB keyboard, Scroll Lock doubles as the switch for the entire backlight. A change to Caps Lock could leave the keys in the dark.",
+      "summary": "A Linux background service for keyboards whose RGB backlight is controlled by the physical Scroll Lock LED.",
       "detail": "A small systemd service pairs a keyboard input device with its own Scroll Lock LED. It reads evdev events and writes the intended brightness back through sysfs.",
       "finding": "A direct LED write switched the lights on in the original GNOME/Wayland setup. The daemon uses that firmware behavior to restore the chosen state after other LED events.",
       "scope": "The original investigation covers one wired keyboard. Other lighting protocols and current-revision behavior across devices remain unverified.",
@@ -290,7 +290,7 @@
     },
     "pt": {
       "kind": "Dispositivos de entrada no Linux",
-      "summary": "Em um teclado USB, o Scroll Lock também liga a iluminação de todas as teclas. Uma mudança no Caps Lock podia apagá-las.",
+      "summary": "Serviço em segundo plano para teclados cuja iluminação RGB é controlada pelo LED físico do Scroll Lock.",
       "detail": "Um serviço do systemd associa o dispositivo de entrada ao próprio LED de Scroll Lock. Ele lê eventos pelo evdev e reaplica o brilho escolhido pelo sysfs.",
       "finding": "No ambiente original com GNOME e Wayland, escrever diretamente no LED acendeu o teclado. O serviço usa esse comportamento do firmware para restaurar o estado após outros eventos de LED.",
       "scope": "A investigação original cobre um teclado com fio. Outros protocolos de iluminação e o comportamento da versão atual em vários dispositivos seguem sem verificação.",
@@ -323,7 +323,7 @@
     "repo": "https://github.com/kayo-willian/channel-blue",
     "en": {
       "kind": "Game development",
-      "summary": "An educational top-down game in which the player collects waste while moving through a lake, a river and the sea.",
+      "summary": "A completed 2D educational game exploring environmental themes across three aquatic stages.",
       "detail": "GDevelop event sheets handle spawning, collision, movement and scene changes. The river introduces a current that pushes the player sideways. In the sea, the current strengthens and the collection goal rises.",
       "finding": "The published scene flow follows all three stages, including failure, retry and victory. Event-sheet captures show how each transition works.",
       "scope": "Playable in a browser with keyboard or touch controls.",
@@ -341,7 +341,7 @@
     },
     "pt": {
       "kind": "Desenvolvimento de jogos",
-      "summary": "Um jogo educativo com visão de cima em que o jogador recolhe resíduos ao atravessar um lago, um rio e o mar.",
+      "summary": "Jogo educacional 2D concluído que explora temas ambientais em três fases aquáticas.",
       "detail": "As folhas de eventos do GDevelop cuidam da criação de objetos, colisões, movimento e mudanças de cena. No rio, a corrente empurra o personagem para o lado. No mar, a corrente fica mais forte e a meta de coleta aumenta.",
       "finding": "O fluxo de cenas publicado percorre as três fases, incluindo derrota, nova tentativa e vitória. As capturas das folhas de eventos mostram como cada transição funciona.",
       "scope": "Jogável no navegador com controles por teclado ou toque.",

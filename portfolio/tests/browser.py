@@ -57,8 +57,11 @@ def check_home(page, base, width, lang, folder):
     else:
         page.locator('#nav a[href="#labs"]').click()
     lab = page.locator('#linux-networking-labs')
-    lab.locator('summary').click()
     assert lab.locator('.lab-body').is_visible()
+    assert page.locator('.lab-body:visible').count() == 4
+    assert page.locator('.project-card').count() == 6
+    assert page.locator('.hero-brand .kana').is_visible()
+    assert page.locator('.antenna').count() == 0
     page.locator('.language').click()
     assert page.url.endswith('#labs')
     page.locator('.lead-copy a').first.click()
@@ -107,7 +110,6 @@ def main():
         page.goto(args.live or BASE)
         assert page.locator('#nav').is_visible()
         page.locator('#nav a[href="#labs"]').click()
-        page.locator('#linux-networking-labs summary').click()
         assert page.locator('#linux-networking-labs .lab-body').is_visible()
         ctx.close()
         browser.close()
