@@ -53,6 +53,9 @@ def check_home(page, base, width, lang, folder):
         assert artwork.get_attribute('alt')
         # Lazy images must enter the viewport before decoding.
     assert page.locator('.hero-links a').count() == 4
+    assert page.locator('#oss a').count() == 1
+    assert page.locator('#oss a').get_attribute('href') == 'https://github.com/kayo-willian'
+    assert page.locator('#oss .up-project, #oss .records, #oss .status').count() == 0
     for image in page.locator('img').all():
         image.scroll_into_view_if_needed()
         image.evaluate("""(img) => {

@@ -21,7 +21,7 @@
     "labsIntro": "Hands-on records of network configuration, Linux administration, troubleshooting and monitoring.",
     "labSource": "Open notebook",
     "upTitle": "Open-source contributions",
-    "upIntro": "Independent software testing, reproducible bug reports and documentation contributions. Original authorship and submission status are identified in each record.",
+    "upIntro": "Independent software testing, reproducible bug reports and documentation contributions.",
     "securityTitle": "Cybersecurity",
     "securityLabel": "DEFENSIVE SECURITY / LEARNING FOCUS",
     "securityIntro": "My next area of technical development is defensive security, grounded in Linux administration, networking and infrastructure. This section will expand with documented security work.",
@@ -44,14 +44,14 @@
     "footerLine": "Kayo Willian · Technical portfolio",
     "workContinuation": "This collection grows as new tools and projects are documented.",
     "labContinuation": "New lab records will join this collection.",
-    "ossContinuation": "Additional upstream contributions will be recorded here.",
     "securityRecordTitle": "Security research & labs",
     "securityRecordNote": "Dedicated security projects and investigations will be added here when they are documented and tested. Existing infrastructure labs remain in their original categories.",
     "securityFoundation": "Related technical evidence",
     "portal": "Corporate portal",
     "illustration": "Concept illustration · not a photograph",
     "generatedArt": "AI-generated concept art · not a photograph or screenshot of the actual project",
-    "spiralAlt": "Golden spiral with a geometric construction."
+    "spiralAlt": "Golden spiral with a geometric construction.",
+    "ossLink": "View my GitHub"
   },
   "pt": {
     "portfolio": "Portfólio técnico",
@@ -75,7 +75,7 @@
     "labsIntro": "Registros práticos de configuração de redes, administração Linux, diagnóstico e monitoramento.",
     "labSource": "Abrir caderno",
     "upTitle": "Contribuições open source",
-    "upIntro": "Testes de software independente, relatos reproduzíveis e contribuições de documentação. A autoria original e o estado de cada envio são identificados.",
+    "upIntro": "Testes de software independente, relatos reproduzíveis e contribuições de documentação.",
     "securityTitle": "Cibersegurança",
     "securityLabel": "SEGURANÇA DEFENSIVA / ÁREA DE ESTUDO",
     "securityIntro": "Minha próxima área de desenvolvimento técnico é a segurança defensiva, com base em administração Linux, redes e infraestrutura. Esta seção crescerá com trabalhos de segurança documentados.",
@@ -98,13 +98,13 @@
     "footerLine": "Kayo Willian · Portfólio técnico",
     "workContinuation": "Esta coleção cresce conforme novos projetos e ferramentas são documentados.",
     "labContinuation": "Novos registros de laboratório integrarão esta coleção.",
-    "ossContinuation": "Novas contribuições upstream serão registradas aqui.",
     "securityRecordTitle": "Pesquisas e laboratórios de segurança",
     "securityRecordNote": "Projetos e investigações de segurança serão adicionados aqui quando estiverem documentados e testados. Os laboratórios de infraestrutura permanecem em suas categorias originais.",
     "securityFoundation": "Evidências técnicas relacionadas",
     "portal": "Portal corporativo",
     "illustration": "Ilustração conceitual · não é uma fotografia",
     "generatedArt": "Arte conceitual gerada por IA · não é fotografia ou captura do projeto real",
-    "spiralAlt": "Espiral áurea com construção geométrica."
+    "spiralAlt": "Espiral áurea com construção geométrica.",
+    "ossLink": "Ver meu GitHub"
   }
 }

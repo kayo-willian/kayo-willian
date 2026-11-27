@@ -1,5 +1,5 @@
 """The home edition in either language."""
-from .common import data, e, icon, link, social
+from .common import PROFILE, data, e, icon, link, social
 from .projects import selected_work
 
 
@@ -62,35 +62,6 @@ def labs(page):
 
 def upstream(page):
     t = page.t
-    en = page.lang == 'en'
-    rows = []
-    for project in data('contributions'):
-        entries = []
-        for item in project['items']:
-            v = item[page.lang]
-            kind = 'PR' if item['type'] == 'pr' else ('Issue' if en else 'Relato')
-            state = item['state'] if en else {'open':'em aberto','merged':'integrado','closed':'encerrado'}[item['state']]
-            entries.append(f'''
-<li>
-  <div class="record-meta"><span>{kind} #{item['number']}</span><span class="status {item['state']}">{state}</span>
-  </div>
-  <h4>{link(item['url'],v['title'])}</h4>
-  <p>{e(v['summary'])}</p>
-</li>
-''')
-        rows.append(f'''
-<article class="up-project">
-  <div class="up-summary">
-    <p class="up-owner">{e(project['owner'])} /</p>
-    <h3>{e(project['project'])}</h3>
-    <p>{e(project[page.lang]['forkNote'])}</p>
-    <div class="actions">{link(project['upstream'], 'Upstream' if en else 'Projeto original')}{link(project['fork'], 'My fork' if en else 'Meu fork')}
-    </div>
-  </div>
-  <ul class="records">{''.join(entries)}
-  </ul>
-</article>
-''')
     return f'''
 <section id="oss" class="band open-band">
   <div class="frame">
@@ -99,9 +70,8 @@ def upstream(page):
         <p class="section-label">03 / {t['open']}</p>
         <h2>{t['upTitle']}</h2>
       </div>
-      <p class="deck">{t['upIntro']}</p>
-    </div>{''.join(rows)}
-    <p class="continuity">{t['ossContinuation']}</p>
+      <div><p class="deck">{t['upIntro']}</p><div class="actions">{link(PROFILE,t['ossLink'])}</div></div>
+    </div>
   </div>
 </section>
 '''
