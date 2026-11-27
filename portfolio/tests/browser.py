@@ -42,6 +42,10 @@ def check_home(page, base, width, lang, folder):
     assert ('Johnny Joestar, se o teu coração' if lang == 'pt' else 'Johnny Joestar, if your heart') in page.locator('blockquote').first.inner_text()
     assert page.locator('.project-card img').count() == 6
     assert page.locator('.lead-case .project-cover img').count() == 1
+    assert page.locator('#soft-and-wet-homelab .project-cover img').count() == 1
+    for artwork in page.locator('.cinematic-art img').all():
+        assert artwork.get_attribute('alt')
+        artwork.evaluate('(img) => img.decode()')
     assert page.locator('.hero-links a').count() == 4
     for image in page.locator('img').all():
         image.scroll_into_view_if_needed()

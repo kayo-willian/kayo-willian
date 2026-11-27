@@ -51,7 +51,8 @@
     "securityRecordNote": "Dedicated security projects and investigations will be added here when they are documented and tested. Existing infrastructure labs remain in their original categories.",
     "securityFoundation": "Related technical evidence",
     "portal": "Corporate portal",
-    "illustration": "Concept illustration · not a photograph"
+    "illustration": "Concept illustration · not a photograph",
+    "generatedArt": "AI-generated concept art · not a photograph or screenshot of the actual project"
   },
   "pt": {
     "portfolio": "Portfólio técnico",
@@ -105,6 +106,7 @@
     "securityRecordNote": "Projetos e investigações de segurança serão adicionados aqui quando estiverem documentados e testados. Os laboratórios de infraestrutura permanecem em suas categorias originais.",
     "securityFoundation": "Evidências técnicas relacionadas",
     "portal": "Portal corporativo",
-    "illustration": "Ilustração conceitual · não é uma fotografia"
+    "illustration": "Ilustração conceitual · não é uma fotografia",
+    "generatedArt": "Arte conceitual gerada por IA · não é fotografia ou captura do projeto real"
   }
 }

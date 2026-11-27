@@ -10,6 +10,8 @@ def photo(page, item):
 
 def project_visual(page, item, cover=False):
     v = item[page.lang]
+    if cover and item.get('homeArt') and 'images/'+item['homeArt'] in page.assets:
+        return f'<figure class="evidence-photo concept-art cinematic-art"><img width="887" height="296" loading="lazy" alt="{e(v["homeArtAlt"])}" src="{page.asset("images/"+item["homeArt"])}"><figcaption>{e(page.t["generatedArt"])}</figcaption></figure>'
     if cover and item.get('cover'):
         width,height = item['coverSize']
         return f'<figure class="evidence-photo project-cover"><img width="{width}" height="{height}" loading="lazy" alt="{e(v["coverAlt"])}" src="{page.asset("images/"+item["cover"])}"><figcaption>{e(v["coverCaption"])}</figcaption></figure>'
@@ -51,7 +53,7 @@ def selected_work(page, projects):
     for slug in order:
         p = lookup[slug]
         v = p[page.lang]
-        picture = project_visual(page,p)
+        picture = project_visual(page,p,cover=True)
         cards.append(f'''
 <article class="project-card" id="{slug}">{picture}
   <p class="section-label">{e(v['kind'])}</p><h3><a href="{page.project(slug)}">{e(p['name'])}</a></h3>
@@ -83,7 +85,7 @@ def project_page(page, item, next_item):
     research = [('implementation','detail'),('evidence','finding'),('limits','scope'),('credit','credit')]
     sections = ''.join(f'<section><h2>{t[label]}</h2><p>{e(v[key])}</p></section>' for label,key in research if v.get(key))
     links = ''.join(link(l['url'],l['label']) for l in v['links'])
-    visual = project_visual(page,item)
+    visual = project_visual(page,item,cover=not item.get('image'))
     tags = ' · '.join(item['tags'])
     title = item['name']
     body = f'''

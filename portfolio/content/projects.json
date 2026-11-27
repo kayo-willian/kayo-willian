@@ -100,7 +100,9 @@
           "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/architecture.md"
         }
       ],
-      "illustrationAlt": "Headless laptop server, network connection and audio waveform."
+      "illustrationAlt": "Headless laptop server, network connection and audio waveform.",
+      "coverAlt": "Original Soft & Wet project artwork, with a retro laptop and comic-book typography.",
+      "coverCaption": "Original project artwork."
     },
     "pt": {
       "kind": "Hospedagem própria",
@@ -119,9 +121,16 @@
           "url": "https://github.com/kayo-willian/soft-and-wet-homelab/blob/main/docs/pt-BR/arquitetura.md"
         }
       ],
-      "illustrationAlt": "Notebook servidor headless, conexão de rede e forma de onda de áudio."
+      "illustrationAlt": "Notebook servidor headless, conexão de rede e forma de onda de áudio.",
+      "coverAlt": "Capa original do Soft & Wet, com notebook retrô e tipografia de quadrinhos.",
+      "coverCaption": "Arte original do projeto."
     },
-    "illustration": "soft-and-wet-homelab.svg"
+    "illustration": "soft-and-wet-homelab.svg",
+    "cover": "soft-and-wet-cover.webp",
+    "coverSize": [
+      960,
+      320
+    ]
   },
   {
     "id": "arduino-linux-controller",
@@ -151,7 +160,8 @@
         }
       ],
       "caption": "Final prototype with three buttons and a B10K potentiometer.",
-      "alt": "A wired breadboard holds green, yellow and red buttons beside a rotary potentiometer."
+      "alt": "A wired breadboard holds green, yellow and red buttons beside a rotary potentiometer.",
+      "homeArtAlt": "Concept rendering of a three-button controller, rotary knob and electronics workbench."
     },
     "pt": {
       "kind": "Computação física",
@@ -171,13 +181,15 @@
         }
       ],
       "caption": "Protótipo final com três botões e um potenciômetro B10K.",
-      "alt": "Três botões, verde, amarelo e vermelho, dividem a protoboard com o potenciômetro rotativo."
+      "alt": "Três botões, verde, amarelo e vermelho, dividem a protoboard com o potenciômetro rotativo.",
+      "homeArtAlt": "Renderização conceitual de um controlador com três botões, botão rotativo e bancada eletrônica."
     },
     "image": "controller.webp",
     "imageSize": [
       900,
       880
-    ]
+    ],
+    "homeArt": "arduino-linux-controller.webp"
   },
   {
     "id": "oppy",
@@ -205,7 +217,8 @@
           "url": "https://github.com/kayo-willian/oppy/blob/main/docs/psg-parser.md"
         }
       ],
-      "illustrationAlt": "Public listings flowing into persistent storage and notification messages."
+      "illustrationAlt": "Public listings flowing into persistent storage and notification messages.",
+      "homeArtAlt": "Concept artwork of documents feeding a database and a notification service."
     },
     "pt": {
       "kind": "Detecção de mudanças",
@@ -224,9 +237,11 @@
           "url": "https://github.com/kayo-willian/oppy/blob/main/pt-BR/docs/psg-parser.md"
         }
       ],
-      "illustrationAlt": "Listagens públicas fluindo para armazenamento persistente e notificações."
+      "illustrationAlt": "Listagens públicas fluindo para armazenamento persistente e notificações.",
+      "homeArtAlt": "Arte conceitual de documentos alimentando um banco de dados e um serviço de notificações."
     },
-    "illustration": "oppy.svg"
+    "illustration": "oppy.svg",
+    "homeArt": "oppy.webp"
   },
   {
     "id": "usb-presence-gate",
@@ -254,7 +269,8 @@
           "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/docs/lifecycle.md"
         }
       ],
-      "illustrationAlt": "USB plug, device presence signal and system service state."
+      "illustrationAlt": "USB plug, device presence signal and system service state.",
+      "homeArtAlt": "Concept rendering of a USB device next to an illuminated server port."
     },
     "pt": {
       "kind": "Ciclo de vida de serviços",
@@ -273,9 +289,11 @@
           "url": "https://github.com/kayo-willian/usb-presence-gate/blob/main/pt-BR/docs/ciclo-de-vida.md"
         }
       ],
-      "illustrationAlt": "Conector USB, sinal de presença do dispositivo e estado de serviço."
+      "illustrationAlt": "Conector USB, sinal de presença do dispositivo e estado de serviço.",
+      "homeArtAlt": "Renderização conceitual de um dispositivo USB próximo de uma porta iluminada de servidor."
     },
-    "illustration": "usb-presence-gate.svg"
+    "illustration": "usb-presence-gate.svg",
+    "homeArt": "usb-presence-gate.webp"
   },
   {
     "id": "scrolllock-rgb-fix",
@@ -304,7 +322,8 @@
         }
       ],
       "caption": "Enhanced image from the project documentation.",
-      "alt": "Blue illuminated keyboard from the Scroll Lock RGB Fix project."
+      "alt": "Blue illuminated keyboard from the Scroll Lock RGB Fix project.",
+      "homeArtAlt": "Concept macro image of a dark keyboard with blue backlighting."
     },
     "pt": {
       "kind": "Dispositivos de entrada no Linux",
@@ -324,13 +343,15 @@
         }
       ],
       "caption": "Imagem aprimorada da documentação do projeto.",
-      "alt": "Teclado com iluminação azul do projeto Scroll Lock RGB Fix."
+      "alt": "Teclado com iluminação azul do projeto Scroll Lock RGB Fix.",
+      "homeArtAlt": "Imagem conceitual em macro de um teclado escuro com iluminação azul."
     },
     "image": "scroll-lock-enhanced.webp",
     "imageSize": [
       1000,
       750
-    ]
+    ],
+    "homeArt": "scrolllock-rgb-fix.webp"
   },
   {
     "id": "channel-blue",
@@ -356,7 +377,8 @@
           "url": "https://github.com/kayo-willian/channel-blue/blob/main/docs/scene-flow.md"
         }
       ],
-      "illustrationAlt": "Pixel-art illustration of an aquatic environment with floating waste and a small collection vessel."
+      "illustrationAlt": "Pixel-art illustration of an aquatic environment with floating waste and a small collection vessel.",
+      "homeArtAlt": "Concept pixel art of a river landscape with floating waste."
     },
     "pt": {
       "kind": "Desenvolvimento de jogos",
@@ -375,8 +397,10 @@
           "url": "https://github.com/kayo-willian/channel-blue/blob/main/pt-BR/docs/fluxo-de-cenas.md"
         }
       ],
-      "illustrationAlt": "Ilustração em pixel art de ambiente aquático com resíduos flutuantes e pequena embarcação coletora."
+      "illustrationAlt": "Ilustração em pixel art de ambiente aquático com resíduos flutuantes e pequena embarcação coletora.",
+      "homeArtAlt": "Pixel art conceitual de uma paisagem fluvial com resíduos flutuantes."
     },
-    "illustration": "channel-blue.svg"
+    "illustration": "channel-blue.svg",
+    "homeArt": "channel-blue.webp"
   }
 ]
