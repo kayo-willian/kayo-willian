@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "existence",
+      "ja": "存在",
+      "title": "EXISTENCE",
+      "description": {
+        "pt": "Apresentação pessoal",
+        "en": "Personal introduction"
+      }
+    },
+    {
+      "id": "projects",
+      "ja": "超越",
+      "title": "GO BEYOND",
+      "description": {
+        "pt": "Projetos e contribuições",
+        "en": "Projects and contributions"
+      }
+    },
+    {
+      "id": "sound",
+      "ja": "音楽",
+      "title": "SOUND ARCHIVE",
+      "description": {
+        "pt": "Música e artistas",
+        "en": "Music and artists"
+      }
+    },
+    {
+      "id": "goats",
+      "ja": "伝説",
+      "title": "GOATS",
+      "description": {
+        "pt": "Michael Jackson e Kanye West",
+        "en": "Michael Jackson and Kanye West"
+      }
+    },
+    {
+      "id": "fight",
+      "ja": "闘争",
+      "title": "FIGHT CLUB",
+      "description": {
+        "pt": "MMA e boxe",
+        "en": "MMA and boxing"
+      }
+    },
+    {
+      "id": "seinen",
+      "ja": "青年",
+      "title": "SEINEN",
+      "description": {
+        "pt": "Mangás e animes",
+        "en": "Manga and anime"
+      }
+    },
+    {
+      "id": "heretics",
+      "ja": "異端",
+      "title": "HERETICS",
+      "description": {
+        "pt": "Quadrinhos",
+        "en": "Comics"
+      }
+    },
+    {
+      "id": "underground",
+      "ja": "地下",
+      "title": "UNDERGROUND",
+      "description": {
+        "pt": "Cultura hacker e Mr. Robot",
+        "en": "Hacker culture and Mr. Robot"
+      }
+    },
+    {
+      "id": "freedom",
+      "ja": "自由",
+      "title": "FREEDOM",
+      "description": {
+        "pt": "Software livre e open source",
+        "en": "Free and open-source software"
+      }
+    },
+    {
+      "id": "origins",
+      "ja": "原点",
+      "title": "ORIGINS",
+      "description": {
+        "pt": "Brasil e Amazônia",
+        "en": "Brazil and the Amazon"
+      }
+    },
+    {
+      "id": "machines",
+      "ja": "機械",
+      "title": "MACHINES",
+      "description": {
+        "pt": "Computadores e máquinas imaginárias",
+        "en": "Computers and imaginary machines"
+      }
+    },
+    {
+      "id": "aesthetics",
+      "ja": "美学",
+      "title": "AESTHETICS",
+      "description": {
+        "pt": "Arte e design",
+        "en": "Art and design"
+      }
+    },
+    {
+      "id": "black-culture",
+      "ja": "黒",
+      "title": "BLACK CULTURE",
+      "description": {
+        "pt": "Cultura negra e afrofuturismo",
+        "en": "Black culture and Afrofuturism"
+      }
+    },
+    {
+      "id": "earth",
+      "ja": "地球",
+      "title": "EARTH",
+      "description": {
+        "pt": "Natureza e geografia",
+        "en": "Nature and geography"
+      }
+    },
+    {
+      "id": "library",
+      "ja": "図書館",
+      "title": "LIBRARY",
+      "description": {
+        "pt": "Biblioteca e leituras",
+        "en": "Library and reading"
+      }
+    },
+    {
+      "id": "games",
+      "ja": "遊戯",
+      "title": "GAMES",
+      "description": {
+        "pt": "Terraria e Resident Evil",
+        "en": "Terraria and Resident Evil"
+      }
+    },
+    {
+      "id": "memory",
+      "ja": "記憶",
+      "title": "MEMORY",
+      "description": {
+        "pt": "Arquivo pessoal",
+        "en": "Personal archive"
+      }
+    },
+    {
+      "id": "experiments",
+      "ja": "実験",
+      "title": "EXPERIMENTS",
+      "description": {
+        "pt": "Experimentos artísticos e técnicos",
+        "en": "Artistic and technical experiments"
+      }
+    },
+    {
+      "id": "connection",
+      "ja": "通信",
+      "title": "CONNECTION",
+      "description": {
+        "pt": "Links públicos",
+        "en": "Public links"
+      }
+    }
+  ],
+  "music": {
+    "goats": [
+      "Michael Jackson",
+      "Kanye West"
+    ],
+    "artists": [
+      "Arthur Verocai",
+      "Frank Ocean",
+      "Childish Gambino",
+      "The Weeknd",
+      "Travis Scott",
+      "Péricles",
+      "Belo",
+      "Playboi Carti",
+      "Future",
+      "Chief Keef",
+      "Don Toliver",
+      "Lil Uzi Vert",
+      "Young Thug",
+      "Tyler, the Creator",
+      "MF DOOM"
+    ],
+    "textOnly": [
+      "Arthur Verocai",
+      "Péricles",
+      "Belo"
+    ]
+  },
+  "fighters": [
+    {
+      "name": "Charles Oliveira",
+      "label": "DO BRONX",
+      "featured": true,
+      "sport": "mma"
+    },
+    {
+      "name": "Dustin Poirier",
+      "label": "THE DIAMOND",
+      "featured": true,
+      "sport": "mma"
+    },
+    {
+      "name": "King Green",
+      "label": "KING",
+      "featured": true,
+      "sport": "mma"
+    },
+    {
+      "name": "Renato Moicano",
+      "label": "MONEY MOICANO",
+      "featured": true,
+      "sport": "mma"
+    },
+    {
+      "name": "Alex Pereira",
+      "label": "POATAN",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Mike Tyson",
+      "label": "IRON MIKE",
+      "featured": false,
+      "sport": "boxing"
+    },
+    {
+      "name": "Anderson Silva",
+      "label": "THE SPIDER",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Jon Jones",
+      "label": "BONES",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Israel Adesanya",
+      "label": "THE LAST STYLEBENDER",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Khamzat Chimaev",
+      "label": "BORZ",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Conor McGregor",
+      "label": "THE NOTORIOUS",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Justin Gaethje",
+      "label": "THE HIGHLIGHT",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Diego Lopes",
+      "label": "EL BRABO",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Carlos Prates",
+      "label": "THE NIGHTMARE",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Johnny Walker",
+      "label": "DEMIGOD",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Valter Walker",
+      "label": "CLEAN MONSTER",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Josh Hokit",
+      "label": "THE INCREDIBLE HOK",
+      "featured": false,
+      "sport": "mma"
+    },
+    {
+      "name": "Arman Tsarukyan",
+      "label": "BATMAN",
+      "featured": false,
+      "sport": "mma"
+    }
+  ],
+  "seinen": [
+    "Berserk",
+    "Vagabond",
+    "Vinland Saga",
+    "20th Century Boys",
+    "Monster",
+    "JoJo's Bizarre Adventure",
+    "Homunculus"
+  ],
+  "comics": [
+    "Batman",
+    "Superman",
+    "Coringa / Joker",
+    "Motoqueiro Fantasma / Ghost Rider",
+    "Miles Morales",
+    "Cavaleiro da Lua / Moon Knight",
+    "Pantera Negra / Black Panther",
+    "Deadpool",
+    "Blade"
+  ],
+  "games": [
+    "Terraria",
+    "Resident Evil"
+  ],
+  "screen": [
+    "Mr. Robot — Leon"
+  ],
+  "library": {
+    "books": [
+      {
+        "title": "A Metamorfose",
+        "author": "Franz Kafka",
+        "status": "read",
+        "rating": 8,
+        "pagesRead": 96
+      },
+      {
+        "title": "Noites Brancas",
+        "author": "Fiódor Dostoiévski",
+        "status": "read",
+        "rating": 8,
+        "pagesRead": 80
+      },
+      {
+        "title": "A Morte de Ivan Ilitch",
+        "author": "Lev Tolstói",
+        "status": "read",
+        "rating": 7,
+        "pagesRead": 96
+      },
+      {
+        "title": "Memórias Póstumas de Brás Cubas",
+        "author": "Machado de Assis",
+        "status": "read",
+        "rating": 10,
+        "pagesRead": 480
+      },
+      {
+        "title": "Vidas Secas",
+        "author": "Graciliano Ramos",
+        "status": "read",
+        "rating": 6,
+        "pagesRead": 96
+      },
+      {
+        "title": "A Hora da Estrela",
+        "author": "Clarice Lispector",
+        "status": "read",
+        "rating": 10,
+        "pagesRead": 88
+      },
+      {
+        "title": "Ilíada",
+        "author": "Homero",
+        "status": "abandoned",
+        "rating": 2,
+        "pagesRead": 200
+      },
+      {
+        "title": "Odisseia",
+        "author": "Homero",
+        "status": "uncertain",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Banquete",
+        "author": "Platão",
+        "status": "read",
+        "rating": 10,
+        "pagesRead": 95
+      },
+      {
+        "title": "Memórias do Subsolo",
+        "author": "Fiódor Dostoiévski",
+        "status": "read",
+        "rating": 10,
+        "pagesRead": 184
+      },
+      {
+        "title": "Confissões",
+        "author": "Santo Agostinho",
+        "status": "uncertain",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Dom Casmurro",
+        "author": "Machado de Assis",
+        "status": "abandoned",
+        "rating": 4,
+        "pagesRead": 274
+      },
+      {
+        "title": "A Revolução dos Bichos",
+        "author": "George Orwell",
+        "status": "read",
+        "rating": 9,
+        "pagesRead": 96
+      },
+      {
+        "title": "Angústia",
+        "author": "Graciliano Ramos",
+        "status": "read",
+        "rating": 10,
+        "pagesRead": 256
+      },
+      {
+        "title": "Em Louvor da Sombra",
+        "author": "Junichiro Tanizaki",
+        "status": "read",
+        "rating": 10,
+        "pagesRead": null
+      },
+      {
+        "title": "Drácula",
+        "author": "Bram Stoker",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Retrato de Dorian Gray",
+        "author": "Oscar Wilde",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Idiota",
+        "author": "Fiódor Dostoiévski",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Água Viva",
+        "author": "Clarice Lispector",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Frankenstein",
+        "author": "Mary Shelley",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Alienista",
+        "author": "Machado de Assis",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Mrs Dalloway",
+        "author": "Virginia Woolf",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Cortiço",
+        "author": "Aluísio Azevedo",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Fantasma da Ópera",
+        "author": "Gaston Leroux",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Memorial de Aires",
+        "author": "Machado de Assis",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Casa de Pensão",
+        "author": "Aluísio Azevedo",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Dentro da Baleia",
+        "author": "George Orwell",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Helena",
+        "author": "Machado de Assis",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Mulato",
+        "author": "Aluísio Azevedo",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "Memórias de um Sargento de Milícias",
+        "author": "Manuel Antônio de Almeida",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "O Último dos Moicanos",
+        "author": "James Fenimore Cooper",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      },
+      {
+        "title": "A Arte da Guerra",
+        "author": "Sun Tzu",
+        "status": "unspecified",
+        "rating": null,
+        "pagesRead": null
+      }
+    ],
+    "ranking": [
+      "Angústia",
+      "Memórias do Subsolo",
+      "Memórias Póstumas de Brás Cubas",
+      "O Banquete",
+      "A Hora da Estrela"
+    ],
+    "reportedTotalsPendingReview": true
+  },
+  "homeQuotes": [
+    {
+      "source": "Steel Ball Run",
+      "speaker": "Jesus Cristo",
+      "placement": "opening",
+      "status": "rights-and-source-review"
+    },
+    {
+      "source": "O Lobo da Estepe",
+      "speaker": "Harry Haller",
+      "placement": "closing",
+      "status": "rights-and-source-review"
+    },
+    {
+      "source": "Resident Evil",
+      "speaker": "Leon S. Kennedy",
+      "placement": "closing",
+      "status": "rights-and-source-review"
+    },
+    {
+      "source": "Steel Ball Run",
+      "speaker": "Jesus Cristo",
+      "placement": "closing",
+      "status": "rights-and-source-review"
+    }
+  ],
+  "projectSeeds": [
+    "enterprise-noc-from-scratch",
+    "soft-and-wet-homelab",
+    "oppy",
+    "usb-presence-gate",
+    "scrolllock-rgb-fix",
+    "arduino-linux-controller"
+  ]
+}
