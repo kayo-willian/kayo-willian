@@ -27,11 +27,15 @@ activities : Testing, Research & Development
 curiosity  : The Unknown
 ```
 
-**`$ ls projects/`**
+**`$ tree -L 1 projects/`**
 
-[Enterprise NOC](https://github.com/kayo-willian/enterprise-noc-from-scratch) · [Soft & Wet](https://github.com/kayo-willian/soft-and-wet-homelab)<br>
-[Oppy](https://github.com/kayo-willian/oppy) · [USB Presence Gate](https://github.com/kayo-willian/usb-presence-gate)<br>
-[Scroll Lock RGB Fix](https://github.com/kayo-willian/scrolllock-rgb-fix) · [Arduino Linux Controller](https://github.com/kayo-willian/arduino-linux-controller)
+<pre>projects/
+├── <a href="https://github.com/kayo-willian/enterprise-noc-from-scratch">enterprise-noc-from-scratch</a>
+├── <a href="https://github.com/kayo-willian/soft-and-wet-homelab">soft-and-wet-homelab</a>
+├── <a href="https://github.com/kayo-willian/oppy">oppy</a>
+├── <a href="https://github.com/kayo-willian/usb-presence-gate">usb-presence-gate</a>
+├── <a href="https://github.com/kayo-willian/scrolllock-rgb-fix">scrolllock-rgb-fix</a>
+└── <a href="https://github.com/kayo-willian/arduino-linux-controller">arduino-linux-controller</a></pre>
 
 </td>
 <td width="42%" align="center" valign="middle">
