@@ -2,6 +2,8 @@
 
 <img src="./assets/go-beyond.svg" width="100%" alt="GO BEYOND" />
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-0B3D91?style=for-the-badge&logo=githubpages&logoColor=white)](https://kayo-willian.github.io/kayo-willian/)
+
 ![Linux](https://img.shields.io/badge/Linux-161B22?style=flat-square&logo=linux&logoColor=FCC624)
 ![Networking](https://img.shields.io/badge/Networking-161B22?style=flat-square&logo=cisco&logoColor=049FD9)
 ![Bash](https://img.shields.io/badge/Bash-161B22?style=flat-square&logo=gnubash&logoColor=4EAA25)
