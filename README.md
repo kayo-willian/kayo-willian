@@ -51,6 +51,16 @@ curiosity  : The Unknown
 
 <div align="center">
 
+<em>“One day I would be a better hand at the game. One day I would learn how to laugh. Pablo was waiting for me, and Mozart too.”</em>
+
+— Harry Haller, <em>Steppenwolf</em> (Hermann Hesse, 1927)
+
+</div>
+
+---
+
+<div align="center">
+
 ## 📬 Contact
 
 [![X](https://img.shields.io/badge/-%20-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/kayowestlion)
