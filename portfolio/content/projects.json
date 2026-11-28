@@ -134,57 +134,88 @@
   },
   {
     "id": "arduino-linux-controller",
-    "name": "Arduino Linux Controller",
+    "name": "Arduino Projects",
     "tags": [
-      "Arduino Uno",
+      "Arduino",
       "C++",
       "Python",
       "USB serial"
     ],
-    "repo": "https://github.com/kayo-willian/arduino-linux-controller",
+    "repo": "https://github.com/kayo-willian/arduino-projects",
     "en": {
       "kind": "Physical computing",
-      "summary": "A physical desktop controller with three buttons, a rotary volume control and two connectivity indicators.",
-      "detail": "The Uno sends gestures and volume changes over USB serial. A Python process maps them to media, audio and session controls in Ubuntu. The host sends connectivity status back to the LEDs.",
-      "finding": "A short press worked in the terminal but missed the intended media player. Selecting the player explicitly fixed playback. A separate pin mismatch explained the silent offline indicator.",
-      "scope": "One functional prototype. The published source reconstructs the working build. An intermittent USB connector heating issue remained unresolved.",
+      "summary": "A collection of practical Arduino builds integrating physical hardware and software.",
+      "detail": "Built from a CDR beginner kit with an Uno-compatible SMD board, three push buttons, two LEDs, a 10 kΩ potentiometer and a breadboard. C++ firmware reads the controls and communicates at 9600 baud over USB serial. A Python host process uses Playerctl, PipeWire/WirePlumber and GNOME session commands, and returns NetworkManager connectivity status to the LEDs.",
+      "finding": "The media-control command worked in the terminal, but a short button press targeted the wrong player. Explicit player selection fixed playback. A pin mismatch kept the offline LED dark; correcting the firmware to D9 resolved it. All main controls were reported working on the physical Ubuntu desktop.",
+      "scope": "One completed prototype is documented in the collection. The published source reconstructs the working build; the intermittent USB connector heating issue remained unresolved. The board should not be left powered unattended if abnormal heating recurs.",
       "credit": "I assembled, rewired and tested the controller. ChatGPT assisted with firmware, Python, troubleshooting and documentation.",
       "links": [
         {
-          "label": "Bench notes",
-          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/development.md"
+          "label": "Complete project documentation",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/README.md"
         },
         {
-          "label": "Final pinout",
-          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/hardware.md"
+          "label": "Final pinout and assembly",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/hardware.md"
+        },
+        {
+          "label": "Installation and usage",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/installation.md"
+        },
+        {
+          "label": "Development log",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/development.md"
+        },
+        {
+          "label": "Photographic record",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/images/README.md"
         }
       ],
       "caption": "Final prototype with three buttons and a B10K potentiometer.",
       "alt": "A wired breadboard holds green, yellow and red buttons beside a rotary potentiometer.",
       "homeArtAlt": "Photographic montage of the real Uno-compatible board, assembled breadboard, three push buttons and B10K potentiometer.",
-      "homeArtCaption": "Original project photographs, arranged for the portfolio."
+      "homeArtCaption": "Arduino Linux Controller — photographs of the actual build.",
+      "homeDetail": "Arduino Linux Controller is the first documented build: a USB desktop peripheral for Ubuntu with physical media and volume controls, screen locking and network indicators.",
+      "projectTitle": "Arduino Linux Controller",
+      "projectIntro": "Completed personal prototype · November 26, 2026."
     },
     "pt": {
       "kind": "Computação física",
-      "summary": "Controlador físico de desktop com três botões, controle rotativo de volume e dois indicadores de conectividade.",
-      "detail": "O Uno envia os acionamentos dos botões e as mudanças de volume pela serial USB. Um processo Python os traduz em controles de mídia, áudio e sessão no Ubuntu. O computador devolve o estado da conexão para os LEDs.",
-      "finding": "O comando funcionava no terminal, mas o toque curto acionava o reprodutor errado. A seleção explícita do reprodutor resolveu o problema. Uma divergência de pino explicava por que o LED de falta de conexão permanecia apagado.",
-      "scope": "Um protótipo funcional. O código publicado reconstrói a versão que funcionou na bancada. O aquecimento intermitente do conector USB ficou sem diagnóstico conclusivo.",
+      "summary": "Uma coleção de projetos práticos com Arduino, integrando hardware físico e software.",
+      "detail": "Montado com um kit iniciante da CDR, placa SMD compatível com Uno, três botões, dois LEDs, potenciômetro de 10 kΩ e protoboard. O firmware em C++ lê os controles e se comunica pela serial USB a 9600 baud. Um processo Python utiliza Playerctl, PipeWire/WirePlumber e comandos de sessão do GNOME, além de devolver aos LEDs o estado de conectividade do NetworkManager.",
+      "finding": "O comando de mídia funcionava no terminal, mas o toque curto acionava o reprodutor errado. A seleção explícita do reprodutor resolveu a reprodução. Uma divergência de pino mantinha o LED de falta de conexão apagado; a correção do firmware para D9 resolveu o problema. Os controles principais foram relatados como funcionais no desktop Ubuntu físico.",
+      "scope": "A coleção contém um protótipo concluído e documentado. O código publicado reconstrói a versão funcional; o aquecimento intermitente do conector USB ficou sem diagnóstico conclusivo. A placa não deve permanecer ligada sem supervisão se o aquecimento anormal voltar a ocorrer.",
       "credit": "Montei, refiz a fiação e testei o controle. O ChatGPT auxiliou no firmware, no Python, no diagnóstico e na documentação.",
       "links": [
         {
-          "label": "Diário de bancada",
-          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/pt-BR/desenvolvimento.md"
+          "label": "Documentação completa do projeto",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/pt-BR/README.md"
         },
         {
-          "label": "Pinagem final",
-          "url": "https://github.com/kayo-willian/arduino-linux-controller/blob/main/docs/pt-BR/componentes-e-montagem.md"
+          "label": "Pinagem final e montagem",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/pt-BR/componentes-e-montagem.md"
+        },
+        {
+          "label": "Instalação e utilização",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/pt-BR/instalacao.md"
+        },
+        {
+          "label": "Diário de desenvolvimento",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/pt-BR/desenvolvimento.md"
+        },
+        {
+          "label": "Registro fotográfico",
+          "url": "https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/docs/pt-BR/registro-fotografico.md"
         }
       ],
       "caption": "Protótipo final com três botões e um potenciômetro B10K.",
       "alt": "Três botões, verde, amarelo e vermelho, dividem a protoboard com o potenciômetro rotativo.",
       "homeArtAlt": "Montagem fotográfica da placa compatível com Uno, protoboard montada, três botões e potenciômetro B10K reais.",
-      "homeArtCaption": "Fotografias originais do projeto, reunidas para o portfólio."
+      "homeArtCaption": "Arduino Linux Controller — fotografias da montagem real.",
+      "name": "Projetos Arduino",
+      "homeDetail": "Arduino Linux Controller é o primeiro projeto documentado: um periférico USB para Ubuntu com controles físicos de mídia e volume, bloqueio de tela e indicadores de rede.",
+      "projectTitle": "Arduino Linux Controller",
+      "projectIntro": "Protótipo pessoal concluído · 26 de novembro de 2026."
     },
     "image": "controller.webp",
     "imageSize": [

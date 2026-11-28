@@ -36,7 +36,7 @@ curiosity  : The Unknown
 <img src="./assets/project-labels/automation.svg" width="78" height="14" align="absmiddle" alt="automation" /> : <a href="https://github.com/kayo-willian/oppy">Oppy</a>
 <img src="./assets/project-labels/system.svg" width="78" height="14" align="absmiddle" alt="system" /> : <a href="https://github.com/kayo-willian/usb-presence-gate">USB Presence Gate</a>
 <img src="./assets/project-labels/utility.svg" width="78" height="14" align="absmiddle" alt="utility" /> : <a href="https://github.com/kayo-willian/scrolllock-rgb-fix">Scroll Lock RGB Fix</a>
-<img src="./assets/project-labels/hardware.svg" width="78" height="14" align="absmiddle" alt="hardware" /> : <a href="https://github.com/kayo-willian/arduino-linux-controller">Arduino Linux Controller</a></pre>
+<img src="./assets/project-labels/hardware.svg" width="78" height="14" align="absmiddle" alt="hardware" /> : <a href="https://github.com/kayo-willian/arduino-projects">Arduino Projects</a></pre>
 
 </td>
 <td width="42%" align="center" valign="middle">

@@ -46,6 +46,9 @@ def check_home(page, base, width, lang, folder):
     assert page.locator('.project-card img').count() == 6
     for slug in ['oppy','usb-presence-gate','arduino-linux-controller','scrolllock-rgb-fix','channel-blue']:
         assert (page.locator(f'#{slug} img').get_attribute('src') or '').endswith(f'/images/{slug}.webp')
+    arduino = page.locator('#arduino-linux-controller')
+    assert arduino.locator('h3').inner_text() == ('Projetos Arduino' if lang == 'pt' else 'Arduino Projects')
+    assert arduino.locator('.project-links a').first.get_attribute('href') == 'https://github.com/kayo-willian/arduino-projects'
     assert page.locator('#soft-and-wet-homelab img').get_attribute('src').endswith('/images/soft-and-wet-cover.webp')
     assert page.locator('.lead-case .project-cover img').count() == 1
     assert page.locator('#soft-and-wet-homelab .project-cover img').count() == 1
@@ -107,6 +110,13 @@ def check_home(page, base, width, lang, folder):
             check_width(page, width)
             assert page.locator('h1').inner_text()
             assert page.locator('.case-sources a').count() >= 2
+            if case.parent.name == 'arduino-linux-controller':
+                assert page.locator('h1').inner_text() == ('Projetos Arduino' if lang == 'pt' else 'Arduino Projects')
+                assert page.locator('.case-text h2').first.inner_text() == 'Arduino Linux Controller'
+                assert page.locator('.case-sources a').first.get_attribute('href') == 'https://github.com/kayo-willian/arduino-projects'
+                suffix = 'docs/pt-BR/README.md' if lang == 'pt' else 'README.md'
+                assert page.locator('.case-sources a').nth(1).get_attribute('href') == 'https://github.com/kayo-willian/arduino-projects/blob/main/projects/linux-controller/' + suffix
+                assert page.locator('.language').get_attribute('href').endswith('projects/arduino-linux-controller/')
 
 
 def main():

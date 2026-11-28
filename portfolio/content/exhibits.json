@@ -115,7 +115,7 @@
   },
   "arduino-linux-controller": {
     "en": {
-      "title": "Reading the controls",
+      "title": "Arduino Linux Controller — controls",
       "rows": [
         [
           "Green button",
@@ -132,12 +132,16 @@
         [
           "Rotary knob",
           "Adjust playback volume."
+        ],
+        [
+          "Connectivity LEDs",
+          "Green: full connectivity. Red: limited or absent connectivity; blinking red: unknown state or host timeout."
         ]
       ],
       "note": "The host tests connectivity and sends its status over USB. Two LEDs on the controller show the result."
     },
     "pt": {
-      "title": "Leitura dos controles",
+      "title": "Arduino Linux Controller — controles",
       "rows": [
         [
           "Botão verde",
@@ -154,6 +158,10 @@
         [
           "Potenciômetro",
           "Ajusta o volume da reprodução."
+        ],
+        [
+          "LEDs de conectividade",
+          "Verde: conectividade plena. Vermelho: conectividade limitada ou ausente; vermelho piscante: estado desconhecido ou perda de comunicação com o computador."
         ]
       ],
       "note": "O computador testa a conectividade e envia o estado por USB. Dois LEDs no controlador mostram o resultado."

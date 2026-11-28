@@ -60,8 +60,8 @@ def selected_work(page, projects):
         picture = project_visual(page,p,cover=True)
         cards.append(f'''
 <article class="project-card" id="{slug}">{picture}
-  <p class="section-label">{e(v['kind'])}</p><h3><a href="{page.project(slug)}">{e(p['name'])}</a></h3>
-  <p>{e(v['summary'])}</p><p>{e(v['detail'])}</p>{tags(p)}{project_links(page,p)}
+  <p class="section-label">{e(v['kind'])}</p><h3><a href="{page.project(slug)}">{e(v.get('name', p['name']))}</a></h3>
+  <p>{e(v['summary'])}</p><p>{e(v.get('homeDetail', v['detail']))}</p>{tags(p)}{project_links(page,p)}
 </article>
 ''')
     return f'''
@@ -91,7 +91,9 @@ def project_page(page, item, next_item):
     links = ''.join(link(l['url'],l['label']) for l in v['links'])
     visual = project_visual(page,item,cover=not item.get('image'))
     tags = ' · '.join(item['tags'])
-    title = item['name']
+    title = v.get('name', item['name'])
+    project_intro = (f'<section><h2>{e(v["projectTitle"])}</h2><p>{e(v["projectIntro"])}</p></section>'
+                     if v.get('projectTitle') else '')
     body = f'''
 <article class="project-page">
   <div class="case-cover frame"><a class="breadcrumb" href="{page.home('#work')}">← {t['contents']}</a>
@@ -107,13 +109,13 @@ def project_page(page, item, next_item):
         <div class="case-sources">{link(item['repo'],t['repo'])}{links}
         </div>
       </aside>
-      <div class="case-text">{sections}
+      <div class="case-text">{project_intro}{sections}
       </div>
     </div>
   </div>
 </article>
 <div class="frame next">
-  <div><span class="mono">{t['next']}</span>{link(page.project(next_item['id']), next_item['name'],'right')}
+  <div><span class="mono">{t['next']}</span>{link(page.project(next_item['id']), next_item[page.lang].get('name', next_item['name']),'right')}
   </div>{link(page.home('#work'),t['contents'],'up')}
 </div>
 '''
